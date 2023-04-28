@@ -29,7 +29,7 @@ public class TitleSceneManager : SceneManagerCommon
         }
         else if (toFadeOut == true)
         {
-            volumeVar = Mathf.SmoothDamp(volumeVar, 0f, ref volumeRef, fadeOutTime - 1f);
+            volumeVar = Mathf.SmoothDamp(volumeVar, 0f, ref volumeRef, fadeOutTime - 1.1f);
             if (volumeVar < 0f)
             {
                 volumeVar = 0f;

@@ -2,10 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneManagerCommon : MonoBehaviour
 {
     public string sceneToLoad;
+    public float volumeVar;
+    public float volumeRef = 0f;
+    public float fadeInTime = 3f;
+    public float fadeOutTime = 3f;
+
+    public GameObject blackScreenHolder;
+    public Image blackScreenImage;
+
+    public bool toFadeIn = false;
+    public bool toFadeOut = false;
+    public AudioSource BGMSource; //Background Music Source
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +30,48 @@ public class SceneManagerCommon : MonoBehaviour
         
     }
 
-    public virtual void LoadScene(string sceneToLoad)
+    public virtual void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneToLoad);
+        SceneManager.LoadSceneAsync(sceneName);
     }
+    public virtual void BGMFadeIn()
+    {
+        toFadeIn = true;
+    }
+    public virtual void BGMFadeOut()
+    {
+        toFadeOut = true;
+    }
+    public virtual void BlackScreenFadeIn()
+    {
+        StartCoroutine(BlackScreenFadeInCo());
+    }
+
+    IEnumerator BlackScreenFadeInCo()
+    {
+        blackScreenImage.CrossFadeAlpha(1f, 0f, false);
+        blackScreenImage.CrossFadeAlpha(0f, fadeInTime, false);
+        yield return new WaitForSeconds(fadeInTime);
+        blackScreenHolder.SetActive(false);
+    }
+
+    public virtual void BlackScreenFadeOut()
+    {
+        blackScreenHolder.SetActive(true);
+        blackScreenImage.CrossFadeAlpha(0f, 0f, false);
+        blackScreenImage.CrossFadeAlpha(1f, fadeOutTime, false);
+    }
+    public virtual void ExitScene()
+    {
+        StartCoroutine(ExitSceneCo());
+    }
+
+    IEnumerator ExitSceneCo()
+    {
+        BGMFadeOut();
+        BlackScreenFadeOut();
+        yield return new WaitForSeconds(fadeOutTime);
+        LoadScene(sceneToLoad);
+    }
+
 }

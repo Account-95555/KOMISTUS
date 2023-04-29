@@ -7,7 +7,9 @@ public class Joystick : MonoBehaviour
 {
     public GameObject joystick;
     public GameObject joystickBG;
-    
+
+    public float joystickDist;
+
     public Vector2 joystickVector;
 
     private Vector2 joystickTouchPos;
@@ -23,7 +25,7 @@ public class Joystick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(joystickDist);
     }
 
     public void PointerDown()
@@ -39,7 +41,8 @@ public class Joystick : MonoBehaviour
         Vector2 dragPos = pointerEventData.position;
         joystickVector = (dragPos - joystickTouchPos).normalized;
 
-        float joystickDist = Vector2.Distance(dragPos, joystickTouchPos);
+        joystickDist = Vector2.Distance(dragPos, joystickTouchPos);
+        
 
         if(joystickDist < joystickRadius)
         {

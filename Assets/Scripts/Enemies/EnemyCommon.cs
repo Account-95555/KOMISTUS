@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class EnemyCommon : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject enemy;
-    public Transform currentPlayerPos;
-    public Transform currentEnemyPos;
-    public Rigidbody2D rb;
     public float moveSpeed;
-    public bool isTargeting;
+    protected Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
-    
+        
     }
 
     // Update is called once per frame
@@ -25,21 +20,18 @@ public class EnemyCommon : MonoBehaviour
 
     public virtual void MoveUp()
     {
-        rb.velocity = new Vector2(rb.velocity.x, 5f);
+        rb.velocity = new Vector2(rb.velocity.x, moveSpeed);
     }
     public virtual void MoveDown()
     {
-        rb.velocity = new Vector2(rb.velocity.x, -5f);
+        rb.velocity = new Vector2(rb.velocity.x, -moveSpeed);
     }
     public virtual void MoveLeft()
     {
-        rb.velocity = new Vector2(-5f, rb.velocity.y);
+        rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
     }
     public virtual void MoveRight()
     {
-        rb.velocity = new Vector2(5f, rb.velocity.y);
+        rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
     }
-
-    //Pathfind
-
 }

@@ -20,21 +20,31 @@ public class TitleSceneManager : SceneManagerCommon
         BGMSource.volume = volumeVar;
         if (toFadeIn == true)
         {
-            volumeVar = Mathf.SmoothDamp(volumeVar, 1f, ref volumeRef, fadeInTime - 1f);
-            if (volumeVar > 0.99f)
+            volumeVar = Mathf.MoveTowards(volumeVar, 1f, fadeInTime * Time.deltaTime);
+            if (volumeVar >= 1)
+            {
+                toFadeIn = false;
+            }
+            //volumeVar = Mathf.SmoothDamp(volumeVar, 1f, ref volumeRef, fadeInTime - 1f);
+            /*if (volumeVar > 0.99f)
             {
                 volumeVar = 1f;
                 toFadeIn = false;
-            }
+            }*/
         }
         else if (toFadeOut == true)
         {
-            volumeVar = Mathf.SmoothDamp(volumeVar, 0f, ref volumeRef, fadeOutTime - 1.1f);
-            if (volumeVar < 0f)
+            volumeVar = Mathf.MoveTowards(volumeVar, 0f, fadeOutTime * Time.deltaTime);
+            if (volumeVar <= 0)
+            {
+                toFadeOut = false;
+            }
+            //volumeVar = Mathf.SmoothDamp(volumeVar, 0f, ref volumeRef, fadeOutTime - 1.1f);
+            /*if (volumeVar < 0f)
             {
                 volumeVar = 0f;
                 toFadeOut = false;
-            }
+            }*/
         }
     }
 }

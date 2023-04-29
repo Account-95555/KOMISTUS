@@ -8,9 +8,9 @@ public class SceneManagerCommon : MonoBehaviour
 {
     public string sceneToLoad;
     public float volumeVar;
-    public float volumeRef = 0f;
-    public float fadeInTime = 3f;
-    public float fadeOutTime = 3f;
+    //public float volumeRef = 0f;
+    public float fadeInTime = 2f;
+    public float fadeOutTime = 2f;
 
     public GameObject blackScreenHolder;
     public Image blackScreenImage;

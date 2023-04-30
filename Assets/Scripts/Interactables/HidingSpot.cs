@@ -19,8 +19,8 @@ public class HidingSpot : MonoBehaviour
     private SpriteRenderer srPlayer;
     private InteractButton ib;
     private PlayerController pc;
-    private bool isHiding = false;
     private bool inRange = false;
+    private bool isHiding = false;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +55,7 @@ public class HidingSpot : MonoBehaviour
                     srPlayer.color = playerColor;
                     //StartCoroutine(HideRoutine);
                     isHiding = true;
+                    pc.isHiding = isHiding;
                     audioSource.PlayOneShot(close);
                     pc.canMove = false;
                 }
@@ -64,6 +65,7 @@ public class HidingSpot : MonoBehaviour
                     srPlayer.color = playerColor;
                     //StartCoroutine(HideRoutine);
                     isHiding = false;
+                    pc.isHiding = isHiding;
                     audioSource.PlayOneShot(open);
                     pc.canMove = true;
                 }

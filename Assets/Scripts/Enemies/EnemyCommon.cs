@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class EnemyCommon : MonoBehaviour
 {
+    public GameObject player;
+    public PlayerController pc;
     public float moveSpeed;
+    public GameObject jumpscare;
     protected Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()

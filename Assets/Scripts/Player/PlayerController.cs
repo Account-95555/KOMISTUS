@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public float runSpeed;
     public bool isRunning = false;
+    public bool isHiding = false;
     public bool canMove = true;
     private Rigidbody2D rb;
     private Animator anim;

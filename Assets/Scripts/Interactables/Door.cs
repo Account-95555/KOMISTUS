@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public GameObject shadowCaster;
+    public GameObject upperShadowCaster;
+    public GameObject lowerShadowCaster;
+    public GameObject enemy;
+
+    public bool isTrigger = false;
 
     private Color doorColor;
     private bool isEntered = false;
@@ -24,13 +28,12 @@ public class Door : MonoBehaviour
         if (isEntered)
         {
             doorColor.a = Mathf.MoveTowards(doorColor.a, 0f, 1f * Time.deltaTime);
-            shadowCaster.SetActive(false);
         }
         else
         {
             doorColor.a = Mathf.MoveTowards(doorColor.a, 1f, 1f * Time.deltaTime);
-            shadowCaster.SetActive(true);
         }
+       
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -38,14 +41,28 @@ public class Door : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             isEntered = true;
+            if (isTrigger)
+            {
+                enemy.SetActive(true);
+            }
         }
    
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            lowerShadowCaster.SetActive(false);
+            upperShadowCaster.SetActive(false);
+        }
     }
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             isEntered = false;
+            
         }
     }
 }

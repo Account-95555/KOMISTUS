@@ -9,6 +9,7 @@ public class PatrollingEnemy : EnemyCommon
     // Start is called before the first frame update
     void Start()
     {
+        pc = player.GetComponent<PlayerController>();
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(moveSpeed * startingDir.x, moveSpeed * startingDir.y);
     }
@@ -16,10 +17,19 @@ public class PatrollingEnemy : EnemyCommon
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(pc.isHiding);
         rb.velocity = Vector2.ClampMagnitude(rb.velocity, 1f);
         if (isPatrolling == true)
         {
             rb.velocity = new Vector2(rb.velocity.x * moveSpeed,rb.velocity.y * moveSpeed);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player") && pc.isHiding == false)
+        {
+            jumpscare.SetActive(true);
         }
     }
 }

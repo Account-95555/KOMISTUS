@@ -8,11 +8,11 @@ public class WearyMeter : MonoBehaviour
     public Slider wearyMeter;
     public GameObject player;
     public GameObject jumpscare;
-    private Player pc;
+    private PlayerController pc;
     // Start is called before the first frame update
     void Start()
     {
-        pc = player.GetComponent<Player>();
+        pc = player.GetComponent<PlayerController>();
         wearyMeter.value = 10f;
     }
 

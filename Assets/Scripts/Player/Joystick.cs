@@ -10,11 +10,14 @@ public class Joystick : MonoBehaviour
 
     public float joystickDist;
 
+    public bool isDragging;
+
     public Vector2 joystickVector;
 
     private Vector2 joystickTouchPos;
     private Vector2 joystickOriginalPos;
     private float joystickRadius;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +40,7 @@ public class Joystick : MonoBehaviour
 
     public void Drag(BaseEventData baseEventData)
     {
+        isDragging = true;
         PointerEventData pointerEventData = baseEventData as PointerEventData;
         Vector2 dragPos = pointerEventData.position;
         joystickVector = (dragPos - joystickTouchPos).normalized;
@@ -56,6 +60,7 @@ public class Joystick : MonoBehaviour
 
     public void PointerUp()
     {
+        isDragging = false;
         joystickVector = Vector2.zero;
         joystick.transform.position = joystickOriginalPos;
         joystickBG.transform.position = joystickOriginalPos;

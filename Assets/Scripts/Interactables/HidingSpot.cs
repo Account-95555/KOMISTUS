@@ -29,6 +29,7 @@ public class HidingSpot : MonoBehaviour
         srPlayer = player.GetComponent<SpriteRenderer>();
         pc = player.GetComponent<PlayerController>();
         ib = interactButtonObj.GetComponent<InteractButton>();
+        playerColor = Color.white;
     }
 
     // Update is called once per frame
@@ -60,7 +61,6 @@ public class HidingSpot : MonoBehaviour
                 else if (isHiding == true)
                 {
                     playerColor.a = 1f;
-                    playerColor = Color.white;
                     srPlayer.color = playerColor;
                     //StartCoroutine(HideRoutine);
                     isHiding = false;

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class WearyMeter : MonoBehaviour
 {
     public Slider wearyMeter;
+    public float wearyVal = 0f;
     public GameObject player;
     public GameObject jumpscare;
     private PlayerController pc;
@@ -13,23 +14,30 @@ public class WearyMeter : MonoBehaviour
     void Start()
     {
         pc = player.GetComponent<PlayerController>();
-        wearyMeter.value = 10f;
+        wearyMeter.value = 0f;
+        wearyVal = Mathf.Clamp(wearyVal, 0f, 100f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (pc.isRunning == true)
+        wearyMeter.value = wearyVal;
+        if (wearyVal < 0)
         {
-            wearyMeter.value += 0.1f;
+            wearyVal = 0;
         }
-        else
+        if (pc.isRunning == true) //increase the weary meter on run
         {
-            wearyMeter.value -= 0.05f;
+            wearyVal += 0.1f;
         }
-        if (wearyMeter.value >= 100)
+        else //decrease when not running
         {
-            jumpscare.SetActive(true);
+            wearyVal -= 0.05f;
+        }
+        if (wearyMeter.value >= 100) //if full, game over
+        {
+            pc.isDead = true;
+            PlayerPrefs.SetString("CauseOfDeath", "WearyMeter");
         }
     }
 }

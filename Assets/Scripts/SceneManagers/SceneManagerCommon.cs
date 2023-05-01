@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class SceneManagerCommon : MonoBehaviour
 {
-    public string sceneToLoad;
+    //public string sceneToLoad;
     public float volumeVar;
     //public float volumeRef = 0f;
     public float fadeInTime = 2f;
@@ -61,12 +61,12 @@ public class SceneManagerCommon : MonoBehaviour
         blackScreenImage.CrossFadeAlpha(0f, 0f, false);
         blackScreenImage.CrossFadeAlpha(1f, fadeOutTime, false);
     }
-    public virtual void ExitScene()
+    public virtual void ExitScene(string sceneToLoad)
     {
-        StartCoroutine(ExitSceneCo());
+        StartCoroutine(ExitSceneCo(sceneToLoad));
     }
 
-    IEnumerator ExitSceneCo()
+    public virtual IEnumerator ExitSceneCo(string sceneToLoad)
     {
         BGMFadeOut();
         BlackScreenFadeOut();

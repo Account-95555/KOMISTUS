@@ -27,7 +27,7 @@ public class InteractButton : MonoBehaviour
         StartCoroutine(ClickCooldown());
     }
 
-    IEnumerator ClickCooldown()
+    IEnumerator ClickCooldown() //click debounce
     {
         yield return new WaitForSeconds(0.01f);
         clickRegistered = false;

@@ -47,4 +47,17 @@ public class TitleSceneManager : SceneManagerCommon
             }*/
         }
     }
+
+    public void QuitGame()
+    {
+        StartCoroutine(QuitApplication());
+    }
+
+    IEnumerator QuitApplication()
+    {
+        BGMFadeOut();
+        BlackScreenFadeOut();
+        yield return new WaitForSeconds(fadeOutTime);
+        Application.Quit();
+    }
 }

@@ -1,0 +1,33 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class FloorHazard : MonoBehaviour
+{
+    public AudioSource hazardAudio;
+    public AudioClip hazardSFX;
+    public GameObject wearyObject;
+    private WearyMeter wm;
+    //private WearyMeter wm;
+    // Start is called before the first frame update
+    void Start()
+    {
+        wm = wearyObject.GetComponent<WearyMeter>();
+        hazardAudio = GetComponent<AudioSource>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            wm.wearyVal += 11f;
+            hazardAudio.PlayOneShot(hazardSFX);
+        }
+    }
+}

@@ -29,7 +29,8 @@ public class PatrollingEnemy : EnemyCommon
     {
         if (other.gameObject.CompareTag("Player") && pc.isHiding == false)
         {
-            jumpscare.SetActive(true);
+            pc.isDead = true;
+            PlayerPrefs.SetString("CauseOfDeath", "PatrolEnemy");
         }
     }
 }

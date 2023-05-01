@@ -5,6 +5,7 @@ using UnityEngine.Video;
 
 public class LogoSceneManager : SceneManagerCommon
 {
+    public string sceneToLoad;
     public GameObject videoHolder;
     public VideoPlayer loadingVideo;
     // Start is called before the first frame update

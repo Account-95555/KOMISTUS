@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prototyping.unity
     guid: 0bde7e3f9472d3d4bad573946161c300
+  - enabled: 1
+    path: Assets/Scenes/DeathScene.unity
+    guid: df92e3a078ae4b34caaec6056f9b7827
   m_configObjects: {}

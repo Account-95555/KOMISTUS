@@ -7,6 +7,7 @@ public class WearyMeter : MonoBehaviour
 {
     public Slider wearyMeter;
     public float wearyVal = 0f;
+    public float mobileMult = 1f;
     public GameObject player;
     public GameObject jumpscare;
     private PlayerController pc;
@@ -16,12 +17,16 @@ public class WearyMeter : MonoBehaviour
         pc = player.GetComponent<PlayerController>();
         wearyMeter.value = 0f;
         wearyVal = Mathf.Clamp(wearyVal, 0f, 100f);
+        if (Application.isMobilePlatform)
+        {
+            mobileMult = 10f;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        wearyMeter.value = wearyVal;
+        wearyMeter.value = wearyVal * mobileMult;
         if (wearyVal < 0)
         {
             wearyVal = 0;

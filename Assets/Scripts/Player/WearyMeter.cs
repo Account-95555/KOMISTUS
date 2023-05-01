@@ -26,18 +26,18 @@ public class WearyMeter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        wearyMeter.value = wearyVal * mobileMult;
+        wearyMeter.value = wearyVal;
         if (wearyVal < 0)
         {
             wearyVal = 0;
         }
         if (pc.isRunning == true) //increase the weary meter on run
         {
-            wearyVal += 0.1f;
+            wearyVal += 0.1f * mobileMult;
         }
         else //decrease when not running
         {
-            wearyVal -= 0.05f;
+            wearyVal -= 0.05f * mobileMult;
         }
         if (wearyMeter.value >= 100) //if full, game over
         {

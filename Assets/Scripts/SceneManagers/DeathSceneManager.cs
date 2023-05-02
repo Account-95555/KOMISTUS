@@ -11,6 +11,7 @@ public class DeathSceneManager : SceneManagerCommon
     public TextMeshProUGUI youDiedText;
     public string youDied;
     public TextMeshProUGUI deathText;
+    
     private string causeOfDeath;
     // Start is called before the first frame update
     void Start()

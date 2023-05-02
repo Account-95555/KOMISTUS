@@ -35,6 +35,7 @@ public class NormalLevelManager : SceneManagerCommon
 
     IEnumerator Death()
     {
+        pc.canMove = false;
         deathCoPlaying = true;
         footstepObject.SetActive(false);
         mobileControls.SetActive(false);

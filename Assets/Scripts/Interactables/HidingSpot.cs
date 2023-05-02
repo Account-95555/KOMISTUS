@@ -7,6 +7,7 @@ public class HidingSpot : MonoBehaviour
     public Sprite openSprite;
     public Sprite closedSprite;
 
+    public GameObject joystick;
     public GameObject interactButtonObj;
     public GameObject player;
     public AudioSource audioSource;
@@ -38,10 +39,12 @@ public class HidingSpot : MonoBehaviour
         if (isHiding)
         {
             srHideObj.sprite = closedSprite;
+            
         }
         else
         {
             srHideObj.sprite = openSprite;
+            
         }
         
         if (inRange)
@@ -58,6 +61,7 @@ public class HidingSpot : MonoBehaviour
                     pc.isHiding = isHiding;
                     audioSource.PlayOneShot(close);
                     pc.canMove = false;
+                    joystick.SetActive(false);
                 }
                 else if (isHiding == true)
                 {
@@ -68,6 +72,8 @@ public class HidingSpot : MonoBehaviour
                     pc.isHiding = isHiding;
                     audioSource.PlayOneShot(open);
                     pc.canMove = true;
+                    joystick.SetActive(true);
+                    
                 }
             }
       

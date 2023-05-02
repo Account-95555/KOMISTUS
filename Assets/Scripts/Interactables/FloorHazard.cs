@@ -26,7 +26,7 @@ public class FloorHazard : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            wm.wearyVal += 11f;
+            wm.wearyVal += 16f;
             hazardAudio.PlayOneShot(hazardSFX);
         }
     }

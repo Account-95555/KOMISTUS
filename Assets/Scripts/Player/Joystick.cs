@@ -33,11 +33,46 @@ public class Joystick : MonoBehaviour
 
     public void PointerDown()
     {
-        joystick.transform.position = Input.mousePosition;
-        joystickBG.transform.position = Input.mousePosition;
-        joystickTouchPos = Input.mousePosition;
-    }
+        int i = Input.touches.Length; ;
 
+        if (i == 1)
+        {
+            joystick.transform.position = Input.mousePosition;
+            joystickBG.transform.position = Input.mousePosition;
+            joystickTouchPos = Input.mousePosition;
+        }
+        else
+        {
+            int id = SortArray();
+            joystick.transform.position = Input.touches[id].position;
+            joystickBG.transform.position = Input.touches[id].position;
+            joystickTouchPos = Input.touches[id].position;
+        }
+
+    }
+    //SORTARRAYCODE by Rafcon on YT, prevents joystick from going to middle of screen
+    private int SortArray()
+    {
+        Touch[] inputlist = Input.touches;
+        float[] listpositioninputX = new float[inputlist.Length];
+        int id = 0;
+        for (int i = 0; i < inputlist.Length; i++)
+        {
+            listpositioninputX[i] = inputlist[i].position.x;
+        }
+        System.Comparison<float> compare = new System.Comparison<float>((num1, num2) => num1.CompareTo(num2));
+        System.Array.Sort<float>(listpositioninputX, compare);
+
+        for (int i = 0; i < inputlist.Length; i++)
+        {
+            if (listpositioninputX[0] == inputlist[i].position.x)
+            {
+                return id = inputlist[i].fingerId;
+            }
+        }
+        return id;
+    }
+    
     public void Drag(BaseEventData baseEventData)
     {
         isDragging = true;
@@ -46,9 +81,9 @@ public class Joystick : MonoBehaviour
         joystickVector = (dragPos - joystickTouchPos).normalized;
 
         joystickDist = Vector2.Distance(dragPos, joystickTouchPos);
-        
 
-        if(joystickDist < joystickRadius)
+
+        if (joystickDist < joystickRadius)
         {
             joystick.transform.position = joystickTouchPos + joystickVector * joystickDist;
         }

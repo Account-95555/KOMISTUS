@@ -20,6 +20,7 @@ public class HidingSpot : MonoBehaviour
     private SpriteRenderer srPlayer;
     private InteractButton ib;
     private PlayerController pc;
+    private Joystick js;
     private bool inRange = false;
     private bool isHiding = false;
 
@@ -30,6 +31,7 @@ public class HidingSpot : MonoBehaviour
         srPlayer = player.GetComponent<SpriteRenderer>();
         pc = player.GetComponent<PlayerController>();
         ib = interactButtonObj.GetComponent<InteractButton>();
+        js = joystick.GetComponent<Joystick>();
         playerColor = Color.white;
     }
 
@@ -61,6 +63,7 @@ public class HidingSpot : MonoBehaviour
                     pc.isHiding = isHiding;
                     audioSource.PlayOneShot(close);
                     pc.canMove = false;
+                    js.PointerUp();
                     joystick.SetActive(false);
                 }
                 else if (isHiding == true)

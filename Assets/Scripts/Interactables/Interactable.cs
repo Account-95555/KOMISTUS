@@ -36,6 +36,7 @@ public class Interactable : MonoBehaviour
 
     IEnumerator Textbox()
     {
+        // coroutine is here to make the text blank after 5 seconds
         if (isLockedCloset)
         {
             textbox.text = ("The closet is locked...");
@@ -56,6 +57,7 @@ public class Interactable : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
+        // checks if the player is colliding with the object
         if (other.gameObject.CompareTag("Player"))
         {
             inRange = true;

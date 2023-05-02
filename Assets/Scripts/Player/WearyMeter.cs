@@ -17,6 +17,8 @@ public class WearyMeter : MonoBehaviour
         pc = player.GetComponent<PlayerController>();
         wearyMeter.value = 0f;
         wearyVal = Mathf.Clamp(wearyVal, 0f, 100f);
+
+        // weary meter is slower on mobile than on pc
         if (Application.isMobilePlatform)
         {
             mobileMult = 10f;

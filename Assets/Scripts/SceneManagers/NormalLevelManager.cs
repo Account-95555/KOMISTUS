@@ -9,7 +9,9 @@ public class NormalLevelManager : SceneManagerCommon
     public GameObject mobileControls;
     public GameObject footstepObject;
     public GameObject deathImageHolder;
+    
     public Image deathImage;
+    
     public AudioClip jumpscareSFX;
     public PlayerController pc;
 

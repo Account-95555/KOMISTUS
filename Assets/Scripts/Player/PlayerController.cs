@@ -10,11 +10,14 @@ public class PlayerController : MonoBehaviour
     public AudioSource footstepAudioSource;
     public float moveSpeed;
     public float runSpeed;
+    
     public bool isRunning = false;
     public bool isHiding = false;
     public bool isDead = false;
     public bool canMove = true;
+    
     public string causeOfDeath;
+    
     private Rigidbody2D rb;
     private Animator anim;
     // Start is called before the first frame update

@@ -9,7 +9,6 @@ public class WearyMeter : MonoBehaviour
     public float wearyVal = 0f;
     public float mobileMult = 1f;
     public GameObject player;
-    public GameObject jumpscare;
     
     private PlayerController pc;
     // Start is called before the first frame update

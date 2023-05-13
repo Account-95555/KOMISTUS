@@ -6,6 +6,7 @@ public class PatrollingEnemyMarker : PatrollingEnemy
 {
     public GameObject enemy;
     public string dirChange;
+
     // Start is called before the first frame update
     void Start()
     {

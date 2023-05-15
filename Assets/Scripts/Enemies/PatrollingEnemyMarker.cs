@@ -21,7 +21,7 @@ public class PatrollingEnemyMarker : PatrollingEnemy
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.GetComponent<PatrollingEnemy>() != null && isPatrolling == true)
+        if (other.gameObject.GetComponent<PatrollingEnemy>() != null && wm.canBeChased == false)
         {
             if (dirChange == "up")
             {

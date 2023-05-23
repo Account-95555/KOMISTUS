@@ -35,11 +35,11 @@ public class WearyMeter : MonoBehaviour
         }
         if (pc.isRunning == true) //increase the weary meter on run
         {
-            wearyVal += 10f * Time.deltaTime;
+            wearyVal += 20f * Time.deltaTime;
         }
         else //decrease when not running
         {
-            wearyVal -= 5f * Time.deltaTime;
+            wearyVal -= 10f * Time.deltaTime;
         }
         if (wearyMeter.value >= 90) //if full, chase player
         {

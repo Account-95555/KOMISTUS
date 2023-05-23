@@ -1,23 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Interactable : MonoBehaviour
 {
     public TextMeshProUGUI textbox;
     public GameObject interactButtonObj;
+    public GameObject inventoryButton;
+    public GameObject attachedItem;
+    public GameObject inventory;
     public string textPointText;
+    public string itemName;
     public bool isLockedCloset;
-    public bool isItemStore;
-    public bool hasItem;
+    //public bool isItemStore;
+    public bool isItem;
     public bool isTextPoint;
+    public Sprite itemSprite;
+    public Image itemImage;
+    private Inventory inv;
     private InteractButton ib;
     private bool inRange;
     //private bool checkForText = false;
     // Start is called before the first frame update
     void Start()
     {
+        inventoryButton.SetActive(false);
+        inv = inventory.GetComponent<Inventory>();
         ib = interactButtonObj.GetComponent<InteractButton>();
     }
 
@@ -29,29 +39,34 @@ public class Interactable : MonoBehaviour
             if (ib.clickRegistered)
             {
                 ib.clickRegistered = false;
-                StartCoroutine(Textbox());
+                StartCoroutine(onClick());
             }
         }
     }
 
-    IEnumerator Textbox()
+    IEnumerator onClick()
     {
         // coroutine is here to make the text blank after 5 seconds
         if (isLockedCloset)
         {
             textbox.text = ("The closet is locked...");
         }
-        if (isItemStore)
+        //if (isItemStore)
+        //{
+        if (isItem)
         {
-            if (hasItem)
-            {
-
-            }
-            else
-            {
-                textbox.text = ("Nothing in here...");
-            }
+            inv.isHolding = true;
+            inventoryButton.SetActive(true);
+            textbox.text = (itemName + " has been picked up.");
+            itemImage.sprite = itemSprite;
+            inv.attachedItem = attachedItem;
+            gameObject.SetActive(false);
         }
+        //else
+        //{
+            //textbox.text = ("Nothing in here...");
+        //}
+        //}
         yield return new WaitForSeconds(3f);
         textbox.text = ("");
     }

@@ -7,10 +7,12 @@ public class PlayerController : MonoBehaviour
     public Transform player;
     public Joystick joystick;
     public GameObject footstepObject;
+    public GameObject wearyObject;
     public AudioSource footstepAudioSource;
     public float moveSpeed;
     public float runSpeed;
-    
+    public float lastXScale = 1f;
+
     public bool isRunning = false;
     public bool isHiding = false;
     public bool isDead = false;
@@ -20,6 +22,7 @@ public class PlayerController : MonoBehaviour
     
     private Rigidbody2D rb;
     private Animator anim;
+    private WearyMeter wm;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,11 +32,12 @@ public class PlayerController : MonoBehaviour
         footstepAudioSource.volume = 0f;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        wm = wearyObject.GetComponent<WearyMeter>();
     }
     void Update()
     {
-        anim.SetBool("isDragging", joystick.isDragging);
-        player.localScale = new Vector3(Mathf.Sign(joystick.joystickVector.x), 1f, 1f); //change where player is facing
+        anim.SetFloat("joystickDist",joystick.joystickDist);
+        player.localScale = new Vector3(lastXScale, 1f, 1f); //change where player is facing
         if (canMove)
         {
             if (joystick.joystickVector.y != 0)
@@ -47,6 +51,7 @@ public class PlayerController : MonoBehaviour
                 {
                     footstepAudioSource.pitch = 1f;
                     footstepAudioSource.volume = 0.15f;
+                    //wm.wearyVal += 15f * Time.deltaTime;
                 }
             }
             else
@@ -71,11 +76,13 @@ public class PlayerController : MonoBehaviour
                 {
                     rb.velocity = new Vector2(joystick.joystickVector.x * runSpeed, joystick.joystickVector.y * runSpeed);
                     isRunning = true;
+                    lastXScale = Mathf.Sign(joystick.joystickVector.x);
                 }
                 else if (joystick.joystickDist < 100f) //else walk
                 {
                     rb.velocity = new Vector2(joystick.joystickVector.x * moveSpeed, joystick.joystickVector.y * moveSpeed);
                     isRunning = false;
+                    lastXScale = Mathf.Sign(joystick.joystickVector.x);
                 }
 
             }
@@ -83,12 +90,19 @@ public class PlayerController : MonoBehaviour
             {
                 rb.velocity = Vector2.zero;
                 isRunning = false;
+                joystick.joystickDist = 0;
             }
         }
         else //stop entirely also if the player is unable to move
         {
+            joystick.joystickDist = 0;
             rb.velocity = Vector2.zero;
             isRunning = false;
         }
+    }
+
+    IEnumerator PlayerSquish()
+    {
+        yield return new WaitForSeconds(0.5f);
     }
 }

@@ -13,5 +13,5 @@ ________________________________________________________________
 
 Thanks for reading, 🙏 hopefully everything will go swimmingly...
 
-![alt text](https://i.kym-cdn.com/photos/images/newsfeed/002/548/182/231.gif)
+![alt text](https://pbs.twimg.com/media/FqcvfkWXwAEXsCa.jpg)
 

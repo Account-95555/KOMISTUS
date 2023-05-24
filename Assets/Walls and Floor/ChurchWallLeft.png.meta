@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4af457e5aa66f241b3fc2274262cf3a
-      internalID: 2053773203
+      spriteID: a8df90b36ce036a499f5cbf8290f36ce
+      internalID: 1518444699
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ChurchWallLeft_0: 2053773203
+      ChurchWallLeft_0: 1518444699
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

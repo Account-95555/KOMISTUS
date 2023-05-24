@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2579749284391082309
+--- !u!1 &141817826021448014
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,44 +8,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3132896397360095916}
-  - component: {fileID: 8744785247174668614}
+  - component: {fileID: 4190684670479996837}
+  - component: {fileID: 1359663982602718668}
   m_Layer: 0
-  m_Name: Walls
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3132896397360095916
+--- !u!4 &4190684670479996837
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2579749284391082309}
+  m_GameObject: {fileID: 141817826021448014}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2777748088880494781}
+  - {fileID: 1743443794296474051}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!156049354 &8744785247174668614
+--- !u!156049354 &1359663982602718668
 Grid:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2579749284391082309}
+  m_GameObject: {fileID: 141817826021448014}
   m_Enabled: 1
   m_CellSize: {x: 1, y: 1, z: 0}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!1 &5704424787767267796
+--- !u!1 &4670667212916728597
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -53,9 +53,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2777748088880494781}
-  - component: {fileID: 8037118068547152857}
-  - component: {fileID: 5167719585655397838}
+  - component: {fileID: 1743443794296474051}
+  - component: {fileID: 45944647080238819}
+  - component: {fileID: 6272675088061769585}
   m_Layer: 0
   m_Name: Layer1
   m_TagString: Untagged
@@ -63,28 +63,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2777748088880494781
+--- !u!4 &1743443794296474051
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5704424787767267796}
+  m_GameObject: {fileID: 4670667212916728597}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3132896397360095916}
+  m_Father: {fileID: 4190684670479996837}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1839735485 &8037118068547152857
+--- !u!1839735485 &45944647080238819
 Tilemap:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5704424787767267796}
+  m_GameObject: {fileID: 4670667212916728597}
   m_Enabled: 1
   m_Tiles:
   - first: {x: -1, y: -1, z: 0}
@@ -127,11 +127,11 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: f6bf86dab9417454ab42447b5fd7862a, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
-    m_Data: {fileID: 2053773203, guid: 13e0405f580231e49bf9a0f26eb8c2da, type: 3}
+    m_Data: {fileID: 1518444699, guid: 13e0405f580231e49bf9a0f26eb8c2da, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -297192629, guid: f1fff0ef8d25fd643b4e1cfc27e5f0a8, type: 3}
+    m_Data: {fileID: -706495008, guid: f1fff0ef8d25fd643b4e1cfc27e5f0a8, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 45037734, guid: 308314a8906c1d347876762033eb0bb0, type: 3}
+    m_Data: {fileID: 1708524479, guid: 308314a8906c1d347876762033eb0bb0, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 3
     m_Data:
@@ -178,13 +178,13 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!483693784 &5167719585655397838
+--- !u!483693784 &6272675088061769585
 TilemapRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5704424787767267796}
+  m_GameObject: {fileID: 4670667212916728597}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -227,7 +227,7 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!114 &2083822137541721294
+--- !u!114 &9216491114991272202
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

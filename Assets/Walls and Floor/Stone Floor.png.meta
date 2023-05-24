@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0d866fb995d9ec4fab18cfcafde26b2
-      internalID: 2067895660
+      spriteID: 0d56fa52e2219904589077c2c8723ed4
+      internalID: -1792786485
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Stone Floor_0: 2067895660
+      Stone Floor_0: -1792786485
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

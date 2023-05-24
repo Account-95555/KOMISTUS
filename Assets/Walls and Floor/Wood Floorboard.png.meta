@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66dbeabbfc010a94a983a2d93da3e003
-      internalID: -1850744488
+      spriteID: c9d2c9fd4a90f4548ad71b4d2b8514fd
+      internalID: -272242766
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Wood Floorboard_0: -1850744488
+      Wood Floorboard_0: -272242766
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

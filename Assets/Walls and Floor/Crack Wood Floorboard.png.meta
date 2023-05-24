@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1086fcc80e9c2f54286fb02a4f564b71
+guid: 42c64b0b78f415d4f895c04ff23f5656
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,22 +105,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Crack Wood Floorboard2_0
+      name: Crack Wood Floorboard_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 69
+        y: 0
         width: 100
-        height: 31
+        height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7212729d685df74785438382b7bb78d
-      internalID: 1273049535
+      spriteID: d7d83c4fcc4273d48b2804cbe0af6803
+      internalID: 318847387
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Crack Wood Floorboard2_0: 1273049535
+      Crack Wood Floorboard_0: 318847387
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

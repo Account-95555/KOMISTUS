@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: ChurchWallMid_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -297192629, guid: f1fff0ef8d25fd643b4e1cfc27e5f0a8, type: 3}
+  m_Sprite: {fileID: -706495008, guid: f1fff0ef8d25fd643b4e1cfc27e5f0a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

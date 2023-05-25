@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ba40bb92fb3baec4ea2257571e5b4ba5
+guid: 395fbb8351122f243a6945d60ccefdf5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TopWallLeft_0
+      name: AnyCornerWall_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: feb491dc946a4c742a2ca324df30891f
-      internalID: -2132304451
+      spriteID: be34f320522988b448b543f8bf7b38fa
+      internalID: 943896437
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TopWallLeft_0: -2132304451
+      AnyCornerWall_0: 943896437
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a0e77c8bbc6216242ab8f4658637a0a1
+guid: 6424eb967f101564eb143c1bc54a72aa
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TopWallTop_0
+      name: TearedWall_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b02adeb7312f1054e91dad6656c20401
-      internalID: 484370479
+      spriteID: e1e2f9b5b66d8fd4eba7bbe464c8223c
+      internalID: 323997709
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TopWallTop_0: 484370479
+      TearedWall_0: 323997709
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

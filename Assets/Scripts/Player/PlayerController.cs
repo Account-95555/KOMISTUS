@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public Joystick joystick;
     public GameObject footstepObject;
     public GameObject wearyObject;
+    public GameObject inventoryButton;
     public AudioSource footstepAudioSource;
     public float moveSpeed;
     public float runSpeed;
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public bool isHiding = false;
     public bool isDead = false;
     public bool canMove = true;
+    //public bool isHolding = false;
     
     public string causeOfDeath;
     
@@ -63,6 +65,15 @@ public class PlayerController : MonoBehaviour
         {
             footstepAudioSource.volume = 0f;
         }
+
+        /*if (isHolding)
+        {
+            inventoryButton.SetActive(true);
+        }
+        else
+        {
+            inventoryButton.SetActive(false);
+        }*/
         
     }
     // Update is called once per frame

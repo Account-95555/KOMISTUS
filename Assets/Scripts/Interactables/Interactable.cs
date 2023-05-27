@@ -11,6 +11,8 @@ public class Interactable : MonoBehaviour
     public GameObject inventoryButton;
     public GameObject attachedItem;
     public GameObject inventory;
+    public GameObject spezionButton;
+    public GameObject spezionParticles;
     public string textPointText;
     public string itemName;
     public bool isLockedCloset;
@@ -19,6 +21,7 @@ public class Interactable : MonoBehaviour
     public bool isTextPoint;
     public Sprite itemSprite;
     public Image itemImage;
+    private Spezion sp;
     private Inventory inv;
     private InteractButton ib;
     private bool inRange;
@@ -29,6 +32,7 @@ public class Interactable : MonoBehaviour
         inventoryButton.SetActive(false);
         inv = inventory.GetComponent<Inventory>();
         ib = interactButtonObj.GetComponent<InteractButton>();
+        sp = spezionButton.GetComponent<Spezion>();
     }
 
     // Update is called once per frame
@@ -41,6 +45,15 @@ public class Interactable : MonoBehaviour
                 ib.clickRegistered = false;
                 StartCoroutine(onClick());
             }
+        }
+
+        if (sp.isActive)
+        {
+            spezionParticles.SetActive(true);
+        }
+        else
+        {
+            spezionParticles.SetActive(false);
         }
     }
 
@@ -93,4 +106,10 @@ public class Interactable : MonoBehaviour
             }
         }
     }
+
+    IEnumerator ItemFall()
+    {
+        yield return new WaitForSeconds(1f);
+    }
+
 }

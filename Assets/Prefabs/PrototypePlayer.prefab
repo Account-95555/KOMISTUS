@@ -911,7 +911,7 @@ GameObject:
   - component: {fileID: 9068131142360776899}
   - component: {fileID: 9068131142360776908}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PrototypePlayer
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

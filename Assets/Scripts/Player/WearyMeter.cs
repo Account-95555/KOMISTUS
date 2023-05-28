@@ -9,6 +9,7 @@ public class WearyMeter : MonoBehaviour
     public float wearyVal = 0f;
     public float mobileMult = 1f;
     public GameObject player;
+    public AudioSource chaseSource;
     public bool canBeChased = false;
     private PlayerController pc;
     // Start is called before the first frame update
@@ -41,13 +42,22 @@ public class WearyMeter : MonoBehaviour
         {
             wearyVal -= 10f * Time.deltaTime;
         }
-        if (wearyMeter.value >= 90) //if full, chase player
+        if (wearyMeter.value > 40f)//if full, chase player
         {
-            canBeChased = true;
+            if (canBeChased == false)
+            {
+                canBeChased = true;
+            }
+            
+            if (!chaseSource.isPlaying)
+            {
+                chaseSource.Play();
+            }
+            
             //pc.isDead = true;
             //PlayerPrefs.SetString("CauseOfDeath", "WearyMeter");
         }
-        else if (wearyMeter.value < 50)
+        else if (wearyMeter.value < 40)
         {
             canBeChased = false;
         }

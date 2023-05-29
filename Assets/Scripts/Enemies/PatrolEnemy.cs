@@ -8,6 +8,8 @@ public class PatrolEnemy : EnemyCommon
     public Vector2 initialDir;
     public int PEID;
     public int index = 0;
+
+    private RaycastHit2D hit;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,7 @@ public class PatrolEnemy : EnemyCommon
     // Update is called once per frame
     void Update()
     {
+        transform.position  = new Vector3(transform.position.x,transform.position.y,0);
         ChangeScale();
         if (wm.canBeChased == true)
         {
@@ -36,8 +39,29 @@ public class PatrolEnemy : EnemyCommon
         {
             GoToPosition();
         }
-       
+
         
+        //Debug.Log(hit);
+        Debug.DrawRay(transform.position, player.transform.position - transform.position);
+
+        if (hit.collider != null)
+        {
+            if (fov.isInFOV)
+            {
+                if (hit.collider.gameObject.CompareTag("Player"))
+                {
+                    wm.wearyVal += 15f * Time.deltaTime;
+                    Debug.Log("PLAYER!");
+                }
+            }
+        }
+    }
+
+    void FixedUpdate()
+    {
+        //Vector2 v2TEnemy = new Vector2(transform.position.x, transform.position.y);
+        //Vector2 v2TPlayer = new Vector2(player.transform.position.x, player.transform.position.y);
+        hit = Physics2D.Raycast(transform.position, player.transform.position - transform.position);
     }
 
     void GoToPosition()
@@ -58,6 +82,7 @@ public class PatrolEnemy : EnemyCommon
             chaseAudio.Stop();
             isChasing = false;
             EnablePoints();
+            index += 1;
             GoToPosition();
             chaseCo = false;
         }

@@ -28,7 +28,7 @@ public class Joystick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(joystickDist);
+        //Debug.Log(joystickDist);
     }
 
     public void PointerDown()

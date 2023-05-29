@@ -11,6 +11,7 @@ public class EnemyCommon : MonoBehaviour
     public GameObject enemy;
     public GameObject wearyMeter;
     public GameObject originPoint;
+    public GameObject fovObject;
 
     //Identifier
     public string enemyType;
@@ -25,10 +26,12 @@ public class EnemyCommon : MonoBehaviour
     protected Rigidbody2D rb;
     protected NavMeshAgent agent;
     protected WearyMeter wm;
+    protected FOV fov;
 
 
     //floats
     public float moveSpeed;
+    public float range;
 
     //bools
     public bool isChasing = false;
@@ -46,6 +49,7 @@ public class EnemyCommon : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         agent = GetComponent<NavMeshAgent>();
         wm = wearyMeter.GetComponent<WearyMeter>();
+        fov = fovObject.GetComponent<FOV>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         originPos = originPoint.transform.position;

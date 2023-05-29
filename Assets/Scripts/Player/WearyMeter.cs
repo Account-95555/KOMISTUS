@@ -42,7 +42,7 @@ public class WearyMeter : MonoBehaviour
         {
             wearyVal -= 10f * Time.deltaTime;
         }
-        if (wearyMeter.value > 40f)//if full, chase player
+        if (wearyMeter.value >= 100f)//if full, chase player
         {
             if (canBeChased == false)
             {

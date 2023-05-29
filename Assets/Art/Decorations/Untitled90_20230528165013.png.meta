@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled90_20230528165013_0
+      name: OS_prayerbeads
       rect:
         serializedVersion: 2
         x: 116
@@ -125,7 +125,7 @@ TextureImporter:
         width: 66
         height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled90_20230528165013_7
+      name: s_oldmanalive
       rect:
         serializedVersion: 2
         x: 450
@@ -146,7 +146,7 @@ TextureImporter:
         width: 246
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -159,7 +159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled90_20230528165013_8
+      name: s_oldmandead
       rect:
         serializedVersion: 2
         x: 452
@@ -167,7 +167,7 @@ TextureImporter:
         width: 237
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,7 +180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled90_20230528165013_9
+      name: s_barricadeitem
       rect:
         serializedVersion: 2
         x: 805
@@ -188,7 +188,7 @@ TextureImporter:
         width: 91
         height: 98
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,7 +201,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled90_20230528165013_1
+      name: OS_pureprayerbeads
       rect:
         serializedVersion: 2
         x: 227
@@ -209,7 +209,7 @@ TextureImporter:
         width: 63
         height: 86
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,15 +233,15 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Untitled90_20230528165013_2: 739827217
+      OS_pureprayerbeads: 334194352
       Untitled90_20230528165013_5: -1610695773
-      Untitled90_20230528165013_7: -2110551999
-      Untitled90_20230528165013_9: -1957513173
+      s_oldmanalive: -2110551999
+      s_oldmandead: -1369371050
       Untitled90_20230528165013_6: -1366662921
       Untitled90_20230528165013_3: 849201376
       Untitled90_20230528165013_4: -1140789444
-      Untitled90_20230528165013_0: -852167808
-      Untitled90_20230528165013_8: -1369371050
-      Untitled90_20230528165013_1: 334194352
+      s_barricadeitem: -1957513173
+      OS_prayerbeads: -852167808
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

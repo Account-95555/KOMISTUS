@@ -10,7 +10,7 @@ public class EnemyCommon : MonoBehaviour
     //public GameObject 
     public GameObject enemy;
     public GameObject wearyMeter;
-    public GameObject originPoint;
+    //public GameObject originPoint;
     public GameObject fovObject;
 
     //Identifier
@@ -40,19 +40,20 @@ public class EnemyCommon : MonoBehaviour
 
     //Vectors
     private Vector3 target;
-    private Vector3 originPos;
+    //private Vector3 originPos;
 
     // Start is called before the first frame update
     public virtual void Initialise()
     {
-        pc = GetComponent<PlayerController>();
+        pc = player.GetComponent<PlayerController>();
         rb = GetComponent<Rigidbody2D>();
         agent = GetComponent<NavMeshAgent>();
         wm = wearyMeter.GetComponent<WearyMeter>();
         fov = fovObject.GetComponent<FOV>();
+        moveSpeed = agent.speed;
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-        originPos = originPoint.transform.position;
+        //originPos = originPoint.transform.position;
     }
 
     // Update is called once per frame
@@ -73,10 +74,10 @@ public class EnemyCommon : MonoBehaviour
         //agent.velocity = new Vector2(agent.velocity.x, agent.velocity.y);
     }
 
-    public virtual void ReturnToPath()
-    {
-        agent.SetDestination(new Vector3(originPos.x, originPos.y, transform.position.z));
-    }
+    //public virtual void ReturnToPath()
+    //{
+        //agent.SetDestination(new Vector3(originPos.x, originPos.y, transform.position.z));
+    //}
 
     public virtual void ChangeScale()
     {

@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Door : MonoBehaviour
 {
-    public GameObject upperShadowCaster;
-    public GameObject lowerShadowCaster;
+    //public GameObject shadowCaster;
     public GameObject enemy;
 
     public bool isTrigger = false;
@@ -45,24 +45,26 @@ public class Door : MonoBehaviour
             {
                 enemy.SetActive(true);
             }
+            //shadowCaster.SetActive(false);
+            GetComponent<ShadowCaster2D>().enabled = false;
         }
    
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    /*void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            lowerShadowCaster.SetActive(false);
-            upperShadowCaster.SetActive(false);
+            shadowCaster.SetActive(false);
         }
-    }
+    }*/
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             isEntered = false;
-            
+            //shadowCaster.SetActive(true);
+            GetComponent<ShadowCaster2D>().enabled = true;
         }
     }
 }

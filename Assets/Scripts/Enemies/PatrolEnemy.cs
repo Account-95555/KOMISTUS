@@ -24,6 +24,7 @@ public class PatrolEnemy : EnemyCommon
         ChangeScale();
         if (wm.canBeChased == true)
         {
+            agent.speed = moveSpeed * 1.25f;
             DisablePoints();
             GetPlayerPos();
             ChasePlayer();
@@ -37,6 +38,7 @@ public class PatrolEnemy : EnemyCommon
         }
         else
         {
+            agent.speed = moveSpeed;
             GoToPosition();
         }
 
@@ -46,7 +48,7 @@ public class PatrolEnemy : EnemyCommon
 
         if (hit.collider != null)
         {
-            if (fov.isInFOV)
+            if (fov.isInFOV && pc.isHiding == false)
             {
                 if (hit.collider.gameObject.CompareTag("Player"))
                 {
@@ -66,7 +68,7 @@ public class PatrolEnemy : EnemyCommon
 
     void GoToPosition()
     {
-        if (index == (points.Length-1))
+        if (index >= (points.Length))
         {
             index = 0;
         }
@@ -82,7 +84,6 @@ public class PatrolEnemy : EnemyCommon
             chaseAudio.Stop();
             isChasing = false;
             EnablePoints();
-            index += 1;
             GoToPosition();
             chaseCo = false;
         }

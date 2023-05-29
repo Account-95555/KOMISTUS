@@ -115,7 +115,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Nun idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1381
+        width: 416
+        height: 667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2234c627916d1a74d9dd12d4b101820e
+      internalID: 167080841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nun idle_1
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1381
+        width: 419
+        height: 667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f2fd183db378441b6e513aea97e5ef
+      internalID: 323529031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nun idle_2
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1381
+        width: 422
+        height: 667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac728375ef867f47841fd28d5d3328f
+      internalID: 2089326023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nun idle_3
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 1381
+        width: 426
+        height: 667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b968f988d7769084e9f529c47b49918d
+      internalID: -954371741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nun idle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 714
+        width: 428
+        height: 666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec86a029662ea24b8db7cb6da6f834b
+      internalID: 806438581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nun idle_5
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 714
+        width: 425
+        height: 666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4292e4fd778a14f4685d0097c7e03ad3
+      internalID: -1139610703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nun idle_6
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 714
+        width: 422
+        height: 667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52a338a50cac974cb853a2c488a376f
+      internalID: 167213083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nun idle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 418
+        height: 667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61bacd8e146bbb4a86351ef929f2f25
+      internalID: -1862875353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nun idle_7
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 714
+        width: 420
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf42a977a718764b90d30627a379e5c
+      internalID: 445660418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +315,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Nun idle_7: 445660418
+      Nun idle_6: 167213083
+      Nun idle_0: 167080841
+      Nun idle_3: -954371741
+      Nun idle_8: -1862875353
+      Nun idle_4: 806438581
+      Nun idle_1: 323529031
+      Nun idle_5: -1139610703
+      Nun idle_2: 2089326023
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

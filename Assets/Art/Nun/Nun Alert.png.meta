@@ -115,7 +115,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Nun Alert_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1381
+        width: 417
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45108d800aa5914a9191af85408b5e2
+      internalID: 1162279516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nun Alert_1
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1381
+        width: 417
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e5b146f209756428ed12affe94700c
+      internalID: 1503247543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nun Alert_2
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1381
+        width: 423
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d73ad5d0df426408399063ba3ccd75
+      internalID: 34483674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nun Alert_3
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 1381
+        width: 419
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466d4c39f48b6694ca93d7fda7187c0e
+      internalID: 2058526189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nun Alert_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 714
+        width: 415
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d329239e5400f48adefb98a72ff00f
+      internalID: 1895079694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +231,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Nun Alert_3: 2058526189
+      Nun Alert_0: 1162279516
+      Nun Alert_2: 34483674
+      Nun Alert_1: 1503247543
+      Nun Alert_4: 1895079694
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

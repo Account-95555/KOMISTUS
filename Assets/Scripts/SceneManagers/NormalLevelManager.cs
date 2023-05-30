@@ -17,6 +17,8 @@ public class NormalLevelManager : SceneManagerCommon
     public PlayerController pc;
 
     private bool deathCoPlaying = false;
+
+    
     // Start is called before the first frame update
     void Start()
     {

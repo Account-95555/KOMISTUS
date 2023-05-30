@@ -60,6 +60,8 @@ public class Interactable : MonoBehaviour
     private bool inRange;
     //private bool checkForText = false;
     // Start is called before the first frame update
+
+    public Sprite spriteChange;
     void Start()
     {
         symbolColor = Color.white;
@@ -119,6 +121,8 @@ public class Interactable : MonoBehaviour
                 }
             }
         }
+
+        
     }
 
     IEnumerator onClick()

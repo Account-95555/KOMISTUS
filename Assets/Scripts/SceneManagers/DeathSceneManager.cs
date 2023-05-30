@@ -36,7 +36,7 @@ public class DeathSceneManager : SceneManagerCommon
         }
         else
         {
-            deathText.text = ("Cause of death - Unknown...");
+            deathText.text = ("You attracted too much attention to yourself..." );
         }
     }
 

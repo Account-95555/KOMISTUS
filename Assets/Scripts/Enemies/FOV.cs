@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FOV : MonoBehaviour
 {
+    public GameObject nun;
     public bool isInFOV = false;
     // Start is called before the first frame update
     void Start()
@@ -14,7 +15,8 @@ public class FOV : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position = nun.transform.position;
+        transform.localScale = new Vector3(Mathf.Sign(nun.transform.localScale.x), 1, 1);
     }
 
     void OnTriggerEnter2D(Collider2D other)

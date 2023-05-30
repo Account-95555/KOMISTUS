@@ -104,4 +104,16 @@ public class PatrolEnemy : EnemyCommon
             point.SetActive(true);
         }
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (!pc.isHiding)
+            {
+                pc.isDead = true;
+            }
+            
+        }
+    }
 }

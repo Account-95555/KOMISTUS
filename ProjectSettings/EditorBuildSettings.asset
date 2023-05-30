@@ -11,10 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TitleScene.unity
     guid: 733749afa3518054c87af56006a7dd5c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Prototyping.unity
     guid: 0bde7e3f9472d3d4bad573946161c300
   - enabled: 1
     path: Assets/Scenes/DeathScene.unity
     guid: df92e3a078ae4b34caaec6056f9b7827
+  - enabled: 1
+    path: Assets/Scenes/CreditsScene.unity
+    guid: 5cff1b8a575400843b86da8fddd78335
+  - enabled: 1
+    path: Assets/Scenes/TutorialLevel.unity
+    guid: 95b03806cb8a16a49a12f69830168b30
   m_configObjects: {}

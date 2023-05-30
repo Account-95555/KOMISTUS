@@ -7,6 +7,9 @@ public class Inventory : MonoBehaviour
     public GameObject player;
     public GameObject attachedItem;
     public GameObject inventoryButton;
+    public AudioSource dropSource;
+    public AudioClip dropSound;
+    public WearyMeter wm;
     public bool isHolding = false;
 
     private InventoryButton ib;
@@ -22,7 +25,10 @@ public class Inventory : MonoBehaviour
         if (ib.dropItem == true)
         {
             inventoryButton.SetActive(false);
-            Instantiate(attachedItem, player.transform.position, Quaternion.identity);
+            attachedItem.transform.position = new Vector2(player.transform.position.x +0.5f, player.transform.position.y - 1f);
+            attachedItem.SetActive(true);
+            wm.wearyVal += 10f;
+            dropSource.PlayOneShot(dropSound);
             ib.dropItem = false;
         }
     }

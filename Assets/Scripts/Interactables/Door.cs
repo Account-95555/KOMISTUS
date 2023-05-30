@@ -7,8 +7,10 @@ public class Door : MonoBehaviour
 {
     //public GameObject shadowCaster;
     public GameObject enemy;
-
+    //public GameObject removeCollider;
+    //public GameObject player;
     public bool isTrigger = false;
+    public bool isVertical;
 
     private Color doorColor;
     private bool isEntered = false;
@@ -45,6 +47,10 @@ public class Door : MonoBehaviour
             {
                 enemy.SetActive(true);
             }
+            if (isVertical && other.GetComponent<SpriteRenderer>() != null)
+            {
+                other.GetComponent<SpriteRenderer>().sortingOrder = 1;
+            }
             //shadowCaster.SetActive(false);
             GetComponent<ShadowCaster2D>().enabled = false;
         }
@@ -65,6 +71,10 @@ public class Door : MonoBehaviour
             isEntered = false;
             //shadowCaster.SetActive(true);
             GetComponent<ShadowCaster2D>().enabled = true;
+            if (isVertical && other.GetComponent<SpriteRenderer>() != null)
+            {
+                other.GetComponent<SpriteRenderer>().sortingOrder = 6;
+            }
         }
     }
 }

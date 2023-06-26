@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public bool isHiding = false;
     public bool isDead = false;
     public bool canMove = true;
+    public bool inClosetRange = false;
     //public bool isHolding = false;
     
     public string causeOfDeath;

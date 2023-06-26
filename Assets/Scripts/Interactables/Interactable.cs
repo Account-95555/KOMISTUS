@@ -34,9 +34,8 @@ public class Interactable : MonoBehaviour
     public bool isLockedCloset;
     //public bool isItemStore;
     public bool isItem;
+    public bool isFinalLevelItem;
     public bool isDialoguePoint;
-    public bool dialogueStarted = false;
-    public bool dialogueFinished = false;
     public bool isOrigin;
     public bool sealBreakCo = false;
     
@@ -58,6 +57,8 @@ public class Interactable : MonoBehaviour
 
     private int index = 0;
     private bool inRange;
+    private bool dialogueStarted = false;
+    private bool dialogueFinished = false;
     //private bool checkForText = false;
     // Start is called before the first frame update
 
@@ -136,13 +137,21 @@ public class Interactable : MonoBehaviour
         //{
         if (isItem)
         {
-            inv.isHolding = true;
-            inventoryButton.SetActive(true);
-            //textbox.text = (itemName + " has been picked up.");
-            itemImage.sprite = itemSprite;
-            inv.attachedItem = attachedItem;
-            //StartCoroutine(ClearText());
-            gameObject.SetActive(false);
+            if (!isFinalLevelItem)
+            {
+                inv.itemName = itemName;
+                inv.isHolding = true;
+                inventoryButton.SetActive(true);
+                itemImage.sprite = itemSprite;
+                inv.attachedItem = attachedItem;
+                gameObject.SetActive(false);
+            }
+            else
+            {
+                textbox.text = "Wonder what that item is, I think it may be useful later...";
+                yield return new WaitForSeconds(3f);
+                textbox.text = "";
+            }
         }
 
         if (isOrigin)

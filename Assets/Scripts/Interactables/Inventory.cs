@@ -53,9 +53,9 @@ public class Inventory : MonoBehaviour
             if (attachedItem.transform.position.y > newYVal)
             {
                 attachedItem.transform.position = new Vector2(attachedItem.transform.position.x, yFall);
-                yFall -= 0.01f;
+                yFall -= 10f * Time.deltaTime;
             }
-            else
+            if (attachedItem.transform.position.y <= newYVal)
             {
                 wm.wearyVal += 10f;
                 dropSource.PlayOneShot(dropSound);

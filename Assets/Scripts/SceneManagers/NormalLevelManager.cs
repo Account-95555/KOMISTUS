@@ -40,6 +40,7 @@ public class NormalLevelManager : SceneManagerCommon
 
     IEnumerator Death()
     {
+        Handheld.Vibrate();
         pc.canMove = false;
         deathCoPlaying = true;
         footstepObject.SetActive(false);
@@ -52,6 +53,7 @@ public class NormalLevelManager : SceneManagerCommon
         deathImage.CrossFadeAlpha(0f, 0f, false);
         deathImage.CrossFadeAlpha(1f, 0.1f, false);
         yield return new WaitForSeconds(0.1f);
+        Handheld.Vibrate();
         //deathImage.CrossFadeAlpha(1f, 0.5f, false);
         yield return new WaitForSeconds(1.5f);
         deathImage.CrossFadeAlpha(0f, 1f, false);

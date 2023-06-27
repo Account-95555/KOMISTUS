@@ -41,11 +41,7 @@ public class InventoryButton : MonoBehaviour
     {
         coroutineInProg = true;
         dialogue.text = "Too close to hiding spot, cannot drop...";
-        dialogue.CrossFadeAlpha(0f, 0f, false);
-        dialogue.CrossFadeAlpha(1f, 0.5f, false);
         yield return new WaitForSeconds(2f);
-        dialogue.CrossFadeAlpha(0f, 0.5f, false);
-        yield return new WaitForSeconds(0.5f);
         dialogue.text = "";
         coroutineInProg = false;
     }

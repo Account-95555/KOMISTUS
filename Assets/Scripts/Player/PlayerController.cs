@@ -84,13 +84,13 @@ public class PlayerController : MonoBehaviour
         {
             if (joystick.joystickVector.y != 0)
             {
-                if (joystick.joystickDist >= 100f) //if joystick drag is 100 units or greater from touch point, sprint
+                if (joystick.joystickDist >= 110f) //if joystick drag is 100 units or greater from touch point, sprint
                 {
                     rb.velocity = new Vector2(joystick.joystickVector.x * runSpeed, joystick.joystickVector.y * runSpeed);
                     isRunning = true;
                     lastXScale = Mathf.Sign(joystick.joystickVector.x);
                 }
-                else if (joystick.joystickDist < 100f) //else walk
+                else if (joystick.joystickDist < 110f) //else walk
                 {
                     rb.velocity = new Vector2(joystick.joystickVector.x * moveSpeed, joystick.joystickVector.y * moveSpeed);
                     isRunning = false;

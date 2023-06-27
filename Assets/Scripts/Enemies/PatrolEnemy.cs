@@ -53,7 +53,7 @@ public class PatrolEnemy : EnemyCommon
                 if (hit.collider.gameObject.CompareTag("Player"))
                 {
                     wm.wearyVal += 15f * Time.deltaTime;
-                    Debug.Log("Perchance");
+                    //Debug.Log("Perchance");
                 }
             }
         }

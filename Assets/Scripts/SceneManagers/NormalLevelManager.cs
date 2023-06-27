@@ -50,10 +50,12 @@ public class NormalLevelManager : SceneManagerCommon
         BGMSource.PlayOneShot(jumpSupport);
         BGMSource.clip = null;
         deathImage.CrossFadeAlpha(0f, 0f, false);
-        deathImage.CrossFadeAlpha(1f, 0.5f, false);
-        yield return new WaitForSeconds(0.5f);
+        deathImage.CrossFadeAlpha(1f, 0.1f, false);
+        yield return new WaitForSeconds(0.1f);
         //deathImage.CrossFadeAlpha(1f, 0.5f, false);
-        yield return new WaitForSeconds(2.56f);
+        yield return new WaitForSeconds(1.5f);
+        deathImage.CrossFadeAlpha(0f, 1f, false);
+        yield return new WaitForSeconds(1f);
         //deathImage.CrossFadeAlpha(1f, 0.5f, false);
         LoadScene("DeathScene");
     }

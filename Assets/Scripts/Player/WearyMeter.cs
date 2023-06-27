@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class WearyMeter : MonoBehaviour
 {
+    public AudioSource bgm;
+    public AudioClip screech;
     public Slider wearyMeter;
     public float wearyVal = 0f;
     public float mobileMult = 1f;
@@ -47,6 +49,7 @@ public class WearyMeter : MonoBehaviour
             if (canBeChased == false)
             {
                 canBeChased = true;
+                bgm.PlayOneShot(screech);
             }
             
             if (!chaseSource.isPlaying)

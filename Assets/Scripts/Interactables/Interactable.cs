@@ -23,6 +23,9 @@ public class Interactable : MonoBehaviour
     public GameObject sealParticles;
 
     public AudioSource deathSound;
+    public AudioSource bgm;
+
+    public AudioClip entityDeath;
 
     public string endText;
     public string textPointText;
@@ -223,6 +226,7 @@ public class Interactable : MonoBehaviour
     }
     IEnumerator SealBroken()
     {
+        bgm.PlayOneShot(entityDeath);
         sealBreakCo = true;
         symbol.SetActive(true);
         symbol.transform.position = new Vector3(nun.transform.position.x, nun.transform.position.y, nun.transform.position.z) ;

@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Door : MonoBehaviour
 {
-    public GameObject upperShadowCaster;
-    public GameObject lowerShadowCaster;
+    //public GameObject shadowCaster;
     public GameObject enemy;
-
+    //public GameObject removeCollider;
+    //public GameObject player;
     public bool isTrigger = false;
+    public bool isVertical;
 
     private Color doorColor;
     private bool isEntered = false;
@@ -45,24 +47,34 @@ public class Door : MonoBehaviour
             {
                 enemy.SetActive(true);
             }
+            if (isVertical && other.GetComponent<SpriteRenderer>() != null)
+            {
+                other.GetComponent<SpriteRenderer>().sortingOrder = 1;
+            }
+            //shadowCaster.SetActive(false);
+            GetComponent<ShadowCaster2D>().enabled = false;
         }
    
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    /*void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            lowerShadowCaster.SetActive(false);
-            upperShadowCaster.SetActive(false);
+            shadowCaster.SetActive(false);
         }
-    }
+    }*/
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             isEntered = false;
-            
+            //shadowCaster.SetActive(true);
+            GetComponent<ShadowCaster2D>().enabled = true;
+            if (isVertical && other.GetComponent<SpriteRenderer>() != null)
+            {
+                other.GetComponent<SpriteRenderer>().sortingOrder = 6;
+            }
         }
     }
 }

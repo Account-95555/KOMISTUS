@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
     public Joystick joystick;
     public GameObject footstepObject;
     public GameObject wearyObject;
-    public GameObject inventoryButton;
     public AudioSource footstepAudioSource;
     public float moveSpeed;
     public float runSpeed;
@@ -18,8 +17,6 @@ public class PlayerController : MonoBehaviour
     public bool isHiding = false;
     public bool isDead = false;
     public bool canMove = true;
-    public bool inClosetRange = false;
-    //public bool isHolding = false;
     
     public string causeOfDeath;
     
@@ -66,15 +63,6 @@ public class PlayerController : MonoBehaviour
         {
             footstepAudioSource.volume = 0f;
         }
-
-        /*if (isHolding)
-        {
-            inventoryButton.SetActive(true);
-        }
-        else
-        {
-            inventoryButton.SetActive(false);
-        }*/
         
     }
     // Update is called once per frame
@@ -84,13 +72,13 @@ public class PlayerController : MonoBehaviour
         {
             if (joystick.joystickVector.y != 0)
             {
-                if (joystick.joystickDist >= 110f) //if joystick drag is 100 units or greater from touch point, sprint
+                if (joystick.joystickDist >= 100f) //if joystick drag is 100 units or greater from touch point, sprint
                 {
                     rb.velocity = new Vector2(joystick.joystickVector.x * runSpeed, joystick.joystickVector.y * runSpeed);
                     isRunning = true;
                     lastXScale = Mathf.Sign(joystick.joystickVector.x);
                 }
-                else if (joystick.joystickDist < 110f) //else walk
+                else if (joystick.joystickDist < 100f) //else walk
                 {
                     rb.velocity = new Vector2(joystick.joystickVector.x * moveSpeed, joystick.joystickVector.y * moveSpeed);
                     isRunning = false;

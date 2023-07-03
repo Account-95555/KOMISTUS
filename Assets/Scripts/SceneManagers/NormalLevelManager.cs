@@ -13,12 +13,9 @@ public class NormalLevelManager : SceneManagerCommon
     public Image deathImage;
     
     public AudioClip jumpscareSFX;
-    public AudioClip jumpSupport;
     public PlayerController pc;
 
     private bool deathCoPlaying = false;
-
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +37,6 @@ public class NormalLevelManager : SceneManagerCommon
 
     IEnumerator Death()
     {
-        Handheld.Vibrate();
         pc.canMove = false;
         deathCoPlaying = true;
         footstepObject.SetActive(false);
@@ -48,17 +44,12 @@ public class NormalLevelManager : SceneManagerCommon
         deathImageHolder.SetActive(true);
         blackScreenHolder.SetActive(true);
         BGMSource.PlayOneShot(jumpscareSFX);
-        BGMSource.PlayOneShot(jumpSupport);
         BGMSource.clip = null;
         deathImage.CrossFadeAlpha(0f, 0f, false);
-        deathImage.CrossFadeAlpha(1f, 0.1f, false);
-        yield return new WaitForSeconds(0.1f);
-        Handheld.Vibrate();
-        //deathImage.CrossFadeAlpha(1f, 0.5f, false);
-        yield return new WaitForSeconds(1.5f);
-        deathImage.CrossFadeAlpha(0f, 1f, false);
-        yield return new WaitForSeconds(1f);
-        //deathImage.CrossFadeAlpha(1f, 0.5f, false);
+        deathImage.CrossFadeAlpha(1f, 0.5f, false);
+        yield return new WaitForSeconds(0.5f);
+        deathImage.CrossFadeAlpha(0f, 0.5f, false);
+        yield return new WaitForSeconds(2.56f);
         LoadScene("DeathScene");
     }
 }

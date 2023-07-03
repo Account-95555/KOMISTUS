@@ -5,7 +5,6 @@ using UnityEngine;
 public class Spezion : MonoBehaviour
 {
     public int spezionAmount;
-    public bool isActive = false;
 
     // Start is called before the first frame update
     void Start()
@@ -24,18 +23,12 @@ public class Spezion : MonoBehaviour
         if (spezionAmount > 0)
         {
             spezionAmount -= 1;
-            if (!isActive)
-            {
-                StartCoroutine(SpezionCo());
-            }
         }
         
     }
 
     IEnumerator SpezionCo()
     {
-        isActive = true;
-        yield return new WaitForSeconds(6f);
-        isActive = false;
+        yield return new WaitForSeconds(5f);
     }
 }

@@ -10,7 +10,6 @@ public class HidingSpot : MonoBehaviour
     public GameObject joystick;
     public GameObject interactButtonObj;
     public GameObject player;
-    public GameObject feet;
     public AudioSource audioSource;
 
     public AudioClip open;
@@ -58,7 +57,6 @@ public class HidingSpot : MonoBehaviour
                 ib.clickRegistered = false;
                 if (isHiding == false)
                 {
-                    feet.SetActive(false);
                     playerColor.a = 0f;
                     srPlayer.color = playerColor;
                     //StartCoroutine(HideRoutine);
@@ -71,7 +69,6 @@ public class HidingSpot : MonoBehaviour
                 }
                 else if (isHiding == true)
                 {
-                    feet.SetActive(true);
                     playerColor.a = 1f;
                     srPlayer.color = playerColor;
                     //StartCoroutine(HideRoutine);
@@ -92,7 +89,6 @@ public class HidingSpot : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             inRange = true;
-            pc.inClosetRange = true;
         }
     }
     void OnTriggerExit2D(Collider2D other)
@@ -100,7 +96,6 @@ public class HidingSpot : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             inRange = false;
-            pc.inClosetRange = false;
         }
     }
 

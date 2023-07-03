@@ -8,7 +8,6 @@ public class InteractButton : MonoBehaviour
     //public Button interactButton;
 
     public bool clickRegistered;
-    public Inventory inv;
     
     // Start is called before the first frame update
     void Start()
@@ -24,7 +23,6 @@ public class InteractButton : MonoBehaviour
 
     public void OnClick()
     {
-        inv.isFalling = false;
         clickRegistered = true;
         StartCoroutine(ClickCooldown());
     }

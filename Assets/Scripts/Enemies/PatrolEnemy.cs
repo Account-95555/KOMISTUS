@@ -8,7 +8,7 @@ public class PatrolEnemy : EnemyCommon
     public Vector2 initialDir;
     public int PEID;
     public bool isFreeroam;
-    public int integerStored = 0;
+    //public int integerStored = 0;
     public int index = 0;
 
     private RaycastHit2D hit;

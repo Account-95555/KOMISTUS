@@ -66,18 +66,15 @@ public class PatrolEnemyPoint : MonoBehaviour
 
     public void FreeroamFunc()
     {
-        if (pe.index == pe.integerStored)
+        pe.index = Random.Range(0, (pe.points).Length);
+        if (pe.index == assignedIndex)
         {
-            while (pe.index == pe.integerStored)
+            while (pe.index == assignedIndex)
             {
                 pe.index = Random.Range(0, (pe.points).Length);
             }
         }
-        else
-        {
-            pe.index = Random.Range(0, (pe.points).Length);
-        }
-        pe.integerStored = pe.index;
+        //pe.integerStored = pe.index;
     }
 }
 

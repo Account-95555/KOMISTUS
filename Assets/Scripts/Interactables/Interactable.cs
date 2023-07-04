@@ -60,6 +60,7 @@ public class Interactable : MonoBehaviour
 
     private int index = 0;
     private bool inRange;
+    private bool inView;
     private bool dialogueStarted = false;
     private bool dialogueFinished = false;
     //private bool checkForText = false;
@@ -83,6 +84,23 @@ public class Interactable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (sr.isVisible)
+        {
+            if (!inView)
+            {
+                sp.interactiblesOnScreen += 1;
+                inView = true;
+            }
+        }
+        else
+        {
+            if (inView)
+            {
+                sp.interactiblesOnScreen -= 1;
+                inView = false;
+            }
+            
+        }
         if (sealBreakCo)
         {
             symbol.GetComponent<SpriteRenderer>().color = symbolColor;
@@ -129,6 +147,7 @@ public class Interactable : MonoBehaviour
         
     }
 
+    
     IEnumerator onClick()
     {
         // coroutine is here to make the text blank after 5 seconds

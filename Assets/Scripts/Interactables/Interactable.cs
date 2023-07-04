@@ -97,7 +97,7 @@ public class Interactable : MonoBehaviour
         }
 
 
-        if (spezionParticles != null)
+        if (spezionParticles != null) //Activates spezion particles if there and spezion is pressed
         {
             if (sp.isActive)
             {

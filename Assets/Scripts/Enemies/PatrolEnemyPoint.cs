@@ -9,9 +9,9 @@ public class PatrolEnemyPoint : MonoBehaviour
     public Vector2 dirChange;
     public int assignedIndex;
     public int PEPID;
-    public int waitTime;
+    public float waitTime = 1f;
     public bool isWaitPoint;
-    WearyMeter wm;
+    //WearyMeter wm;
     Rigidbody2D rb;
     PatrolEnemy pe;
     // Start is called before the first frame update
@@ -30,18 +30,12 @@ public class PatrolEnemyPoint : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.GetComponent<PatrolEnemy>() != null)
+        if (other.gameObject.GetComponent<PatrolEnemy>() != null && pe.PEID == PEPID)
         {
-            if (pe.index == assignedIndex)
+            if (pe.index == assignedIndex) //If the patrol enemy's index is the same as the point index
             {
-                if (isWaitPoint)
-                {
-                    StartCoroutine(Wait());
-                }
-                else
-                {
-                    pe.index += 1;
-                }
+                StartCoroutine(PointCo());
+                
             }
             
             
@@ -52,11 +46,38 @@ public class PatrolEnemyPoint : MonoBehaviour
             
         }
     }
-    IEnumerator Wait()
+    IEnumerator PointCo() //Wait at the point if needed
     {
-        yield return new WaitForSeconds(1f);
-        pe.index += 1;
+        yield return new WaitForSeconds(waitTime);
+        if (pe.isFreeroam)
+        {
+            FreeroamFunc(); 
+        }
+        else
+        {
+            if (pe.index == assignedIndex)//If the patrol enemy's index is the same as the point index
+            {
+                pe.index += 1; //add to the patrol enemy index so it moves to the next point
+            }
+ 
+        }
 
+    }
+
+    public void FreeroamFunc()
+    {
+        if (pe.index == pe.integerStored)
+        {
+            while (pe.index == pe.integerStored)
+            {
+                pe.index = Random.Range(0, (pe.points).Length);
+            }
+        }
+        else
+        {
+            pe.index = Random.Range(0, (pe.points).Length);
+        }
+        pe.integerStored = pe.index;
     }
 }
 

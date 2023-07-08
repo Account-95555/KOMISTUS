@@ -14,6 +14,7 @@ public class WearyMeter : MonoBehaviour
     public AudioSource chaseSource;
     public bool canBeChased = false;
     private PlayerController pc;
+    private bool coroutineActive = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -62,7 +63,24 @@ public class WearyMeter : MonoBehaviour
         }
         else if (wearyMeter.value < 40)
         {
-            canBeChased = false;
+            if (!coroutineActive)
+            {
+                StartCoroutine(ChaseEnd());
+            }
+            
         }
+
+        IEnumerator ChaseEnd()
+        {
+            coroutineActive = true;
+            yield return new WaitForSeconds(4.2f);
+            if (wearyMeter.value < 40)
+            {
+                canBeChased = false;
+                chaseSource.Stop();
+            }
+            coroutineActive = false;
+        }
+        
     }
 }

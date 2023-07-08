@@ -32,11 +32,12 @@ public class PatrolEnemy : EnemyCommon
             ChasePlayer();
             isChasing = true;
         }
-        else if (wm.canBeChased == false && !chaseCo && isChasing)
+        else if (wm.canBeChased == false /* && !chaseCo && isChasing*/)
         {
-            GetPlayerPos();
-            ChasePlayer();
-            StartCoroutine(EndChase());
+            //GetPlayerPos();
+            //ChasePlayer();
+            //StartCoroutine(EndChase());
+            EndChase();
         }
         else
         {
@@ -77,19 +78,24 @@ public class PatrolEnemy : EnemyCommon
         agent.SetDestination(new Vector3(points[index].transform.position.x, points[index].transform.position.y, transform.position.z));
     }
 
-    IEnumerator EndChase()
+    /*IEnumerator EndChase()
     {
         yield return new WaitForSeconds(6.9f);
         if (wm.canBeChased == false)
         {
             chaseCo = true;
-            chaseAudio.Stop();
             isChasing = false;
             EnablePoints();
             GoToPosition();
+            chaseAudio.Stop();
             chaseCo = false;
         }
 
+    }*/
+    void EndChase()
+    {
+        EnablePoints();
+        GoToPosition();
     }
 
     void DisablePoints()

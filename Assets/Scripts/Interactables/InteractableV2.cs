@@ -4,18 +4,26 @@ using UnityEngine;
 
 public class InteractableV2 : MonoBehaviour
 {
+    public GameObject player;
     public GameObject spezionParticles;
+    public GameObject originEntityHolder;
+    public GameObject originEntity;
+    public GameObject deathParticles;
+    public GameObject controls;
 
     public bool isItem;
+    public bool isSource;
     public string itemName;
     private bool inRange;
     private bool isAdded = false;
     //Classes
+    public CameraController cc;
     public Spezion sp;
     public InteractButton ib;
     public InventoryV2 iv2;
+    public Joystick js;
     private SpriteRenderer sr;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +52,10 @@ public class InteractableV2 : MonoBehaviour
                 iv2.storedItem = itemName;
                 gameObject.SetActive(false);
             }
+            else if (isSource)
+            {
+                StartCoroutine(SealBreak());
+            }
             ib.clickRegistered = false;
         }
         if (sr.isVisible && isAdded == false)
@@ -56,6 +68,23 @@ public class InteractableV2 : MonoBehaviour
             sp.interactiblesOnScreen -= 1;
             isAdded = false;
         }
+    }
+
+    IEnumerator SealBreak()
+    {
+        controls.SetActive(false);
+        cc.target = originEntity;
+        deathParticles.transform.position = new Vector3(originEntity.transform.position.x, originEntity.transform.position.y,deathParticles.transform.position.z);
+        Time.timeScale = 0f;
+        yield return new WaitForSecondsRealtime(2.1f);
+        originEntity.SetActive(false);
+        deathParticles.SetActive(true);
+        yield return new WaitForSecondsRealtime(2.1f);
+        originEntityHolder.SetActive(false);
+        controls.SetActive(true);
+        js.PointerUp();
+        cc.target = player;
+        Time.timeScale = 1f;
     }
 
     void OnTriggerEnter2D(Collider2D other)

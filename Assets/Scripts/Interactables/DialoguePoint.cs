@@ -88,7 +88,7 @@ public class DialoguePoint : MonoBehaviour
         {
             StartDialogue();
             pc.canMove = false;
-            js.isDragging = false;
+            js.PointerUp();
             controls.SetActive(false);
         }
         

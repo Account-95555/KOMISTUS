@@ -48,7 +48,7 @@ public class Spezion : MonoBehaviour
     IEnumerator SpezionCo()
     {
         isActive = true;
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(5f);
         isActive = false;
     }
 }

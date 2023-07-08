@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ItemRequired : MonoBehaviour
 {
+    public TextMeshProUGUI textbox;
     public GameObject attachedObject;
     public string requiredObject;
     public bool givesItem;
@@ -34,7 +36,7 @@ public class ItemRequired : MonoBehaviour
             }
             else
             {
-                Debug.Log("NO");
+                textbox.text = "You require a " + requiredObject + " for this...";
                 
             }
             ib2.pressed = false;
@@ -57,6 +59,7 @@ public class ItemRequired : MonoBehaviour
         {
             inRange = false;
             ib2.atItemRequired = false;
+            textbox.text = string.Empty;
         }
         
     }

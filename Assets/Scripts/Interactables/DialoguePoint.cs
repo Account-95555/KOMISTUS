@@ -10,6 +10,9 @@ public class DialoguePoint : MonoBehaviour
     public bool givesItem;
 
     //For Dialogue
+    public PlayerController pc;
+    public Joystick js;
+    public GameObject controls;
     public TextMeshProUGUI textbox;
     public string[] lines;
     public string finalText;
@@ -70,6 +73,8 @@ public class DialoguePoint : MonoBehaviour
         {
             textbox.text = finalText;
             inProgress = false;
+            controls.SetActive(true);
+            pc.canMove = true;
             dialogueAudio.PlayOneShot(endSound);
             if (givesItem)
             {
@@ -82,6 +87,9 @@ public class DialoguePoint : MonoBehaviour
         if (other.CompareTag("Player")) //Only the player can activate the dialogue
         {
             StartDialogue();
+            pc.canMove = false;
+            js.isDragging = false;
+            controls.SetActive(false);
         }
         
     }

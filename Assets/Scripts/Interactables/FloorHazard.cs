@@ -13,7 +13,6 @@ public class FloorHazard : MonoBehaviour
     void Start()
     {
         wm = wearyObject.GetComponent<WearyMeter>();
-        hazardAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -26,7 +25,7 @@ public class FloorHazard : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            wm.wearyVal += 16f;
+            wm.wearyVal += 16.9f;
             hazardAudio.PlayOneShot(hazardSFX);
         }
     }

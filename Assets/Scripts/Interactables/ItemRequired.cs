@@ -11,6 +11,7 @@ public class ItemRequired : MonoBehaviour
     public bool givesItem;
     public InventoryV2 iv2;
     public InventoryButtonV2 ib2;
+    public InteractButton ib;
 
     private bool inRange = false;
     // Start is called before the first frame update
@@ -49,6 +50,11 @@ public class ItemRequired : MonoBehaviour
         {
             inRange = true;
             ib2.atItemRequired = true;
+            if (ib.clickRegistered)
+            {
+                textbox.text = "You require a " + requiredObject + " for this...";
+                ib.clickRegistered = false;
+            }
         }
         
     }

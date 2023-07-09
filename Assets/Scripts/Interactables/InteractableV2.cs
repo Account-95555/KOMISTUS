@@ -10,6 +10,7 @@ public class InteractableV2 : MonoBehaviour
     public GameObject originEntity;
     public GameObject deathParticles;
     public GameObject controls;
+    public GameObject sigil;
 
     public bool isItem;
     public bool isSource;
@@ -23,6 +24,7 @@ public class InteractableV2 : MonoBehaviour
     public InventoryV2 iv2;
     public Joystick js;
     private SpriteRenderer sr;
+    public LevelEnd le;
     
     // Start is called before the first frame update
     void Start()
@@ -75,9 +77,13 @@ public class InteractableV2 : MonoBehaviour
         controls.SetActive(false);
         cc.target = originEntity;
         deathParticles.transform.position = new Vector3(originEntity.transform.position.x, originEntity.transform.position.y,deathParticles.transform.position.z);
+        sigil.transform.position = new Vector3(originEntity.transform.position.x, originEntity.transform.position.y, deathParticles.transform.position.z); 
         Time.timeScale = 0f;
-        yield return new WaitForSecondsRealtime(2.1f);
+        yield return new WaitForSecondsRealtime(1.1f);
+        sigil.SetActive(true);
         originEntity.SetActive(false);
+        yield return new WaitForSecondsRealtime(1.1f);
+        sigil.SetActive(false);
         deathParticles.SetActive(true);
         yield return new WaitForSecondsRealtime(2.1f);
         originEntityHolder.SetActive(false);
@@ -85,6 +91,7 @@ public class InteractableV2 : MonoBehaviour
         js.PointerUp();
         cc.target = player;
         Time.timeScale = 1f;
+        le.originDestroyed = true;
     }
 
     void OnTriggerEnter2D(Collider2D other)

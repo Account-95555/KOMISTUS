@@ -7,9 +7,12 @@ public class LevelEnd : MonoBehaviour
 {
     public TextMeshProUGUI textbox;
     public bool originDestroyed = false;
+    public bool requiresItem;
+    public string requiredItem;
     public string levelToEnter;
     public GameObject levelManager;
     public NormalLevelManager nlm;
+    public InventoryV2 iv2;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +31,22 @@ public class LevelEnd : MonoBehaviour
         {
             if (originDestroyed)
             {
-                nlm.ExitScene(levelToEnter);
+                if (requiresItem)
+                {
+                    if (iv2.storedItem != requiredItem)
+                    {
+                        textbox.text = "You need to take the " + requiredItem + " along with you...";
+                    }
+                    else
+                    {
+                        nlm.ExitScene(levelToEnter);
+                    }
+                }
+                else
+                {
+                    nlm.ExitScene(levelToEnter);
+                }
+                
             }
             else
             {

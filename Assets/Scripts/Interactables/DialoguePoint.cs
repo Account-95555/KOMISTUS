@@ -17,8 +17,10 @@ public class DialoguePoint : MonoBehaviour
     public string[] lines;
     public string finalText;
     public float textSpeed;
+    public bool playOnce;
 
     private int index;
+    private bool allowedToPlay = true;
     private bool inProgress = false; //Prevent Text from always showing up
 
     // Start is called before the first frame update
@@ -76,6 +78,10 @@ public class DialoguePoint : MonoBehaviour
             controls.SetActive(true);
             pc.canMove = true;
             dialogueAudio.PlayOneShot(endSound);
+            if (playOnce)
+            {
+                allowedToPlay = false;
+            }
             if (givesItem)
             {
 
@@ -84,7 +90,7 @@ public class DialoguePoint : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) //Only the player can activate the dialogue
+        if (other.CompareTag("Player") && allowedToPlay) //Only the player can activate the dialogue
         {
             StartDialogue();
             pc.canMove = false;

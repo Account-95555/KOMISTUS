@@ -103,7 +103,2254 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Hospital assets 2_0
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f324c730c411389418a64292ca22f375
+      internalID: 1612099814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_1
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588ad2561d775fa498f6387f859fef19
+      internalID: -1812713763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076d324fb6e61224eb0a0abe9c29cbd5
+      internalID: 537028068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_3
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8539a671038d9d4aa3f502999a0bb33
+      internalID: 1103514915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_4
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17e1e9546c3b55488d8912550c70ce0
+      internalID: -394428741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_5
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3277558f163c045b7b7999790efd6d
+      internalID: 1288558014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_6
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6a7e61c4b15264fa4fb03c70f65817
+      internalID: 125425910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_7
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 2280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d71f5ac014c4a428839633282fc3a1
+      internalID: 2114949521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_8
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25b024967b4f964c87ca4d8486b8873
+      internalID: -22348430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_9
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 2280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171d67a966338b440a9289cf4f340fd7
+      internalID: -1587609913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_10
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 2280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5197870faf6de4bb30a9632871ca5d
+      internalID: 1616883314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1daf33e823a4224ea6e73fabf65b5d1
+      internalID: 615666659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_12
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a271d06cefb780f4e9d452821d6f89f9
+      internalID: 1122503643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_13
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbd4ead15130344fa83e82966b2c6cf
+      internalID: -1894731292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_14
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14279c325bd7662478fb26643bfa79e8
+      internalID: -1160723680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_15
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15103a42222530c48993fd757ca8a9c5
+      internalID: -1251425048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949e7608cf6baad4f973e10541422f84
+      internalID: -1543047882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_17
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5650057998e28469ac63fb3d63e05d
+      internalID: -1810701006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_18
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1832c884c2bd5994fb4730885ddedaa3
+      internalID: 1915806911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_19
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ec5b206eadd3b4f89208e3ed2f3fc4
+      internalID: -1574045249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_20
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9050c4bc7f42ca0438a0a7a79bb88846
+      internalID: 1477843964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_21
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 2080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8acbfdfef15c2b4396870e8d0c54c9d
+      internalID: -1686796046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_22
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc327f32e381d4439a01b8c4658e46f
+      internalID: 442478542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_23
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 2080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfbccdc7fdfb5174ea8612493179b09f
+      internalID: -1447235995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_24
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 2080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b94fb2e4baf800409f96eb1683d43ad
+      internalID: 461565927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e8faaa62d83dd46938dd52e8aa48cb
+      internalID: -748881023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_26
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f484fe46d842db24fa02e0c601d0a97c
+      internalID: 2032074965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_27
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d307e3bfff3e8f84a9e0f934492dd8b2
+      internalID: 232423088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_28
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ab6961676a86d448ffdf61b1dc254e
+      internalID: -758179014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_29
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc43d99ff06e6e47904db61785b68f8
+      internalID: 2114058671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_30
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f769eec653bdb14782f34ee3cb86203
+      internalID: -1641735424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_31
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4339ebb9481b9d44c87ae5df8e2759a8
+      internalID: -604250412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_32
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc659a7ff0adcc04d8f4ecd8aa0b16a9
+      internalID: -1691912457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_33
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d8ef03d3b633f498eb30908a40f529
+      internalID: 1896587049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_34
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 1880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79988f03736397648a5c7d217e14a2c8
+      internalID: -892800749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_35
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3378de59d4b3efd48ac4ea4c13cca3ce
+      internalID: 1873666499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a2bff50a906bb4cb5645137cbc7eb5
+      internalID: -291703922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_37
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a7aa9c6dda5794f9c220f40dad0373
+      internalID: 130453804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_38
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ff72d891987bc4298038b98bf2dcf6
+      internalID: 688657731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_39
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4510dc94e8e4a4d8c1568a4dba08da
+      internalID: -647690807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_40
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8927d476ae1cd4cb83aa2093209471
+      internalID: -2076583742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_41
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26df3dd99f35bc4a84cf5f3f4bd9966
+      internalID: 1999791162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_42
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4478bcfa385b84841a3420b8e4edc99b
+      internalID: 505586924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_43
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3200cf2d3aad3b64b93723f863e8e2bb
+      internalID: 1887036277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_44
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cedef91675a9ad4d8805bf6a0e83fcb
+      internalID: -1969991960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_45
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1183f7156407e4898573e8d81016ad
+      internalID: 504272158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_46
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221b059f4cdd2634897dd5fa1c2663fd
+      internalID: 1378628391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea47ac10ec7ddb748998673862651138
+      internalID: 581606406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_48
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245d534bdfda058469eec1956bccd1a0
+      internalID: -418850881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_49
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89070ccb34ee0d14fb72ee82f84ae630
+      internalID: 1679836943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_50
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606cea6145100af449c704b675c546c7
+      internalID: -612206247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_51
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7b345f67727e24f951bbc2fb5100f5
+      internalID: 573004055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_52
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b357ab77ec42d96429a549d02b374be0
+      internalID: 554270993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_53
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae826e16c1dcb641aa97d5449dd4d50
+      internalID: 739196515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_54
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62def775578fa2645a6632b4eaa69069
+      internalID: 981668380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_55
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba023263d28466c42afa3adee39fd2bb
+      internalID: -337802906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_56
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212466cef62e29b4a96e9b9a8f12037c
+      internalID: 957237095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650c0293ca5fa38459682510773014f8
+      internalID: -1066449500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_58
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf696f7e9b71e84785c81d1068b6997
+      internalID: 1995736799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_59
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28a7a6027019274484e03840c4d57ab
+      internalID: -1040002492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_60
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280d3872e7c10d94aaf7c61ee6a7eb9e
+      internalID: -1232526520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_61
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1109ef0d409fe489de57ebe3f85f65
+      internalID: -1601806410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_62
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0127f649d993c1143b076175ae560d38
+      internalID: -289610248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_63
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5861b059a27f69a4dbbf29e6fa757f1f
+      internalID: -1939397243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_64
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507d4be5f705e6845941aeb01d470ada
+      internalID: -803944506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_65
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac5bd1bd54458f488db3b81b4953be0
+      internalID: -2142200114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_66
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5388248c41fdbcc4f8b41eec66798961
+      internalID: 231954800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7722bd68a658ffa4384d6e78b1be04e2
+      internalID: 1921755789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_68
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17499485c92ac2f44a2f37b6ac3ddee4
+      internalID: 1902588479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_69
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc120786b310ad4ab251d70e55d0348
+      internalID: -938192985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_70
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d6a600996952849866185fe5ae4bc7
+      internalID: -798224266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_71
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a4b26d684f81443b3fbb91892ce34d
+      internalID: 1263684986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_72
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20c791958163c94b914fbc3e0bedadb
+      internalID: -1475315477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_73
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5d9fef3c780284088c7b43f2d2bf36
+      internalID: -757380491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_74
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9dbc95fd2386b4a9cc99dbdd6c8e85
+      internalID: 1301717844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_75
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1080
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e658b3f0e273104a9e2abcc96b06725
+      internalID: 100386319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f003847cbe436429772a445d5a4fbe
+      internalID: -539818642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_77
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b570f77c47d02d4687d06f6b40fdf79
+      internalID: -1043960168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_78
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c8097561adf8a469e087dbd035b719
+      internalID: 866662084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_79
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a867f5ee5c037404893ed5cfae6be743
+      internalID: 1654523213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_80
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208d30ae6090e9640af19d00ea28498f
+      internalID: -1806951182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_81
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099de5d16ae36ca40adb7edd176d1a0c
+      internalID: -69225417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_82
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b637d9762a3ee542b3d4c9055c8a88a
+      internalID: -1297350396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_83
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c4d97cb1c9f704491e0e067bd4f7e8
+      internalID: -1043619014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_84
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 880
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32357125dc9c2bf4196aa06e2d6cb4c0
+      internalID: -1462388443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_85
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3aea2ead08788246a0af02599683ff2
+      internalID: 1966098486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_86
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde7ba0057676f244a6920e50b0a5ea2
+      internalID: 1415100957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_87
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ccc427103f177346abe17bdd0f23229
+      internalID: -253210222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_88
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a37a7c9b337d74d908e7c7419f0c73
+      internalID: -1405420292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_89
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8aa8033f0b055041943b7102a32c93c
+      internalID: -273325493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_90
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89cf90e4d4debc244b800f63101d0007
+      internalID: -510591744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_91
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b67bb9826aad24192f958168fef56b
+      internalID: -1836531468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_92
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 680
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df322d0e191227c4f81d8fa4517dd01b
+      internalID: 551333102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_93
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0502e0f97f0c70c469d62e58700efc3e
+      internalID: 648322894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_94
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7244ee8b1221f44baba96b2cae05f5
+      internalID: 194615058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_95
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7af971c4a305464c819d0b0025876af
+      internalID: 50747543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_96
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9d7412d16cd3449aa412826ba4f76e
+      internalID: -476871846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_97
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97ef843b401130478c47de1a9f58764
+      internalID: 1748059606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_98
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3a7eb2135ab0e4cbfdca1b48e0547d
+      internalID: -509944416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_99
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deaaeeb28799a22428d2e20317e4a96a
+      internalID: -2084085822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_100
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 480
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23714b4df24c1974292ecf4d4a3aee22
+      internalID: 96773363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_101
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a155de863f935ed45a37155af3091261
+      internalID: 950984279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_102
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11503198364a344da50e9e623ad2856
+      internalID: 676991058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_103
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 280
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e97cd204caf394e9c643d1ad7aea98
+      internalID: 1336212884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_104
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 80
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5d0e2db0337e5468817e3b51a109c0
+      internalID: 222796095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_105
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 80
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9930f8bb1178e41a8593e098a09075
+      internalID: 1296411492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital assets 2_106
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 80
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a810e6cb64cd84b40975246023a99fda
+      internalID: 2065148582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +2361,114 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hospital assets 2_87: -253210222
+      Hospital assets 2_30: -1641735424
+      Hospital assets 2_2: 537028068
+      Hospital assets 2_5: 1288558014
+      Hospital assets 2_8: -22348430
+      Hospital assets 2_40: -2076583742
+      Hospital assets 2_85: 1966098486
+      Hospital assets 2_45: 504272158
+      Hospital assets 2_55: -337802906
+      Hospital assets 2_41: 1999791162
+      Hospital assets 2_53: 739196515
+      Hospital assets 2_29: 2114058671
+      Hospital assets 2_23: -1447235995
+      Hospital assets 2_105: 1296411492
+      Hospital assets 2_17: -1810701006
+      Hospital assets 2_88: -1405420292
+      Hospital assets 2_49: 1679836943
+      Hospital assets 2_47: 581606406
+      Hospital assets 2_18: 1915806911
+      Hospital assets 2_68: 1902588479
+      Hospital assets 2_10: 1616883314
+      Hospital assets 2_93: 648322894
+      Hospital assets 2_84: -1462388443
+      Hospital assets 2_36: -291703922
+      Hospital assets 2_54: 981668380
+      Hospital assets 2_7: 2114949521
+      Hospital assets 2_38: 688657731
+      Hospital assets 2_0: 1612099814
+      Hospital assets 2_104: 222796095
+      Hospital assets 2_106: 2065148582
+      Hospital assets 2_34: -892800749
+      Hospital assets 2_86: 1415100957
+      Hospital assets 2_39: -647690807
+      Hospital assets 2_100: 96773363
+      Hospital assets 2_51: 573004055
+      Hospital assets 2_14: -1160723680
+      Hospital assets 2_24: 461565927
+      Hospital assets 2_98: -509944416
+      Hospital assets 2_101: 950984279
+      Hospital assets 2_58: 1995736799
+      Hospital assets 2_65: -2142200114
+      Hospital assets 2_12: 1122503643
+      Hospital assets 2_75: 100386319
+      Hospital assets 2_35: 1873666499
+      Hospital assets 2_94: 194615058
+      Hospital assets 2_74: 1301717844
+      Hospital assets 2_61: -1601806410
+      Hospital assets 2_103: 1336212884
+      Hospital assets 2_52: 554270993
+      Hospital assets 2_91: -1836531468
+      Hospital assets 2_11: 615666659
+      Hospital assets 2_27: 232423088
+      Hospital assets 2_56: 957237095
+      Hospital assets 2_20: 1477843964
+      Hospital assets 2_71: 1263684986
+      Hospital assets 2_67: 1921755789
+      Hospital assets 2_82: -1297350396
+      Hospital assets 2_19: -1574045249
+      Hospital assets 2_80: -1806951182
+      Hospital assets 2_64: -803944506
+      Hospital assets 2_76: -539818642
+      Hospital assets 2_59: -1040002492
+      Hospital assets 2_3: 1103514915
+      Hospital assets 2_81: -69225417
+      Hospital assets 2_73: -757380491
+      Hospital assets 2_6: 125425910
+      Hospital assets 2_46: 1378628391
+      Hospital assets 2_72: -1475315477
+      Hospital assets 2_57: -1066449500
+      Hospital assets 2_62: -289610248
+      Hospital assets 2_70: -798224266
+      Hospital assets 2_95: 50747543
+      Hospital assets 2_31: -604250412
+      Hospital assets 2_78: 866662084
+      Hospital assets 2_89: -273325493
+      Hospital assets 2_92: 551333102
+      Hospital assets 2_22: 442478542
+      Hospital assets 2_15: -1251425048
+      Hospital assets 2_28: -758179014
+      Hospital assets 2_32: -1691912457
+      Hospital assets 2_83: -1043619014
+      Hospital assets 2_37: 130453804
+      Hospital assets 2_4: -394428741
+      Hospital assets 2_79: 1654523213
+      Hospital assets 2_102: 676991058
+      Hospital assets 2_97: 1748059606
+      Hospital assets 2_50: -612206247
+      Hospital assets 2_90: -510591744
+      Hospital assets 2_77: -1043960168
+      Hospital assets 2_33: 1896587049
+      Hospital assets 2_16: -1543047882
+      Hospital assets 2_21: -1686796046
+      Hospital assets 2_1: -1812713763
+      Hospital assets 2_69: -938192985
+      Hospital assets 2_96: -476871846
+      Hospital assets 2_66: 231954800
+      Hospital assets 2_9: -1587609913
+      Hospital assets 2_42: 505586924
+      Hospital assets 2_44: -1969991960
+      Hospital assets 2_25: -748881023
+      Hospital assets 2_26: 2032074965
+      Hospital assets 2_48: -418850881
+      Hospital assets 2_43: 1887036277
+      Hospital assets 2_13: -1894731292
+      Hospital assets 2_63: -1939397243
+      Hospital assets 2_60: -1232526520
+      Hospital assets 2_99: -2084085822
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

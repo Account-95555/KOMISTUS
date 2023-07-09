@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +103,574 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Facility walls (2)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2201
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd8e0fa119699749848217f85ee4b04
+      internalID: 690604547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2201
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f15965a28925d7439e2e6d3fc32655b
+      internalID: -1893693822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2201
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748bde4dbcc51ee46b7bece1c0782fe9
+      internalID: -74676510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2001
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e5905e93b12bf45bb9a5fdf64ac97c
+      internalID: -702905278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2001
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9772fff8882135b40a71823e5e663925
+      internalID: -1353564624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2001
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea7540b8ae437548adfc59a45777729
+      internalID: 578277844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1801
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10834e7e0c84c3a48ab1d2087342352b
+      internalID: 917932666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1801
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5f16b35da34df40b34d24f11feb202
+      internalID: -2016050822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1801
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8699011fd751057469522dc9aa410353
+      internalID: -644642223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1401
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d2cdff434b3cc44aa004d06e69d52e
+      internalID: -829535137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1401
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b7721f98d8b7c45b58651d199d2802
+      internalID: -169191536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1401
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354c49f3c6275e14a8854f6964843bd9
+      internalID: 344591831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1201
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7ff3b5afc93284e88078f15dd20ecd
+      internalID: 246264686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_26
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1201
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c3e2ca1d4d27b458043506b4593d54
+      internalID: -728816636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_27
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1201
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ddf0d033f3b1e41a08bd4eea1fd325
+      internalID: -911179144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1001
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597e6bed343e5c648a62e871b86e0d72
+      internalID: 981224721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1001
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb93935ec18039b47b3c9d75d1180b25
+      internalID: -2032548519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1001
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb0e44abe0c3aa4f8f5e122b81fe8de
+      internalID: 1136516807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_34
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1001
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c19df80e9a32c43b5b5156d912e451
+      internalID: 1200909936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 601
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300e5f62bbc5ef043950a8fa1f9b3973
+      internalID: -538287998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_42
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 601
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f33e28c1174d745ae2cb6ca8f39c97
+      internalID: 554811224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 401
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575aa6ddd0bacb441babe4de441d0bb2
+      internalID: -1553965539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e634af466d17d0449db381974786974
+      internalID: 731853582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_52
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 201
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22448ea9fb8ef9642ab1c30f1869dc46
+      internalID: -828517626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_53
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 201
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01576e2f140d6784c8a2aeadade88903
+      internalID: 1952845383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_57
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419dda0937a2164489f3197bb10ad947
+      internalID: 1442355820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility walls (2)_58
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ca6bafcf84b2a4e9234bb70a8bc6f8
+      internalID: -270371060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +681,67 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Facility walls (2)_6: -1353564624
+      Facility walls (2)_45: -1553965539
+      Facility walls (2)_16: 205197761
+      Facility walls (2)_47: 1101771968
+      Facility walls (2)_55: 1014324409
+      Facility walls (2)_39: 540074739
+      Facility walls (2)_38: -348504239
+      Facility walls (2)_2: -74676510
+      Facility walls (2)_8: -1371312340
+      Facility walls (2)_37: 161632475
+      Facility walls (2)_9: 1678506768
+      Facility walls (2)_17: 1816973149
+      Facility walls (2)_5: -702905278
+      Facility walls (2)_25: 246264686
+      Facility walls (2)_24: 597158243
+      Facility walls (2)_20: -829535137
+      Facility walls (2)_11: -2016050822
+      Facility walls (2)_40: -538287998
+      Facility walls (2)_23: 2121010922
+      Facility walls (2)_12: -644642223
+      Facility walls (2)_36: -2125506669
+      Facility walls (2)_46: -1333424300
+      Facility walls (2)_58: -270371060
+      Facility walls (2)_28: 1388887435
+      Facility walls (2)_57: 1442355820
+      Facility walls (2)_4: -1835459627
+      Facility walls (2)_42: 554811224
+      Facility walls (2)_22: 344591831
+      Facility walls (2)_35: -980294076
+      Facility walls (2)_54: -614692599
+      Facility walls (2)_1: -1893693822
+      Facility walls (2)_7: 578277844
+      Facility walls (2)_43: -1806479528
+      Facility walls (2)_34: 1200909936
+      Facility walls (2)_44: 942451907
+      Facility walls (2)_14: -258929579
+      Facility walls (2)_59: 1277405338
+      Facility walls (2)_32: 1136516807
+      Facility walls (2)_19: -1432569641
+      Facility walls (2)_21: -169191536
+      Facility walls (2)_41: 2045780668
+      Facility walls (2)_0: 690604547
+      Facility walls (2)_15: -650497251
+      Facility walls (2)_10: 917932666
+      Facility walls (2)_27: -911179144
+      Facility walls (2)_29: -1371503539
+      Facility walls (2)_53: 1952845383
+      Facility walls (2)_56: -127189473
+      Facility walls (2)_49: 775689488
+      Facility walls (2)_48: 1098076531
+      Facility walls (2)_13: -864590717
+      Facility walls (2)_30: 981224721
+      Facility walls (2)_3: 1960561072
+      Facility walls (2)_33: 1583916120
+      Facility walls (2)_18: -469978942
+      Facility walls (2)_50: 731853582
+      Facility walls (2)_52: -828517626
+      Facility walls (2)_26: -728816636
+      Facility walls (2)_51: -1948808551
+      Facility walls (2)_31: -2032548519
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

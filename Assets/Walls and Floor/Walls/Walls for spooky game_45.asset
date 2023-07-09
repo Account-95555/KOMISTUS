@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Walls for spooky game_45
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1951008300, guid: 6f8eb32cc49dba94d954d56c1866b773, type: 3}
+  m_Sprite: {fileID: -230585748, guid: 389f6ccccaf08c54886a743059e6cf57, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

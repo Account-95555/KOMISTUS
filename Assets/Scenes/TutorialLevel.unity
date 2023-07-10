@@ -425,7 +425,7 @@ Transform:
   m_Children:
   - {fileID: 761348949}
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &83749435
 PrefabInstance:
@@ -633,8 +633,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1483362264}
-        m_TargetAssemblyTypeName: KeycodeDoor, Assembly-CSharp
+      - m_Target: {fileID: 2128474522}
+        m_TargetAssemblyTypeName: KeycodeObject, Assembly-CSharp
         m_MethodName: NumberPress
         m_Mode: 3
         m_Arguments:
@@ -1027,7 +1027,7 @@ Transform:
   m_Children:
   - {fileID: 381593098}
   m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &121149807
 GameObject:
@@ -1513,7 +1513,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5, y: -1}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1534,12 +1534,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148064931}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40, y: -21.5, z: 0}
+  m_LocalPosition: {x: -39.5, y: -21.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &148448641
 GameObject:
@@ -1719,12 +1719,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171473607}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.228, z: 0}
+  m_LocalPosition: {x: 0, y: -1.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6468029580937575789}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &171473609
 BoxCollider2D:
@@ -1739,7 +1739,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.02, y: 0.82}
+  m_Offset: {x: 0.06, y: 0.82}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1750,7 +1750,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.66, y: 0.25}
+  m_Size: {x: 0.6, y: 0.25}
   m_EdgeRadius: 0
 --- !u!1 &189923575
 GameObject:
@@ -1971,8 +1971,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1483362264}
-        m_TargetAssemblyTypeName: KeycodeDoor, Assembly-CSharp
+      - m_Target: {fileID: 2128474522}
+        m_TargetAssemblyTypeName: KeycodeObject, Assembly-CSharp
         m_MethodName: NumberPress
         m_Mode: 3
         m_Arguments:
@@ -2678,8 +2678,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1483362264}
-        m_TargetAssemblyTypeName: KeycodeDoor, Assembly-CSharp
+      - m_Target: {fileID: 2128474522}
+        m_TargetAssemblyTypeName: KeycodeObject, Assembly-CSharp
         m_MethodName: NumberPress
         m_Mode: 3
         m_Arguments:
@@ -2849,7 +2849,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &362958546
 CircleCollider2D:
@@ -3018,7 +3018,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: -1957513173, guid: 8bd09c56cde03ae4f88f73e66245b45d, type: 3}
+  m_Sprite: {fileID: -1375768586, guid: d89c051a1b4acf14d94ba7b5bed0b53c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3076,7 +3076,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.91, y: 0.98}
+    oldSize: {x: 0.43489584, y: 0.484375}
     newSize: {x: 0.91, y: 0.98}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3982,7 +3982,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &590413490
 GameObject:
@@ -4072,7 +4072,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9125454809963124661, guid: ac3db9f2d6cef0d4ca33c457c15fcf3f, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 9125454809963124661, guid: ac3db9f2d6cef0d4ca33c457c15fcf3f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4210,7 +4210,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 1162657952, guid: 8628a0a58de469f4c8cae1b81447aa02, type: 3}
+  m_Sprite: {fileID: -1977734811, guid: d89c051a1b4acf14d94ba7b5bed0b53c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4229,13 +4229,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638183290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.563816, y: -10.775003, z: 0}
+  m_LocalPosition: {x: -23.82, y: -9.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 753703675}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &638183294
 BoxCollider2D:
@@ -4254,14 +4254,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.94, y: 0.37}
+    oldSize: {x: 0.5416667, y: 0.34895834}
     newSize: {x: 0.94, y: 0.37}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.94, y: 0.37}
+  m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
 --- !u!1 &638668290
 GameObject:
@@ -4966,7 +4966,7 @@ Transform:
   m_Children:
   - {fileID: 239852402}
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &667322010
 MonoBehaviour:
@@ -5420,7 +5420,7 @@ Transform:
   m_Children:
   - {fileID: 652407295}
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &679498542
 GameObject:
@@ -5506,8 +5506,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1483362264}
-        m_TargetAssemblyTypeName: KeycodeDoor, Assembly-CSharp
+      - m_Target: {fileID: 2128474522}
+        m_TargetAssemblyTypeName: KeycodeObject, Assembly-CSharp
         m_MethodName: NumberPress
         m_Mode: 3
         m_Arguments:
@@ -5682,13 +5682,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690671238}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 57.25, y: 16.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_Father: {fileID: 969660648}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &695588913
 GameObject:
@@ -23256,7 +23256,7 @@ Transform:
   - {fileID: 803959144}
   - {fileID: 1245175058}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &835919211
 PrefabInstance:
@@ -24106,6 +24106,44 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!1 &969660647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 969660648}
+  m_Layer: 0
+  m_Name: LevelStarterPack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &969660648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969660647}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -57.25, y: -16.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6468029581051473929}
+  - {fileID: 6468029580937575789}
+  - {fileID: 690671241}
+  - {fileID: 1269961271}
+  - {fileID: 1093223545}
+  - {fileID: 1781244593}
+  - {fileID: 2044877598}
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &974376634
 GameObject:
   m_ObjectHideFlags: 0
@@ -29161,7 +29199,7 @@ Transform:
   m_Children:
   - {fileID: 1283114523}
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1013891091
 MonoBehaviour:
@@ -29431,8 +29469,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1483362264}
-        m_TargetAssemblyTypeName: KeycodeDoor, Assembly-CSharp
+      - m_Target: {fileID: 2128474522}
+        m_TargetAssemblyTypeName: KeycodeObject, Assembly-CSharp
         m_MethodName: NumberPress
         m_Mode: 3
         m_Arguments:
@@ -30245,8 +30283,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1483362264}
-        m_TargetAssemblyTypeName: KeycodeDoor, Assembly-CSharp
+      - m_Target: {fileID: 2128474522}
+        m_TargetAssemblyTypeName: KeycodeObject, Assembly-CSharp
         m_MethodName: NumberPress
         m_Mode: 3
         m_Arguments:
@@ -30490,13 +30528,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093223543}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.475971, y: -38.78791, z: 0.08372607}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 36.77403, y: -22.28791, z: 0.08372607}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_Father: {fileID: 969660648}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1131570636
 GameObject:
@@ -57502,7 +57540,7 @@ Transform:
   m_Children:
   - {fileID: 717292041}
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1196993121
 GameObject:
@@ -66264,8 +66302,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1483362264}
-        m_TargetAssemblyTypeName: KeycodeDoor, Assembly-CSharp
+      - m_Target: {fileID: 2128474522}
+        m_TargetAssemblyTypeName: KeycodeObject, Assembly-CSharp
         m_MethodName: NumberPress
         m_Mode: 3
         m_Arguments:
@@ -66448,12 +66486,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269961268}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -43.397972, y: -19.93512, z: 0}
+  m_LocalPosition: {x: 13.852028, y: -3.4351196, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_Father: {fileID: 969660648}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1273275061
 GameObject:
@@ -66539,8 +66577,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1483362264}
-        m_TargetAssemblyTypeName: KeycodeDoor, Assembly-CSharp
+      - m_Target: {fileID: 2128474522}
+        m_TargetAssemblyTypeName: KeycodeObject, Assembly-CSharp
         m_MethodName: NumberPress
         m_Mode: 3
         m_Arguments:
@@ -72087,8 +72125,8 @@ Tilemap:
   - first: {x: -40, y: -23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 19
-      m_TileSpriteIndex: 18
+      m_TileIndex: 22
+      m_TileSpriteIndex: 22
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -72237,8 +72275,8 @@ Tilemap:
   - first: {x: -40, y: -22, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 22
-      m_TileSpriteIndex: 22
+      m_TileIndex: 19
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -81233,7 +81271,7 @@ Transform:
   - {fileID: 961482220}
   - {fileID: 1074618946}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1348843689 stripped
 Transform:
@@ -81881,7 +81919,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1399216998
 GameObject:
@@ -82067,7 +82105,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1414435613
 GameObject:
@@ -97905,8 +97943,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1483362264}
-        m_TargetAssemblyTypeName: KeycodeDoor, Assembly-CSharp
+      - m_Target: {fileID: 2128474522}
+        m_TargetAssemblyTypeName: KeycodeObject, Assembly-CSharp
         m_MethodName: SpecialPress
         m_Mode: 5
         m_Arguments:
@@ -97965,12 +98003,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1483362263}
   - component: {fileID: 1483362262}
-  - component: {fileID: 1483362264}
   - component: {fileID: 1483362266}
   - component: {fileID: 1483362265}
   - component: {fileID: 1483362267}
   m_Layer: 0
-  m_Name: KeycodeDoor
+  m_Name: KeyDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98041,32 +98078,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1483362264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1483362261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa437f32a3bbd3a4f89c19f77b778ef3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ib: {fileID: 6468029581165514288}
-  correct: {fileID: 8300000, guid: 91cbc49962a15364c94eaeaa97fb1197, type: 3}
-  wrong: {fileID: 8300000, guid: b44523af76a8a074e8d984fc099d92cc, type: 3}
-  press: {fileID: 8300000, guid: b4a543e23a88e8148b644a5153fc33a7, type: 3}
-  self: {fileID: 1483362267}
-  door: {fileID: 1483362261}
-  keypad: {fileID: 1224373881}
-  inRange: 0
-  codeNumber: 7645
-  playerInput: 
-  currentInput: {fileID: 1314052962}
-  textbox: {fileID: 6468029581289472162}
 --- !u!61 &1483362265
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -98119,102 +98132,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
---- !u!82 &1483362267
-AudioSource:
+--- !u!114 &1483362267
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483362261}
   m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 0.5
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ee184fff62918149939aa0fd2e303c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textbox: {fileID: 6468029581289472162}
+  bgm: {fileID: 1093223544}
+  correct: {fileID: 8300000, guid: 91cbc49962a15364c94eaeaa97fb1197, type: 3}
+  attachedObject: {fileID: 0}
+  door: {fileID: 1483362261}
+  requiredObject: Key
+  activatesDoor: 1
+  givesItem: 0
+  iv2: {fileID: 7015238709069851884}
+  ib2: {fileID: 2601804704825040183}
+  ib: {fileID: 6468029581165514288}
 --- !u!1 &1491868135
 GameObject:
   m_ObjectHideFlags: 0
@@ -98637,8 +98577,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1483362264}
-        m_TargetAssemblyTypeName: KeycodeDoor, Assembly-CSharp
+      - m_Target: {fileID: 2128474522}
+        m_TargetAssemblyTypeName: KeycodeObject, Assembly-CSharp
         m_MethodName: NumberPress
         m_Mode: 3
         m_Arguments:
@@ -98962,7 +98902,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1666329384
 GameObject:
@@ -99770,7 +99710,7 @@ Transform:
   m_Children:
   - {fileID: 1133179683}
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1749949025
 GameObject:
@@ -99949,13 +99889,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1781244591}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -49.129063, y: -10.14693, z: 0.006112411}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.120937, y: 6.3530703, z: 0.006112411}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_Father: {fileID: 969660648}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1797165743 stripped
 GameObject:
@@ -100190,8 +100130,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1483362264}
-        m_TargetAssemblyTypeName: KeycodeDoor, Assembly-CSharp
+      - m_Target: {fileID: 2128474522}
+        m_TargetAssemblyTypeName: KeycodeObject, Assembly-CSharp
         m_MethodName: SpecialPress
         m_Mode: 5
         m_Arguments:
@@ -101029,8 +100969,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1483362264}
-        m_TargetAssemblyTypeName: KeycodeDoor, Assembly-CSharp
+      - m_Target: {fileID: 2128474522}
+        m_TargetAssemblyTypeName: KeycodeObject, Assembly-CSharp
         m_MethodName: NumberPress
         m_Mode: 3
         m_Arguments:
@@ -101190,7 +101130,7 @@ Transform:
   - {fileID: 1996880827099779504}
   - {fileID: 514550554}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2006517268
 GameObject:
@@ -101245,7 +101185,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.66, y: 0.97}
+    oldSize: {x: 0.390625, y: 0.5703125}
     newSize: {x: 0.66, y: 0.97}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -101374,7 +101314,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -852167808, guid: 8bd09c56cde03ae4f88f73e66245b45d, type: 3}
+  m_Sprite: {fileID: -42345131, guid: d89c051a1b4acf14d94ba7b5bed0b53c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101752,13 +101692,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044877596}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -32.270714, y: -50.848694, z: 0.044019952}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 24.979286, y: -34.348694, z: 0.044019952}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_Father: {fileID: 969660648}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2046500881
 GameObject:
@@ -102178,7 +102118,7 @@ Transform:
   m_Children:
   - {fileID: 638907763}
   m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &2067118957
 Mesh:
@@ -110351,13 +110291,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124109019}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -35.5, y: -51.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2124109022
 MonoBehaviour:
@@ -110390,7 +110330,7 @@ GameObject:
   - component: {fileID: 2128474519}
   - component: {fileID: 2128474518}
   - component: {fileID: 2128474520}
-  - component: {fileID: 2128474521}
+  - component: {fileID: 2128474522}
   m_Layer: 0
   m_Name: s_safe
   m_TagString: Untagged
@@ -110492,7 +110432,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.94, y: 1.73}
   m_EdgeRadius: 0
---- !u!114 &2128474521
+--- !u!114 &2128474522
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110501,16 +110441,100 @@ MonoBehaviour:
   m_GameObject: {fileID: 2128474517}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ee184fff62918149939aa0fd2e303c9, type: 3}
+  m_Script: {fileID: 11500000, guid: aa437f32a3bbd3a4f89c19f77b778ef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textbox: {fileID: 6468029581289472162}
-  attachedObject: {fileID: 379510877}
-  requiredObject: Key
-  givesItem: 1
-  iv2: {fileID: 7015238709069851884}
-  ib2: {fileID: 2601804704825040183}
   ib: {fileID: 6468029581165514288}
+  correct: {fileID: 8300000, guid: 91cbc49962a15364c94eaeaa97fb1197, type: 3}
+  wrong: {fileID: 8300000, guid: b44523af76a8a074e8d984fc099d92cc, type: 3}
+  press: {fileID: 8300000, guid: b4a543e23a88e8148b644a5153fc33a7, type: 3}
+  bgm: {fileID: 1093223544}
+  door: {fileID: 0}
+  keypad: {fileID: 1224373881}
+  attachedObject: {fileID: 379510877}
+  inRange: 0
+  correctCode: 0
+  isDoor: 0
+  givesItem: 1
+  codeNumber: 7645
+  playerInput: 
+  hint: Please don't tell me I need to read a book to find the code...
+  currentInput: {fileID: 1314052962}
+  textbox: {fileID: 6468029581289472162}
+--- !u!1 &2134010888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2134010891}
+  - component: {fileID: 2134010890}
+  - component: {fileID: 2134010889}
+  m_Layer: 0
+  m_Name: CreakyFloor (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2134010889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134010888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4e60898cfa0e543830a6892ab854dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hazardAudio: {fileID: 1093223544}
+  hazardSFX: {fileID: 8300000, guid: 3103d9d5486bf564d895d911beb70db8, type: 3}
+  wearyObject: {fileID: 6468029581816531746}
+--- !u!61 &2134010890
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134010888}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0
+--- !u!4 &2134010891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134010888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -31, y: -37, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 42
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1495761535885352192 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1495761537174703488, guid: 4f0f97acbe473cb4287f234631538767, type: 3}
@@ -110926,17 +110950,17 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 2
+  m_PointLightOuterRadius: 1.69
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffSize: 0.21
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: -0.6062012, y: 1.0080452, z: 0}
-  - {x: -0.24340248, y: 1.0399055, z: 0}
-  - {x: -0.28588295, y: 1.2221603, z: 0}
-  - {x: -0.6380596, y: 1.2115402, z: 0}
+  - {x: -0.45323563, y: 1.0223312, z: 0}
+  - {x: -0.4022751, y: 1.1329422, z: 0}
+  - {x: -0.41025543, y: 1.1831207, z: 0}
+  - {x: -0.4507923, y: 1.17033, z: 0}
 --- !u!60 &2413449614766237793
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -111314,7 +111338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2601804704555783331
 RectTransform:
   m_ObjectHideFlags: 0
@@ -112363,7 +112387,7 @@ Animator:
   m_GameObject: {fileID: 6468029580937575787}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6acb91b9a7001ce47ba4370e1d510597, type: 2}
+  m_Controller: {fileID: 9100000, guid: 02a8e751107816842bb95003691fda06, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -112414,7 +112438,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: -843521362, guid: a9377fc70c915e0458b048dde90eec63, type: 3}
+  m_Sprite: {fileID: 953237180, guid: 5742796daf9bcd4488ba06af66729b5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -112459,18 +112483,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.07}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8125, y: 1.0625}
+    oldSize: {x: 1.25, y: 1.875}
     newSize: {x: 0.712963, y: 3.0185184}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 1.1}
+  m_Size: {x: 1.25, y: 1.75}
   m_EdgeRadius: 0
 --- !u!4 &6468029580937575789
 Transform:
@@ -112480,7 +112504,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6468029580937575787}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -57.25, y: -16.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -112489,10 +112513,9 @@ Transform:
   - {fileID: 6468029582413243321}
   - {fileID: 2601804704459824870}
   - {fileID: 7015238709069851882}
-  - {fileID: 7015238710776603893}
   - {fileID: 171473608}
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_Father: {fileID: 969660648}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6468029580937575790
 MonoBehaviour:
@@ -112702,12 +112725,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6468029581051474165}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -57.25, y: -16.5, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 969660648}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!81 &6468029581051474164
 AudioListener:
@@ -112896,7 +112919,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 16
+  m_PointLightOuterRadius: 9
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -114113,7 +114136,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 250, y: 200}
+  m_AnchoredPosition: {x: 267, y: 213}
   m_SizeDelta: {x: 500, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6468029582843773423
@@ -114186,74 +114209,6 @@ MonoBehaviour:
   itemImage: {fileID: 2601804706115066265}
   storedItem: 
   isHolding: 0
---- !u!1 &7015238710776603850
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7015238710776603893}
-  - component: {fileID: 7015238710776603892}
-  - component: {fileID: 7015238710776603895}
-  m_Layer: 0
-  m_Name: Floor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!68 &7015238710776603892
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7015238710776603850}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.5}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -2, y: 0}
-  - {x: 2, y: 0}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
---- !u!4 &7015238710776603893
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7015238710776603850}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6468029580937575789}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7015238710776603895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7015238710776603850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0102ebf73bdcbc442a6813a58feac514, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wm: {fileID: 6468029581816531751}
 --- !u!1001 &9125454811307634460
 PrefabInstance:
   m_ObjectHideFlags: 0

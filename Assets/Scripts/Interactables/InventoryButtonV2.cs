@@ -37,7 +37,7 @@ public class InventoryButtonV2 : MonoBehaviour
                 if (!pc.inClosetRange)
                 {
                     iv2.storedItem = "none";
-                    iv2.attachedObject.transform.position = new Vector3(player.transform.position.x, player.transform.position.y - 0.21f, player.transform.position.z);
+                    iv2.attachedObject.transform.position = new Vector3(player.transform.position.x, player.transform.position.y - 0.69f, player.transform.position.z);
                     iv2.attachedObject.SetActive(true);
                     bgm.PlayOneShot(drop);
                     wm.wearyVal += 11f;

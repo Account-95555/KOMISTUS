@@ -6,8 +6,12 @@ using TMPro;
 public class ItemRequired : MonoBehaviour
 {
     public TextMeshProUGUI textbox;
+    public AudioSource bgm;
+    public AudioClip correct;
     public GameObject attachedObject;
+    public GameObject door;
     public string requiredObject;
+    public bool activatesDoor;
     public bool givesItem;
     public InventoryV2 iv2;
     public InventoryButtonV2 ib2;
@@ -33,6 +37,11 @@ public class ItemRequired : MonoBehaviour
                 {
                     attachedObject.SetActive(true);
                 }
+                if (activatesDoor)
+                {
+                    door.SetActive(false);
+                }
+                bgm.PlayOneShot(correct);
                 
             }
             else

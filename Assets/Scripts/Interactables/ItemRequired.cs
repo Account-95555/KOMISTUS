@@ -59,6 +59,19 @@ public class ItemRequired : MonoBehaviour
         
     }
 
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (ib.clickRegistered)
+            {
+                textbox.text = "You require a " + requiredObject + " for this...";
+                ib.clickRegistered = false;
+            }
+        }
+
+    }
+
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

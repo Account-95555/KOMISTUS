@@ -11,6 +11,8 @@ public class InteractableV2 : MonoBehaviour
     public GameObject deathParticles;
     public GameObject controls;
     public GameObject sigil;
+    public AudioSource bgm;
+    public AudioClip entityDeathSound;
 
     public bool isItem;
     public bool isSource;
@@ -84,6 +86,7 @@ public class InteractableV2 : MonoBehaviour
         originEntity.SetActive(false);
         yield return new WaitForSecondsRealtime(1.1f);
         sigil.SetActive(false);
+        bgm.PlayOneShot(entityDeathSound);
         deathParticles.SetActive(true);
         yield return new WaitForSecondsRealtime(2.1f);
         originEntityHolder.SetActive(false);

@@ -16,6 +16,7 @@ public class InteractableV2 : MonoBehaviour
 
     public bool isItem;
     public bool isSource;
+    public bool sourceDestroyed;
     public string itemName;
     private bool inRange;
     private bool isAdded = false;
@@ -76,6 +77,7 @@ public class InteractableV2 : MonoBehaviour
 
     IEnumerator SealBreak()
     {
+        sourceDestroyed = true;
         controls.SetActive(false);
         cc.target = originEntity;
         deathParticles.transform.position = new Vector3(originEntity.transform.position.x, originEntity.transform.position.y,deathParticles.transform.position.z);

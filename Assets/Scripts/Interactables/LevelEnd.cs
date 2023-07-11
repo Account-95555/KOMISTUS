@@ -35,7 +35,7 @@ public class LevelEnd : MonoBehaviour
                 {
                     if (iv2.storedItem != requiredItem)
                     {
-                        textbox.text = "You need to take the " + requiredItem + " along with you...";
+                        textbox.text = "You need to bring the item from the safe back to HQ";
                     }
                     else
                     {

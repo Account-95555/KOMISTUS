@@ -5,11 +5,19 @@ using UnityEngine;
 public class PatrolEnemy : EnemyCommon
 {
     public GameObject[] points;
+    public GameObject entityHolder;
+    public GameObject entity;
+    public GameObject deathParticles;
+    public GameObject sigil;
+    public InteractableV2 sourceObject;
     public Vector2 initialDir;
     public int PEID;
+    public bool isOriginEntity;
     public bool isFreeroam;
     //public int integerStored = 0;
     public int index = 0;
+
+    private bool disintegrating;
 
     private RaycastHit2D hit;
     // Start is called before the first frame update
@@ -22,6 +30,12 @@ public class PatrolEnemy : EnemyCommon
     // Update is called once per frame
     void Update()
     {
+        if (sourceObject.sourceDestroyed && !isOriginEntity && !disintegrating)
+        {
+            StartCoroutine(SealBreak());
+            disintegrating = true; //Prevent coroutine from running again
+
+        }
         transform.position  = new Vector3(transform.position.x,transform.position.y,0);
         ChangeScale();
         if (wm.canBeChased == true)
@@ -124,4 +138,20 @@ public class PatrolEnemy : EnemyCommon
             
         }
     }
+
+    IEnumerator SealBreak()
+    {
+        
+        deathParticles.transform.position = new Vector3(entity.transform.position.x, entity.transform.position.y, deathParticles.transform.position.z);
+        sigil.transform.position = new Vector3(entity.transform.position.x, entity.transform.position.y, deathParticles.transform.position.z);
+        yield return new WaitForSecondsRealtime(1.1f);
+        sigil.SetActive(true);
+        //entity.SetActive(false);
+        yield return new WaitForSecondsRealtime(1.1f);
+        sigil.SetActive(false);
+        deathParticles.SetActive(true);
+        yield return new WaitForSecondsRealtime(2.1f);
+        entityHolder.SetActive(false);
+    }
+
 }

@@ -33,7 +33,7 @@ public class HidingSpot : MonoBehaviour
         pc = player.GetComponent<PlayerController>();
         ib = interactButtonObj.GetComponent<InteractButton>();
         js = joystick.GetComponent<Joystick>();
-        audioSource = GetComponent<AudioSource>();
+        //audioSource = GetComponent<AudioSource>();
         playerColor = Color.white;
     }
 

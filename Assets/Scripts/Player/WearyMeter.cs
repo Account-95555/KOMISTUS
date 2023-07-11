@@ -42,6 +42,10 @@ public class WearyMeter : MonoBehaviour
         {
             wearyVal = 0;
         }
+        else if (wearyVal > 123f)
+        {
+            wearyVal = 123f;
+        }
         if (pc.isRunning == true) //increase the weary meter on run
         {
             wearyVal += 20f * Time.deltaTime;

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class NormalLevelManager : SceneManagerCommon
 {
+    public string sceneName;
+
     public GameObject player;
     public GameObject mobileControls;
     public GameObject footstepObject;
@@ -22,6 +24,7 @@ public class NormalLevelManager : SceneManagerCommon
     // Start is called before the first frame update
     void Start()
     {
+        PlayerPrefs.SetString("CurrentLevel", sceneName);
         pc = player.GetComponent<PlayerController>();
         blackScreenImage = blackScreenHolder.GetComponent<Image>();
         deathImage = deathImageHolder.GetComponent<Image>();

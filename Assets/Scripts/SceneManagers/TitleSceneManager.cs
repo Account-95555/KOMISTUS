@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class TitleSceneManager : SceneManagerCommon
 {
+    public GameObject optionsPanel;
+    public TextMeshProUGUI buttonText;
     // Start is called before the first frame update
     void Start()
     {
+        buttonText.text = PlayerPrefs.GetString("wearyOff", "false");
         blackScreenImage = blackScreenHolder.GetComponent<Image>();
         BGMFadeIn();
         BlackScreenFadeIn();
@@ -51,6 +55,31 @@ public class TitleSceneManager : SceneManagerCommon
     public void QuitGame()
     {
         StartCoroutine(QuitApplication());
+    }
+
+    public void ShowOptionsPanel()
+    {
+        if (!optionsPanel.activeInHierarchy)
+        {
+            optionsPanel.SetActive(true);
+        }
+        else
+        {
+            optionsPanel.SetActive(false);
+        }
+    }
+
+    public void WearyToggle()
+    {
+        if (PlayerPrefs.GetString("wearyOff", "false") == "false")
+        {
+            PlayerPrefs.SetString("wearyOff", "true");
+        }
+        else
+        {
+            PlayerPrefs.SetString("wearyOff", "false");
+        }
+        buttonText.text = PlayerPrefs.GetString("wearyOff", "false");
     }
 
     IEnumerator QuitApplication()

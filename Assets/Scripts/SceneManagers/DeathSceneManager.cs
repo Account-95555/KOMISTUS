@@ -73,4 +73,9 @@ public class DeathSceneManager : SceneManagerCommon
         yield return new WaitForSeconds(1f);
         LoadScene(sceneToLoad);
     }
+
+    public void RetryLevel()
+    {
+        StartCoroutine(ExitSceneCo(PlayerPrefs.GetString("CurrentLevel", "TutorialLevel")));
+    }
 }

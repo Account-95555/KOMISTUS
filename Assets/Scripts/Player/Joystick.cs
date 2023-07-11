@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class Joystick : MonoBehaviour
 {
+    public GameObject joystickPanel;
     public GameObject joystick;
     public GameObject joystickBG;
 

@@ -11,6 +11,7 @@ public class WearyMeter : MonoBehaviour
     public float wearyVal = 0f;
     public float mobileMult = 1f;
     public GameObject player;
+    public GameObject wearyHolder;
     public AudioSource chaseSource;
     public bool canBeChased = false;
     private PlayerController pc;
@@ -18,6 +19,10 @@ public class WearyMeter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (PlayerPrefs.GetString("wearyOff", "false") == "true")
+        {
+            wearyHolder.SetActive(false);
+        }
         pc = player.GetComponent<PlayerController>();
         wearyMeter.value = 0f;
         wearyVal = Mathf.Clamp(wearyVal, 0f, 100f);

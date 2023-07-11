@@ -8,6 +8,7 @@ public class InteractButton : MonoBehaviour
     //public Button interactButton;
 
     public bool clickRegistered;
+    public bool dialogueSkip;
     
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class InteractButton : MonoBehaviour
     public void OnClick()
     {
         clickRegistered = true;
+        dialogueSkip = true;
         StartCoroutine(ClickCooldown());
     }
 
@@ -31,5 +33,6 @@ public class InteractButton : MonoBehaviour
     {
         yield return new WaitForSeconds(0.01f);
         clickRegistered = false;
+        dialogueSkip = false;
     }
 }

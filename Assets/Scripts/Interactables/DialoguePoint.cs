@@ -12,12 +12,15 @@ public class DialoguePoint : MonoBehaviour
     //For Dialogue
     public PlayerController pc;
     public Joystick js;
-    public GameObject controls;
+    public InteractButton ib;
+    //public GameObject controls;
     public TextMeshProUGUI textbox;
     public string[] lines;
     public string finalText;
+    public Color textColor;
     public float textSpeed;
     public bool playOnce;
+    public bool autoplay;
 
     private int index;
     private bool allowedToPlay = true;
@@ -33,10 +36,11 @@ public class DialoguePoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && inProgress)
+        if (ib.dialogueSkip && inProgress)
         {
             if (textbox.text == lines[index]) //next line when clicked if all text outputted
             {
+                StopAllCoroutines();
                 NextLine();
             }
             else //skip to all text outputted when clicked
@@ -44,22 +48,33 @@ public class DialoguePoint : MonoBehaviour
                 StopAllCoroutines();
                 textbox.text = lines[index];
             }
+            ib.dialogueSkip = false;
         }
     }
 
     void StartDialogue()
     {
-        inProgress = true;
+        textbox.color = textColor;
+        textbox.text = string.Empty;
         index = 0;
         StartCoroutine(TypeLine());
     }
 
     IEnumerator TypeLine()
     {
+        
         foreach (char c in lines[index].ToCharArray())
         {
             textbox.text += c; //print out each character individually
             yield return new WaitForSeconds(textSpeed); //wait for an extremely short while to give illusion of typing
+        }
+        if (autoplay)
+        {
+            if (textbox.text == lines[index])
+            {
+                yield return new WaitForSeconds(1.5f);
+                NextLine();
+            }
         }
     }
 
@@ -73,9 +88,10 @@ public class DialoguePoint : MonoBehaviour
         }
         else //once all text done do this
         {
+            pc.inDialogue = false;
             textbox.text = finalText;
             inProgress = false;
-            controls.SetActive(true);
+            js.joystickPanel.SetActive(true);
             pc.canMove = true;
             dialogueAudio.PlayOneShot(endSound);
             if (playOnce)
@@ -88,21 +104,27 @@ public class DialoguePoint : MonoBehaviour
             }
         }
     }
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && allowedToPlay) //Only the player can activate the dialogue
+        if (other.CompareTag("Player") && allowedToPlay && !inProgress && !pc.inDialogue) //Only the player can activate the dialogue
         {
+            inProgress = true;
+            pc.inDialogue = true;
             StartDialogue();
-            pc.canMove = false;
-            js.PointerUp();
-            controls.SetActive(false);
+            if (!autoplay)
+            {
+                pc.canMove = false;
+                js.PointerUp();
+                js.joystickPanel.SetActive(false);
+            }
+
         }
         
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !autoplay && !pc.inDialogue)
         {
             textbox.text = string.Empty;
         }

@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public bool isDead = false;
     public bool canMove = true;
     public bool inClosetRange = false;
+    public bool inDialogue = false;
     //public bool isHolding = false;
     
     public string causeOfDeath;
@@ -40,7 +41,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         anim.SetFloat("joystickDist",joystick.joystickDist);
-        player.localScale = new Vector3(lastXScale, 1f, 1f); //change where player is facing
+        player.localScale = new Vector3(lastXScale, player.localScale.y, player.localScale.z); //change where player is facing
         if (canMove)
         {
             if (joystick.joystickVector.y != 0)

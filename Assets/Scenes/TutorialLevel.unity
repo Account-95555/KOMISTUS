@@ -436,7 +436,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7402348423895526670, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7402348423895526670, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: m_LocalPosition.x
@@ -559,7 +559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4006943748924114260, guid: 5ef9bc96cc7a1bb4baf3536df8fc734a, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4006943748924114260, guid: 5ef9bc96cc7a1bb4baf3536df8fc734a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -624,7 +624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8736182610787473175, guid: 6e248943de0a592498c369ff40466644, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8736182610787473175, guid: 6e248943de0a592498c369ff40466644, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1197,7 +1197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5736372116010806246, guid: f6ef1b4eaf1cd0644a046f4654e339a8, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5736372116010806246, guid: f6ef1b4eaf1cd0644a046f4654e339a8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1908,7 +1908,7 @@ Transform:
   - {fileID: 1374360791}
   - {fileID: 1020961608}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &292049431
 PrefabInstance:
@@ -2210,7 +2210,18 @@ MonoBehaviour:
     the place and report what you find. '
   - 'Lilith: Be careful, La Suora is still there. '
   finalText: 
-  textColor: {r: 1, g: 1, b: 1, a: 1}
+  textColor:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 0, a: 1}
+  - {r: 1, g: 1, b: 0, a: 1}
+  - {r: 1, g: 1, b: 0, a: 1}
+  - {r: 1, g: 1, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   textSpeed: 0.042
   playOnce: 1
   autoplay: 1
@@ -2751,6 +2762,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2330390919335455862, guid: 4f0f97acbe473cb4287f234631538767, type: 3}
   m_PrefabInstance: {fileID: 514550553}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &525220329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4526286033228741320, guid: ef1f4bcf9c606404bbcb1dfd5082d7a1, type: 3}
+  m_PrefabInstance: {fileID: 7427446824846457448}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &568036307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3077,7 +3093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7402348423895526670, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7402348423895526670, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16952,7 +16968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4006943748924114260, guid: 5ef9bc96cc7a1bb4baf3536df8fc734a, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4006943748924114260, guid: 5ef9bc96cc7a1bb4baf3536df8fc734a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17110,7 +17126,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &885002904
 MonoBehaviour:
@@ -17141,7 +17157,7 @@ MonoBehaviour:
   - 'Caretaker: The Nun suddenly went berserk, it''s not really her.'
   - 'You: Sir, Stay with me. The medics are on the way-'
   finalText: 'Caretaker: -breathing stops-'
-  textColor: {r: 1, g: 0, b: 0, a: 1}
+  textColor: []
   textSpeed: 0.04
   playOnce: 1
   autoplay: 0
@@ -17178,7 +17194,7 @@ Transform:
   - {fileID: 568036308}
   - {fileID: 2108621273}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &917323477
 GameObject:
@@ -23111,7 +23127,7 @@ Transform:
   - {fileID: 2526069446069366492}
   - {fileID: 1058125569}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1058125568
 GameObject:
@@ -90795,7 +90811,7 @@ Transform:
   - {fileID: 1797644642}
   - {fileID: 1558716311}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1747642851
 GameObject:
@@ -91155,7 +91171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7402348423895526670, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7402348423895526670, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: m_LocalPosition.x
@@ -91335,7 +91351,7 @@ MonoBehaviour:
     to DROP it.  '
   - 'You: I understand. Exploring site now.  '
   finalText: 
-  textColor: {r: 1, g: 0, b: 0, a: 1}
+  textColor: []
   textSpeed: 0.042
   playOnce: 1
   autoplay: 1
@@ -91367,7 +91383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2236612700062241903, guid: 03848a695608d81479ca1a8e54cc29ba, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2236612700062241903, guid: 03848a695608d81479ca1a8e54cc29ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -91617,7 +91633,7 @@ Transform:
   - {fileID: 1146779222}
   - {fileID: 980695388}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1867297432
 GameObject:
@@ -93106,7 +93122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7402348423895526670, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7402348423895526670, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: m_LocalPosition.x
@@ -100842,7 +100858,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7402348423895526670, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7402348423895526670, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: m_LocalPosition.x
@@ -101233,7 +101249,7 @@ Transform:
   m_Children:
   - {fileID: 379510878}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2128474520
 BoxCollider2D:
@@ -102269,12 +102285,41 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4526286033228741322, guid: ef1f4bcf9c606404bbcb1dfd5082d7a1, type: 3}
   m_PrefabInstance: {fileID: 7427446824846457448}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 525220329}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6468029581289472165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525220329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6468029581165514288}
+          m_TargetAssemblyTypeName: InteractButton, Assembly-CSharp
+          m_MethodName: DialogueClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6468029581814256593 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4526286032715557305, guid: ef1f4bcf9c606404bbcb1dfd5082d7a1, type: 3}
@@ -102401,7 +102446,7 @@ PrefabInstance:
       objectReference: {fileID: 2128474522}
     - target: {fileID: 7427446824439947904, guid: ef1f4bcf9c606404bbcb1dfd5082d7a1, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 7427446824439947904, guid: ef1f4bcf9c606404bbcb1dfd5082d7a1, type: 3}
       propertyPath: m_LocalScale.y

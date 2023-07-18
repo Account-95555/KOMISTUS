@@ -6,7 +6,7 @@ using UnityEngine;
 public class InteractButton : MonoBehaviour
 {
     //public Button interactButton;
-
+    public int clicksInFourthSec = 0;
     public bool clickRegistered;
     public bool dialogueSkip;
     
@@ -25,7 +25,14 @@ public class InteractButton : MonoBehaviour
     public void OnClick()
     {
         clickRegistered = true;
+        StartCoroutine(ClickCooldown());
+    }
+
+    public void DialogueClick()
+    {
+        clicksInFourthSec += 1;
         dialogueSkip = true;
+        StartCoroutine(SkipAll());
         StartCoroutine(ClickCooldown());
     }
 
@@ -35,4 +42,11 @@ public class InteractButton : MonoBehaviour
         clickRegistered = false;
         dialogueSkip = false;
     }
+
+    IEnumerator SkipAll()
+    {
+        yield return new WaitForSeconds(0.25f);
+        clicksInFourthSec = 0;
+    }
+
 }

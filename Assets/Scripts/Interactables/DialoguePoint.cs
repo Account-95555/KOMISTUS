@@ -17,7 +17,7 @@ public class DialoguePoint : MonoBehaviour
     public TextMeshProUGUI textbox;
     public string[] lines;
     public string finalText;
-    public Color textColor;
+    public Color[] textColor;
     public float textSpeed;
     public bool playOnce;
     public bool autoplay;
@@ -36,6 +36,11 @@ public class DialoguePoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (ib.clicksInFourthSec > 1 && inProgress)
+        {
+            StopAllCoroutines();
+            NextLine();
+        }
         if (ib.dialogueSkip && inProgress)
         {
             if (textbox.text == lines[index]) //next line when clicked if all text outputted
@@ -47,6 +52,10 @@ public class DialoguePoint : MonoBehaviour
             {
                 StopAllCoroutines();
                 textbox.text = lines[index];
+                if (autoplay)
+                {
+                    StartCoroutine(TypeLine());
+                }
             }
             ib.dialogueSkip = false;
         }
@@ -54,7 +63,7 @@ public class DialoguePoint : MonoBehaviour
 
     void StartDialogue()
     {
-        textbox.color = textColor;
+        textbox.color = textColor[index];
         textbox.text = string.Empty;
         index = 0;
         StartCoroutine(TypeLine());
@@ -62,11 +71,13 @@ public class DialoguePoint : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        
-        foreach (char c in lines[index].ToCharArray())
+        if (textbox.text != lines[index])
         {
-            textbox.text += c; //print out each character individually
-            yield return new WaitForSeconds(textSpeed); //wait for an extremely short while to give illusion of typing
+            foreach (char c in lines[index].ToCharArray())
+            {
+                textbox.text += c; //print out each character individually
+                yield return new WaitForSeconds(textSpeed); //wait for an extremely short while to give illusion of typing
+            }
         }
         if (autoplay)
         {
@@ -80,13 +91,14 @@ public class DialoguePoint : MonoBehaviour
 
     void NextLine()
     {
-        if(index < lines.Length - 1) //If not all the segments of dialogue have been outputted
+        if (index < lines.Length - 1) //If not all the segments of dialogue have been outputted
         {
             index++;
+            textbox.color = textColor[index];
             textbox.text = string.Empty; //Set the textbox to empty so that the next line can play
             StartCoroutine(TypeLine());
         }
-        else //once all text done do this
+        else if (index >= lines.Length - 1 || ib.clicksInFourthSec > 1)  //once all text done do this
         {
             pc.inDialogue = false;
             textbox.text = finalText;

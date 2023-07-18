@@ -38,7 +38,7 @@ public class InteractableV2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (sp.isActive)
+        if (sp.isActive) //If the spezion is pressed, do accordingly
         {
             spezionParticles.SetActive(true);
         }
@@ -47,28 +47,30 @@ public class InteractableV2 : MonoBehaviour
             spezionParticles.SetActive(false);
         }
         //onClick
-        if (ib.clickRegistered && inRange)
+        if (ib.clickRegistered && inRange) //General Item interaction code
         {
-            if (isItem)
+            if (isItem) //Regular item
             {
-                iv2.isHolding = true;
-                iv2.attachedObject = gameObject;
-                iv2.itemImage.sprite = sr.sprite;
-                iv2.storedItem = itemName;
+                iv2.isHolding = true; //Player is holding in inventory
+                iv2.attachedObject = gameObject; //item becomes linked to the inventory script
+                iv2.itemImage.sprite = sr.sprite; //inventory button sprite is equal to the item.
+                iv2.storedItem = itemName; //item name is stored in the inventory for unlockables
                 gameObject.SetActive(false);
             }
-            else if (isSource)
+            else if (isSource && !sourceDestroyed) //If the origin source has not been destroyed yet, destroy.
             {
                 StartCoroutine(SealBreak());
             }
-            ib.clickRegistered = false;
+            ib.clickRegistered = false; //Set to false since the click activity has been done.
         }
-        if (sr.isVisible && isAdded == false)
+
+        //For the spezion enabling only if there is an interactible on the screen.
+        if (sr.isVisible && isAdded == false) //If there is an interactible on the screen, increment
         {
             sp.interactiblesOnScreen += 1;
             isAdded = true;
         }
-        else if (!sr.isVisible && isAdded == true)
+        else if (!sr.isVisible && isAdded == true) //If the interactible disappears from screen, decrement
         {
             sp.interactiblesOnScreen -= 1;
             isAdded = false;
@@ -99,6 +101,7 @@ public class InteractableV2 : MonoBehaviour
         le.originDestroyed = true;
     }
 
+    //Range codes if the player is within the item's range
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

@@ -28,6 +28,7 @@ public class NormalLevelManager : SceneManagerCommon
         pc = player.GetComponent<PlayerController>();
         blackScreenImage = blackScreenHolder.GetComponent<Image>();
         deathImage = deathImageHolder.GetComponent<Image>();
+        //Fade in things
         BGMFadeIn();
         BlackScreenFadeIn();
     }

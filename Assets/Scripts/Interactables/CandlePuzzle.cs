@@ -5,26 +5,51 @@ using UnityEngine.UI;
 
 public class CandlePuzzle : MonoBehaviour
 {
-    public GameObject self;
-    public Image candle;
-    public Sprite Green;
-    public Sprite Purple;
+    public AudioSource bgm;
+    public AudioClip complete;
+    public GameObject item;
     public int completeStatus;
+    public bool finished;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (completeStatus == 5 && !finished)
+        {
+            StartCoroutine(Finished());
+            finished = true;
+        }
     }
-    
-    public void ChangeColour()
+
+    IEnumerator Finished()
     {
+        bgm.PlayOneShot(complete);
+        yield return new WaitForSeconds(2f);
+        item.SetActive(true);
+        gameObject.SetActive(false);
+    }
+
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            gameObject.SetActive(true);
+        }
+
+    }
+
+    public void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            gameObject.SetActive(false);
+        }
 
     }
 }

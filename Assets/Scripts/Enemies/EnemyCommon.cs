@@ -7,6 +7,10 @@ public class EnemyCommon : MonoBehaviour
 {
     //GameObjects
     public GameObject player;
+    public GameObject deathParticles;
+    public GameObject sigil;
+    public GameObject entity;
+    public GameObject entityHolder;
     //public GameObject 
     public GameObject enemy;
     public GameObject wearyMeter;
@@ -82,5 +86,20 @@ public class EnemyCommon : MonoBehaviour
     public virtual void ChangeScale()
     {
         enemy.transform.localScale = new Vector3(-Mathf.Sign(agent.velocity.x) * 1, 1, 1);
+    }
+
+    public virtual IEnumerator SealBreak()
+    {
+
+        deathParticles.transform.position = new Vector3(entity.transform.position.x, entity.transform.position.y, deathParticles.transform.position.z);
+        sigil.transform.position = new Vector3(entity.transform.position.x, entity.transform.position.y, deathParticles.transform.position.z);
+        yield return new WaitForSecondsRealtime(1.1f);
+        sigil.SetActive(true);
+        //entity.SetActive(false);
+        yield return new WaitForSecondsRealtime(1.1f);
+        sigil.SetActive(false);
+        deathParticles.SetActive(true);
+        yield return new WaitForSecondsRealtime(2.1f);
+        entityHolder.SetActive(false);
     }
 }

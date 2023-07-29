@@ -5,15 +5,17 @@ using UnityEngine;
 public class PatrolEnemy : EnemyCommon
 {
     public GameObject[] points;
-    public GameObject entityHolder;
-    public GameObject entity;
-    public GameObject deathParticles;
-    public GameObject sigil;
     public InteractableV2 sourceObject;
+    public Vector2 playerPos;
     public Vector2 initialDir;
     public int PEID;
     public bool isOriginEntity;
     public bool isFreeroam;
+    public bool isNormal = true;
+    public bool isMinion;
+    public bool isAizen;
+    public bool teleported;
+    private bool coStart = false;
     //public int integerStored = 0;
     public int index = 0;
 
@@ -40,11 +42,30 @@ public class PatrolEnemy : EnemyCommon
         ChangeScale();
         if (wm.canBeChased == true)
         {
-            agent.speed = moveSpeed * 1.25f;
-            DisablePoints();
-            GetPlayerPos();
-            ChasePlayer();
-            isChasing = true;
+            if (isNormal)
+            {
+                agent.speed = moveSpeed * 1.25f;
+                DisablePoints();
+                GetPlayerPos();
+                ChasePlayer();
+                isChasing = true;
+            }
+            else if (isAizen)
+            {
+                if (!coStart && !teleported)
+                {
+                    StartCoroutine(AizenSpawn());
+                }
+                if (teleported)
+                {
+                    DisablePoints();
+                    GetPlayerPos();
+                    ChasePlayer();
+                    isChasing = true;
+                }
+
+            }
+            
         }
         else if (wm.canBeChased == false /* && !chaseCo && isChasing*/)
         {
@@ -53,13 +74,16 @@ public class PatrolEnemy : EnemyCommon
             //StartCoroutine(EndChase());
             EndChase();
         }
-        else
+        /*else
         {
-            agent.speed = moveSpeed;
-            GoToPosition();
-        }
+            if (isNormal)
+            {
+                agent.speed = moveSpeed;
+                GoToPosition();
+            }
+        }*/
 
-        
+
         //Debug.Log(hit);
         Debug.DrawRay(transform.position, player.transform.position - transform.position);
 
@@ -69,7 +93,14 @@ public class PatrolEnemy : EnemyCommon
             {
                 if (hit.collider.gameObject.CompareTag("Player"))
                 {
-                    wm.wearyVal += 15f * Time.deltaTime;
+                    if (isNormal || isAizen)
+                    {
+                        wm.wearyVal += 15f * Time.deltaTime;
+                    }
+                    else if (isMinion)
+                    {
+
+                    }
                     //Debug.Log("Perchance");
                 }
             }
@@ -83,6 +114,18 @@ public class PatrolEnemy : EnemyCommon
         hit = Physics2D.Raycast(transform.position, player.transform.position - transform.position);
     }
 
+    IEnumerator AizenSpawn()
+    {
+        agent.isStopped = true;
+        coStart = true;
+        playerPos = player.transform.position;
+        yield return new WaitForSeconds(2f);
+        gameObject.transform.position = playerPos;
+        yield return new WaitForSeconds(1f);
+        agent.isStopped = false;
+        teleported = true;
+        coStart = false;
+    }
     void GoToPosition()
     {
         if (index >= (points.Length))
@@ -110,6 +153,7 @@ public class PatrolEnemy : EnemyCommon
     {
         EnablePoints();
         GoToPosition();
+        teleported = false;
     }
 
     void DisablePoints()
@@ -139,19 +183,6 @@ public class PatrolEnemy : EnemyCommon
         }
     }
 
-    IEnumerator SealBreak()
-    {
-        
-        deathParticles.transform.position = new Vector3(entity.transform.position.x, entity.transform.position.y, deathParticles.transform.position.z);
-        sigil.transform.position = new Vector3(entity.transform.position.x, entity.transform.position.y, deathParticles.transform.position.z);
-        yield return new WaitForSecondsRealtime(1.1f);
-        sigil.SetActive(true);
-        //entity.SetActive(false);
-        yield return new WaitForSecondsRealtime(1.1f);
-        sigil.SetActive(false);
-        deathParticles.SetActive(true);
-        yield return new WaitForSecondsRealtime(2.1f);
-        entityHolder.SetActive(false);
-    }
+    
 
 }

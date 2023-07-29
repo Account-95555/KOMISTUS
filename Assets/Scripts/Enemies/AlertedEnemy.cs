@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AlertedEnemy : MonoBehaviour
-{
-    public GameObject self;
+public class AlertedEnemy : PatrolEnemy
+{ 
     // Start is called before the first frame update
     void Start()
     {

@@ -5,6 +5,8 @@ using UnityEngine;
 public class PatrolEnemy : EnemyCommon
 {
     public GameObject[] points;
+    public GameObject appearParticles; //if not aizen, leave blank
+    public GameObject drip;
     public InteractableV2 sourceObject;
     public Vector2 playerPos;
     public Vector2 initialDir;
@@ -32,6 +34,29 @@ public class PatrolEnemy : EnemyCommon
     // Update is called once per frame
     void Update()
     {
+        if(agent.velocity == Vector3.zero)
+        {
+            if (isAizen)
+            {
+                if (coStart)
+                {
+                    anim.SetBool("idle", false);
+                }
+                else
+                {
+                    anim.SetBool("idle", true);
+                }
+            }
+            else
+            {
+                anim.SetBool("idle", true);
+            }
+            
+        }
+        else
+        {
+            anim.SetBool("idle", false);
+        }
         if (sourceObject.sourceDestroyed && !isOriginEntity && !disintegrating)
         {
             StartCoroutine(SealBreak());
@@ -44,6 +69,7 @@ public class PatrolEnemy : EnemyCommon
         {
             if (isNormal)
             {
+                anim.SetBool("chasing", isChasing);
                 agent.speed = moveSpeed * 1.25f;
                 DisablePoints();
                 GetPlayerPos();
@@ -120,11 +146,22 @@ public class PatrolEnemy : EnemyCommon
         coStart = true;
         playerPos = player.transform.position;
         yield return new WaitForSeconds(2f);
+        appearParticles.SetActive(true);
+        drip.SetActive(false);
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
         gameObject.transform.position = playerPos;
+        anim.SetBool("appear", true);
         yield return new WaitForSeconds(1f);
+        //appearParticles.SetActive(false);
+        drip.SetActive(true);
+        gameObject.GetComponent<BoxCollider2D>().enabled = true;
+        anim.SetBool("appear", false);
+        anim.SetBool("chasing", true);
         agent.isStopped = false;
         teleported = true;
         coStart = false;
+        yield return new WaitForSeconds(1f);
+        gameObject.GetComponent<BoxCollider2D>().enabled = true;
     }
     void GoToPosition()
     {

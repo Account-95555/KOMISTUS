@@ -12,7 +12,7 @@ public class EnemyCommon : MonoBehaviour
     public GameObject entity;
     public GameObject entityHolder;
     //public GameObject 
-    public GameObject enemy;
+    //public GameObject enemy;
     public GameObject wearyMeter;
     //public GameObject originPoint;
     public GameObject fovObject;
@@ -31,6 +31,7 @@ public class EnemyCommon : MonoBehaviour
     protected NavMeshAgent agent;
     protected WearyMeter wm;
     protected FOV fov;
+    protected Animator anim;
 
 
     //floats
@@ -54,6 +55,7 @@ public class EnemyCommon : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         wm = wearyMeter.GetComponent<WearyMeter>();
         fov = fovObject.GetComponent<FOV>();
+        anim = GetComponent<Animator>();
         moveSpeed = agent.speed;
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -85,7 +87,7 @@ public class EnemyCommon : MonoBehaviour
 
     public virtual void ChangeScale()
     {
-        enemy.transform.localScale = new Vector3(-Mathf.Sign(agent.velocity.x) * 1, 1, 1);
+        entity.transform.localScale = new Vector3(-Mathf.Sign(agent.velocity.x) * 1, 1, 1);
     }
 
     public virtual IEnumerator SealBreak()

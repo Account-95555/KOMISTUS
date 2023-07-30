@@ -988,7 +988,7 @@ MonoBehaviour:
   dirChange: {x: 0, y: 0}
   assignedIndex: 2
   PEPID: 1
-  waitTime: 1
+  waitTime: 2
   isWaitPoint: 1
 --- !u!61 &121149810
 BoxCollider2D:
@@ -9973,7 +9973,7 @@ MonoBehaviour:
   dirChange: {x: 0, y: 0}
   assignedIndex: 0
   PEPID: 1
-  waitTime: 1
+  waitTime: 2
   isWaitPoint: 1
 --- !u!61 &782637575
 BoxCollider2D:
@@ -50349,7 +50349,7 @@ MonoBehaviour:
   dirChange: {x: 0, y: 0}
   assignedIndex: 1
   PEPID: 1
-  waitTime: 1
+  waitTime: 2
   isWaitPoint: 1
 --- !u!61 &1196993124
 BoxCollider2D:
@@ -90621,7 +90621,7 @@ MonoBehaviour:
   dirChange: {x: 0, y: 0}
   assignedIndex: 4
   PEPID: 1
-  waitTime: 1
+  waitTime: 2
   isWaitPoint: 1
 --- !u!1 &1672493360
 GameObject:
@@ -101593,7 +101593,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8571428, y: 2.9776785}
+    oldSize: {x: 1.8333334, y: 2.5833333}
     newSize: {x: 1.9277344, y: 3.6152344}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -101615,7 +101615,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 6468029580937575787}
-  enemy: {fileID: 2413449613907566587}
+  deathParticles: {fileID: 980695387}
+  sigil: {fileID: 1146779221}
+  entity: {fileID: 2413449613907566587}
+  entityHolder: {fileID: 8137279}
   wearyMeter: {fileID: 6468029581816531746}
   fovObject: {fileID: 2413449614766237797}
   enemyType: Patrol
@@ -101632,15 +101635,16 @@ MonoBehaviour:
   - {fileID: 978599018}
   - {fileID: 1666329384}
   - {fileID: 152927195}
-  entityHolder: {fileID: 0}
-  entity: {fileID: 0}
-  deathParticles: {fileID: 0}
-  sigil: {fileID: 0}
   sourceObject: {fileID: 2006517275}
+  playerPos: {x: 0, y: 0}
   initialDir: {x: 0, y: 0}
   PEID: 1
   isOriginEntity: 1
   isFreeroam: 0
+  isNormal: 1
+  isMinion: 0
+  isAizen: 0
+  teleported: 0
   index: 0
 --- !u!212 &2413449613907566580
 SpriteRenderer:

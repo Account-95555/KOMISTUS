@@ -17,6 +17,7 @@ public class PatrolEnemy : EnemyCommon
     public bool isMinion;
     public bool isAizen;
     public bool teleported;
+    public AudioClip aizenGrowl;
     private bool coStart = false;
     //public int integerStored = 0;
     public int index = 0;
@@ -142,26 +143,28 @@ public class PatrolEnemy : EnemyCommon
 
     IEnumerator AizenSpawn()
     {
-        agent.isStopped = true;
-        coStart = true;
-        playerPos = player.transform.position;
+        agent.isStopped = true; //stop AIZEN from moving
+        coStart = true; //coroutine has started
+        playerPos = player.transform.position; //get the player position
         yield return new WaitForSeconds(2f);
         appearParticles.SetActive(true);
         drip.SetActive(false);
-        gameObject.GetComponent<BoxCollider2D>().enabled = false;
-        gameObject.transform.position = playerPos;
+        gameObject.GetComponent<BoxCollider2D>().enabled = false; //disable the kill radius since AIZEN is emerging from the ground
+        gameObject.transform.position = playerPos; //emerge at the location the player was 2 seconds earlier
         anim.SetBool("appear", true);
         yield return new WaitForSeconds(1f);
         //appearParticles.SetActive(false);
+        //gameObject.GetComponent<BoxCollider2D>().enabled = true;
         drip.SetActive(true);
-        gameObject.GetComponent<BoxCollider2D>().enabled = true;
         anim.SetBool("appear", false);
+        yield return new WaitForSeconds(1f);
         anim.SetBool("chasing", true);
-        agent.isStopped = false;
+        agent.isStopped = false; //AIZEN is free to roam around now
         teleported = true;
         coStart = false;
-        yield return new WaitForSeconds(1f);
-        gameObject.GetComponent<BoxCollider2D>().enabled = true;
+        wm.wearyVal += 10f;
+        chaseAudio.PlayOneShot(aizenGrowl);
+        gameObject.GetComponent<BoxCollider2D>().enabled = true; //reenable the kill radius since he is fully emerged
     }
     void GoToPosition()
     {

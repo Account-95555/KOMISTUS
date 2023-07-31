@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PatrolEnemy : EnemyCommon
 {
     public GameObject[] points;
     public GameObject appearParticles; //if not aizen, leave blank
     public GameObject drip;
+    public Slider minionSlider;
     public InteractableV2 sourceObject;
     public Vector2 playerPos;
     public Vector2 initialDir;
@@ -17,12 +19,17 @@ public class PatrolEnemy : EnemyCommon
     public bool isMinion;
     public bool isAizen;
     public bool teleported;
+    public bool screeching;
+    public bool aizenInRange;
     public AudioClip aizenGrowl;
+    public AudioSource minionScreech;
     private bool coStart = false;
     //public int integerStored = 0;
     public int index = 0;
 
     private bool disintegrating;
+    private bool alreadyChasing;
+    
 
     private RaycastHit2D hit;
     // Start is called before the first frame update
@@ -35,11 +42,67 @@ public class PatrolEnemy : EnemyCommon
     // Update is called once per frame
     void Update()
     {
+        
+        if (isMinion)
+        {
+            minionSlider.value = Mathf.Clamp(minionSlider.value, 0f, 100f);
+            minionSlider.transform.position = new Vector3 (gameObject.transform.position.x, gameObject.transform.position.y + 1f, gameObject.transform.position.z);
+            if (screeching)
+            {
+                wm.wearyVal += 20f * Time.deltaTime;
+            }
+            if (minionSlider.value >= 100f)
+            {
+                minionSlider.value = 100f;
+                screeching = true;
+                if (!minionScreech.isPlaying)
+                {
+                    minionScreech.Play();
+                }
+                anim.SetBool("screeching", screeching);
+                agent.isStopped = true;
+            }
+            else if (minionSlider.value <= 50f)
+            {
+                if (!minionScreech.isPlaying)
+                {
+                    minionScreech.Stop();
+                }
+                screeching = false;
+                agent.isStopped = false;
+                EndChase();
+                anim.SetBool("screeching", screeching);
+            }
+        }
+
+        if (isAizen)
+        {
+            if (gameObject.GetComponent<SpriteRenderer>().isVisible)
+            {
+                aizenInRange = true;
+            }
+            else
+            {
+                aizenInRange = false;
+            }
+        }
+
         if(agent.velocity == Vector3.zero)
         {
             if (isAizen)
             {
                 if (coStart)
+                {
+                    anim.SetBool("idle", false);
+                }
+                else
+                {
+                    anim.SetBool("idle", true);
+                }
+            }
+            else if (isMinion)
+            {
+                if (screeching)
                 {
                     anim.SetBool("idle", false);
                 }
@@ -64,8 +127,10 @@ public class PatrolEnemy : EnemyCommon
             disintegrating = true; //Prevent coroutine from running again
 
         }
+        
         transform.position  = new Vector3(transform.position.x,transform.position.y,0);
         ChangeScale();
+
         if (wm.canBeChased == true)
         {
             if (isNormal)
@@ -79,17 +144,34 @@ public class PatrolEnemy : EnemyCommon
             }
             else if (isAizen)
             {
-                if (!coStart && !teleported)
+                if (!aizenInRange && !alreadyChasing)
                 {
-                    StartCoroutine(AizenSpawn());
+                    if (!coStart && !teleported)
+                    {
+                        StartCoroutine(AizenSpawn());
+                    }
+                    else if (teleported)
+                    {
+                        anim.SetBool("chasing", true);
+                        agent.speed = moveSpeed * 1.25f;
+                        DisablePoints();
+                        GetPlayerPos();
+                        ChasePlayer();
+                        isChasing = true;
+                    }
                 }
-                if (teleported)
+                else
                 {
+                    alreadyChasing = true;
+                    anim.SetBool("inRange", aizenInRange);
+                    anim.SetBool("chasing", true);
+                    agent.speed = moveSpeed * 1.25f;
                     DisablePoints();
                     GetPlayerPos();
                     ChasePlayer();
                     isChasing = true;
                 }
+                
 
             }
             
@@ -101,8 +183,8 @@ public class PatrolEnemy : EnemyCommon
             //StartCoroutine(EndChase());
             EndChase();
         }
-        /*else
-        {
+        else
+        /*{
             if (isNormal)
             {
                 agent.speed = moveSpeed;
@@ -122,13 +204,23 @@ public class PatrolEnemy : EnemyCommon
                 {
                     if (isNormal || isAizen)
                     {
-                        wm.wearyVal += 15f * Time.deltaTime;
+                        wm.wearyVal += 20f * Time.deltaTime;
                     }
                     else if (isMinion)
                     {
-
+                        minionSlider.value += 40f * Time.deltaTime;
                     }
                     //Debug.Log("Perchance");
+                }
+            }
+            else if (fov.isInFOV == false || pc.isHiding)
+            {
+                if (hit.collider.gameObject.CompareTag("Player"))
+                {
+                    if (isMinion)
+                    {
+                        minionSlider.value -= 20f * Time.deltaTime;
+                    }
                 }
             }
         }
@@ -158,7 +250,6 @@ public class PatrolEnemy : EnemyCommon
         drip.SetActive(true);
         anim.SetBool("appear", false);
         yield return new WaitForSeconds(1f);
-        anim.SetBool("chasing", true);
         agent.isStopped = false; //AIZEN is free to roam around now
         teleported = true;
         coStart = false;
@@ -191,23 +282,42 @@ public class PatrolEnemy : EnemyCommon
     }*/
     void EndChase()
     {
+        agent.speed = moveSpeed;
         EnablePoints();
         GoToPosition();
         teleported = false;
+        isChasing = false;
+        alreadyChasing = false;
+        if (!isMinion)
+        {
+            anim.SetBool("chasing", isChasing);
+        }
+        if (isAizen)
+        {
+            anim.SetBool("inRange", aizenInRange);
+        }
+        
     }
 
     void DisablePoints()
     {
         foreach (GameObject point in points)
         {
-            point.SetActive(false);
+            if (point.activeSelf) //so it doesn't run infinitely
+            {
+                point.SetActive(false);
+            }
+            
         }
     }
     void EnablePoints()
     {
         foreach (GameObject point in points)
         {
-            point.SetActive(true);
+            if (!point.activeSelf)
+            {
+                point.SetActive(true);
+            }
         }
     }
 
@@ -215,7 +325,7 @@ public class PatrolEnemy : EnemyCommon
     {
         if (other.CompareTag("Player"))
         {
-            if (!pc.isHiding)
+            if (!pc.isHiding && !isMinion)
             {
                 pc.isDead = true;
             }

@@ -25,7 +25,7 @@ public class WearyMeter : MonoBehaviour
         }
         pc = player.GetComponent<PlayerController>();
         wearyMeter.value = 0f;
-        wearyVal = Mathf.Clamp(wearyVal, 0f, 100f);
+        
 
         // weary meter is slower on mobile than on pc
         if (Application.isMobilePlatform)
@@ -37,15 +37,16 @@ public class WearyMeter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        wearyVal = Mathf.Clamp(wearyVal, 0f, 100f);
         wearyMeter.value = wearyVal;
-        if (wearyVal < 0)
+        /*if (wearyVal < 0)
         {
             wearyVal = 0;
         }
         else if (wearyVal > 123f)
         {
             wearyVal = 123f;
-        }
+        }*/
         if (pc.isRunning == true) //increase the weary meter on run
         {
             wearyVal += 20f * Time.deltaTime;

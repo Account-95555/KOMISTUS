@@ -6,6 +6,8 @@ using TMPro;
 
 public class Spezion : MonoBehaviour
 {
+    public AudioSource bgm;
+    public AudioClip notAllowed;
     public int spezionAmount;
     public TextMeshProUGUI spezionLeft;
     public GameObject noSpezion;
@@ -50,5 +52,11 @@ public class Spezion : MonoBehaviour
         isActive = true;
         yield return new WaitForSeconds(10f);
         isActive = false;
+    }
+
+    public void SpezPrevent()
+    {
+        //feedback when pressing inactive spezion
+        bgm.PlayOneShot(notAllowed);
     }
 }

@@ -15,8 +15,10 @@ public class ItemRequired : MonoBehaviour
     public bool activatesDoor;
     public bool anotherDoor;
     public bool givesItem;
+    public bool multipleItems;
     public InventoryV2 iv2;
     public InventoryButtonV2 ib2;
+    public MultipleItemsRequired mir;
     public InteractButton ib;
 
     private bool inRange = false;
@@ -47,12 +49,20 @@ public class ItemRequired : MonoBehaviour
                     }
                     door.SetActive(false);
                 }
+                if (multipleItems)
+                {
+                    mir.status += 1;
+                }
                 bgm.PlayOneShot(correct);
                 
             }
             else
             {
-                textbox.text = "You require a " + requiredObject + " for this...";
+                if (textbox.text == "")
+                {
+                    textbox.text = "You require a " + requiredObject + " for this..."; //prevent any dialogue overwrites
+                }
+                
                 
             }
             ib2.pressed = false;
@@ -67,7 +77,10 @@ public class ItemRequired : MonoBehaviour
             ib2.atItemRequired = true;
             if (ib.clickRegistered)
             {
-                textbox.text = "You require a " + requiredObject + " for this...";
+                if (textbox.text == "")
+                {
+                    textbox.text = "You require a " + requiredObject + " for this..."; //prevent any dialogue overwrites
+                }
                 ib.clickRegistered = false;
             }
         }
@@ -80,7 +93,10 @@ public class ItemRequired : MonoBehaviour
         {
             if (ib.clickRegistered)
             {
-                textbox.text = "You require a " + requiredObject + " for this...";
+                if (textbox.text == "")
+                {
+                    textbox.text = "You require a " + requiredObject + " for this..."; //prevent any dialogue overwrites
+                }
                 ib.clickRegistered = false;
             }
         }

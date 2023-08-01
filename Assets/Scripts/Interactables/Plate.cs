@@ -6,6 +6,9 @@ public class Plate : MonoBehaviour
 {
     public int sequenceNum;
     public GameObject platePuzzleObj;
+    public Sprite corrSprite;
+    public Sprite wrongSprite;
+    public Sprite neutralSprite;
     private bool correct = false;
     //public bool reset = false;
     private SpriteRenderer sr;
@@ -22,7 +25,7 @@ public class Plate : MonoBehaviour
     {
         if (pp.reset == true)
         {
-             sr.color = Color.red;
+             sr.sprite = wrongSprite;
              correct = false;
         }
     }
@@ -35,7 +38,7 @@ public class Plate : MonoBehaviour
                 if (sequenceNum == pp.currentNum)
                 {
                     pp.reset = false;
-                    sr.color = Color.green;
+                    sr.sprite = corrSprite;
                     pp.currentNum += 1;
                     correct = true;
                 }

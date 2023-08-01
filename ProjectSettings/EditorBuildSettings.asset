@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level3.unity
     guid: 78674f0885efbe14ca587f8ba4822798
+  - enabled: 1
+    path: Assets/Scenes/IncompleteEnding.unity
+    guid: 2e4c6bebd5ec8124d990268488f6818b
   m_configObjects: {}

@@ -8,10 +8,12 @@ public class LevelEnd : MonoBehaviour
     public TextMeshProUGUI textbox;
     public bool originDestroyed = false;
     public bool requiresItem;
+    public bool spezionRequirement;
     public string requiredItem;
     public string levelToEnter;
     public GameObject levelManager;
     public NormalLevelManager nlm;
+    public Spezion sp;
     public InventoryV2 iv2;
     // Start is called before the first frame update
     void Start()
@@ -41,6 +43,18 @@ public class LevelEnd : MonoBehaviour
                     {
                         nlm.ExitScene(levelToEnter);
                     }
+                }
+                else if (spezionRequirement)
+                {
+                    if (sp.spezionAmount >= 3)
+                    {
+                        nlm.ExitScene(levelToEnter);
+                    }
+                    else
+                    {
+                        nlm.ExitScene("IncompleteEnding");
+                    }
+                    
                 }
                 else
                 {

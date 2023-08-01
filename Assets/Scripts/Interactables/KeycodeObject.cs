@@ -19,9 +19,7 @@ public class KeycodeObject : MonoBehaviour
     public bool givesItem;
     public string codeNumber;
     public string playerInput;
-    public string hint;
     public TextMeshProUGUI currentInput;
-    public TextMeshProUGUI textbox;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +32,6 @@ public class KeycodeObject : MonoBehaviour
         if (inRange && !correctCode)
         {
             keypad.SetActive(true);
-            textbox.text = hint;
             currentInput.text = playerInput;
         }
     }
@@ -53,7 +50,6 @@ public class KeycodeObject : MonoBehaviour
         {
             inRange = false;
             keypad.SetActive(false);
-            textbox.text = "";
         }
     }
     public void NumberPress(int number)
@@ -93,7 +89,6 @@ public class KeycodeObject : MonoBehaviour
     
     IEnumerator CorrectCode()
     {
-        textbox.text = "";
         bgm.PlayOneShot(correct);
         playerInput = "ACCESS GRANTED";
         yield return new WaitForSeconds(1.5f);

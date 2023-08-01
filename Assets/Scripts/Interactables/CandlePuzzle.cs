@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Rendering.Universal;
 
 public class CandlePuzzle : MonoBehaviour
 {
@@ -10,11 +10,12 @@ public class CandlePuzzle : MonoBehaviour
     public GameObject item;
     public int completeStatus;
     public bool finished;
+    private Light2D l2d;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        l2d = GetComponent<Light2D>();
     }
 
     // Update is called once per frame
@@ -29,27 +30,12 @@ public class CandlePuzzle : MonoBehaviour
 
     IEnumerator Finished()
     {
+        l2d.color = Color.black;
         bgm.PlayOneShot(complete);
         yield return new WaitForSeconds(2f);
         item.SetActive(true);
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
     }
 
-    public void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            gameObject.SetActive(true);
-        }
-
-    }
-
-    public void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            gameObject.SetActive(false);
-        }
-
-    }
+    
 }

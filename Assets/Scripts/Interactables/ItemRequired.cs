@@ -10,8 +10,10 @@ public class ItemRequired : MonoBehaviour
     public AudioClip correct;
     public GameObject attachedObject;
     public GameObject door;
+    public GameObject secondDoor;
     public string requiredObject;
     public bool activatesDoor;
+    public bool anotherDoor;
     public bool givesItem;
     public InventoryV2 iv2;
     public InventoryButtonV2 ib2;
@@ -39,6 +41,10 @@ public class ItemRequired : MonoBehaviour
                 }
                 if (activatesDoor)
                 {
+                    if (anotherDoor)
+                    {
+                        secondDoor.SetActive(true);
+                    }
                     door.SetActive(false);
                 }
                 bgm.PlayOneShot(correct);

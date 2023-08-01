@@ -13,10 +13,14 @@ public class InteractableV2 : MonoBehaviour
     public GameObject sigil;
     public AudioSource bgm;
     public AudioClip entityDeathSound;
+    public GameObject wall;
+
+    public Color spriteColor;
 
     public bool isItem;
     public bool isSource;
     public bool sourceDestroyed;
+    public bool unlocksArea;
     public string itemName;
     private bool inRange;
     private bool isAdded = false;
@@ -49,10 +53,11 @@ public class InteractableV2 : MonoBehaviour
         //onClick
         if (ib.clickRegistered && inRange) //General Item interaction code
         {
-            if (isItem) //Regular item
+            if (isItem && !iv2.isHolding) //Regular item
             {
                 iv2.isHolding = true; //Player is holding in inventory
                 iv2.attachedObject = gameObject; //item becomes linked to the inventory script
+                iv2.itemImage.color = sr.color;
                 iv2.itemImage.sprite = sr.sprite; //inventory button sprite is equal to the item.
                 iv2.storedItem = itemName; //item name is stored in the inventory for unlockables
                 gameObject.SetActive(false);
@@ -99,6 +104,10 @@ public class InteractableV2 : MonoBehaviour
         cc.target = player;
         Time.timeScale = 1f;
         le.originDestroyed = true;
+        if (unlocksArea)
+        {
+            StartCoroutine(FadeTo(0f, 1f));
+        }
     }
 
     //Range codes if the player is within the item's range
@@ -116,5 +125,18 @@ public class InteractableV2 : MonoBehaviour
         {
             inRange = false;
         }
+    }
+
+    IEnumerator FadeTo(float aValue, float aTime)
+    {
+        float alpha = wall.GetComponent<Renderer>().material.color.a;
+        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+        {
+            Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha, aValue, t));
+            wall.GetComponent<Renderer>().material.color = newColor;
+            yield return null;
+
+        }
+        wall.SetActive(false);
     }
 }

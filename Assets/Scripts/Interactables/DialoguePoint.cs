@@ -14,6 +14,9 @@ public class DialoguePoint : MonoBehaviour
     public Joystick js;
     public InteractButton ib;
     //public GameObject controls;
+    public GameObject item;
+    public GameObject wall;
+    //public SpriteRenderer wallSprite;
     public TextMeshProUGUI textbox;
     public string[] lines;
     public string finalText;
@@ -21,16 +24,20 @@ public class DialoguePoint : MonoBehaviour
     public float textSpeed;
     public bool playOnce;
     public bool autoplay;
+    public bool unlocksArea;
 
     private int index;
-    private bool allowedToPlay = true;
+    public bool allowedToPlay = true;
     private bool inProgress = false; //Prevent Text from always showing up
 
     // Start is called before the first frame update
     void Start()
     {
         textbox.text = string.Empty;
-        
+        /*if (wall)
+        {
+            wallSprite = wall.GetComponent<SpriteRenderer>();
+        }*/
     }
 
     // Update is called once per frame
@@ -112,7 +119,11 @@ public class DialoguePoint : MonoBehaviour
             }
             if (givesItem)
             {
-
+                item.SetActive(true);
+            }
+            if (unlocksArea)
+            {
+                StartCoroutine(FadeTo(0f,0.21f));
             }
         }
     }
@@ -141,5 +152,18 @@ public class DialoguePoint : MonoBehaviour
             textbox.text = string.Empty;
         }
         
+    }
+
+    IEnumerator FadeTo(float aValue, float aTime)
+    {
+        float alpha = wall.GetComponent<Renderer>().material.color.a;
+        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+        {
+            Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha, aValue, t));
+            wall.GetComponent<Renderer>().material.color = newColor;
+            yield return null;
+            
+        }
+        wall.SetActive(false);
     }
 }

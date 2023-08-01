@@ -46,10 +46,10 @@ public class PatrolEnemy : EnemyCommon
         if (isMinion)
         {
             minionSlider.value = Mathf.Clamp(minionSlider.value, 0f, 100f);
-            minionSlider.transform.position = new Vector3 (gameObject.transform.position.x, gameObject.transform.position.y + 1f, gameObject.transform.position.z);
+            minionSlider.transform.position = new Vector3 (gameObject.transform.position.x, gameObject.transform.position.y + 0.75f, gameObject.transform.position.z);
             if (screeching)
             {
-                wm.wearyVal += 20f * Time.deltaTime;
+                wm.wearyVal += 42f * Time.deltaTime;
             }
             if (minionSlider.value >= 100f)
             {
@@ -64,7 +64,7 @@ public class PatrolEnemy : EnemyCommon
             }
             else if (minionSlider.value <= 50f)
             {
-                if (!minionScreech.isPlaying)
+                if (minionScreech.isPlaying)
                 {
                     minionScreech.Stop();
                 }
@@ -144,9 +144,9 @@ public class PatrolEnemy : EnemyCommon
             }
             else if (isAizen)
             {
-                if (!aizenInRange && !alreadyChasing)
+                if (!aizenInRange)
                 {
-                    if (!coStart && !teleported)
+                    if (!coStart && !teleported && !alreadyChasing)
                     {
                         StartCoroutine(AizenSpawn());
                     }
@@ -204,23 +204,22 @@ public class PatrolEnemy : EnemyCommon
                 {
                     if (isNormal || isAizen)
                     {
-                        wm.wearyVal += 20f * Time.deltaTime;
+                        wm.wearyVal += 15f * Time.deltaTime;
                     }
                     else if (isMinion)
                     {
-                        minionSlider.value += 40f * Time.deltaTime;
+                        minionSlider.value += 84f * Time.deltaTime;
                     }
                     //Debug.Log("Perchance");
                 }
             }
             else if (fov.isInFOV == false || pc.isHiding)
             {
-                if (hit.collider.gameObject.CompareTag("Player"))
+              
+                if (isMinion)
                 {
-                    if (isMinion)
-                    {
-                        minionSlider.value -= 20f * Time.deltaTime;
-                    }
+                    minionSlider.value -= 20f * Time.deltaTime;
+                
                 }
             }
         }
@@ -235,14 +234,16 @@ public class PatrolEnemy : EnemyCommon
 
     IEnumerator AizenSpawn()
     {
-        agent.isStopped = true; //stop AIZEN from moving
+        
         coStart = true; //coroutine has started
-        playerPos = player.transform.position; //get the player position
-        yield return new WaitForSeconds(2f);
+        playerPos = new Vector3(player.transform.position.x, player.transform.position.y + 1f, player.transform.position.z); //get the player position
+        yield return new WaitForSeconds(1f);
         appearParticles.SetActive(true);
         drip.SetActive(false);
+        agent.Warp(playerPos);
+        agent.isStopped = true; //stop AIZEN from moving
         gameObject.GetComponent<BoxCollider2D>().enabled = false; //disable the kill radius since AIZEN is emerging from the ground
-        gameObject.transform.position = playerPos; //emerge at the location the player was 2 seconds earlier
+        //gameObject.transform.position = playerPos; //emerge at the location the player was 2 seconds earlier
         anim.SetBool("appear", true);
         yield return new WaitForSeconds(1f);
         //appearParticles.SetActive(false);

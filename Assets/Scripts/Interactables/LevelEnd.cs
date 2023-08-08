@@ -9,6 +9,7 @@ public class LevelEnd : MonoBehaviour
     public bool originDestroyed = false;
     public bool requiresItem;
     public bool spezionRequirement;
+    public bool isTutorial;
     public string requiredItem;
     public string levelToEnter;
     public GameObject levelManager;
@@ -33,6 +34,10 @@ public class LevelEnd : MonoBehaviour
         {
             if (originDestroyed)
             {
+                if (isTutorial)
+                {
+                    PlayerPrefs.SetString("tutorialComplete", "true");
+                }
                 if (requiresItem)
                 {
                     if (iv2.storedItem != requiredItem)

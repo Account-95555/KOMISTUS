@@ -6,7 +6,13 @@ using UnityEngine.UI;
 public class LevelSelectManager : SceneManagerCommon
 {
     public Image levelImage;
-    public int index;
+    public Image popupImage;
+    //public Image locked;
+    public Sprite[] imageSprite;
+    public Sprite[] popupSprite;
+    public GameObject levelPopup;
+    public GameObject lockedHolder;
+    public int index = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +49,7 @@ public class LevelSelectManager : SceneManagerCommon
             }
         }
     }
-    public void ExitClicked()
+    public void ExitClicked() //To load levels
     {
         if (index == 0)
         {
@@ -51,8 +57,50 @@ public class LevelSelectManager : SceneManagerCommon
         }
         else
         {
-            ExitScene("Level" + index);
+            ExitScene("Level" + (index + 1));
         }
     }
+
+    public void SwitchCard() //Since there's only 2 levels, just switch between them according to the index
+    {
+        if(index == 0)
+        {
+            if (PlayerPrefs.GetString("tutorialComplete", "false") == "true")
+            {
+                if (lockedHolder.activeInHierarchy)
+                {
+                    lockedHolder.SetActive(false);
+                }
+
+            }
+            else
+            {
+                lockedHolder.SetActive(true);
+            }
+            index = 1;
+            levelImage.sprite = imageSprite[index]; //change the background sprite
+        }
+        else
+        {
+            if (lockedHolder.activeInHierarchy)
+            {
+                lockedHolder.SetActive(false);
+            }
+            index = 0;
+            levelImage.sprite = imageSprite[index];
+        }
+    }
+
+    public void MissionClicked()
+    {
+        levelPopup.SetActive(true);
+        popupImage.sprite = popupSprite[index]; //change the background sprite
+    }
+
+    public void ReturnSelect() //return to the level select
+    {
+        levelPopup.SetActive(false);
+    }
+
 
 }

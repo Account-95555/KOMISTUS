@@ -102184,10 +102184,13 @@ MonoBehaviour:
   textbox: {fileID: 6468029581289472162}
   originDestroyed: 0
   requiresItem: 1
+  spezionRequirement: 0
+  isTutorial: 1
   requiredItem: Barricade Breaker
   levelToEnter: Level2
   levelManager: {fileID: 2044877596}
   nlm: {fileID: 2044877597}
+  sp: {fileID: 0}
   iv2: {fileID: 7015238709069851884}
 --- !u!1 &2128474517
 GameObject:

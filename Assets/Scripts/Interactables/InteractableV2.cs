@@ -108,6 +108,8 @@ public class InteractableV2 : MonoBehaviour
         {
             StartCoroutine(FadeTo(0f, 1f));
         }
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.GetComponent<BoxCollider2D>().enabled = false; //prevent player from destroying origin again but allows origin process to continue running.
     }
 
     //Range codes if the player is within the item's range

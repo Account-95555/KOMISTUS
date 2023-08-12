@@ -18,7 +18,8 @@ public class PlayerController : MonoBehaviour
     public bool isHiding = false;
     public bool isDead = false;
     public bool canMove = true;
-    public bool inClosetRange = false;
+    public bool inClosetRange = false; //prevent player from dropping near closets
+    public bool inInteractibleRange = false; //prevent player from dropping near interactibles
     public bool inDialogue = false;
     //public bool isHolding = false;
     
@@ -76,7 +77,6 @@ public class PlayerController : MonoBehaviour
         {
             inventoryButton.SetActive(false);
         }*/
-        
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -114,8 +114,4 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator PlayerSquish()
-    {
-        yield return new WaitForSeconds(0.5f);
-    }
 }

@@ -103493,6 +103493,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2128474522}
+    - target: {fileID: 7427446823758478864, guid: ef1f4bcf9c606404bbcb1dfd5082d7a1, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2a20adc20a99b9a42af24ecae6f94398, type: 3}
     - target: {fileID: 7427446823883850160, guid: ef1f4bcf9c606404bbcb1dfd5082d7a1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

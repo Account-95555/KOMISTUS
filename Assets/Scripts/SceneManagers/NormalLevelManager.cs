@@ -12,7 +12,7 @@ public class NormalLevelManager : SceneManagerCommon
     public GameObject footstepObject;
     public GameObject deathImageHolder;
     
-    public Image deathImage;
+    //public Image deathImage;
     
     public AudioClip jumpscareSFX;
     public AudioClip jumpSupport;
@@ -27,7 +27,7 @@ public class NormalLevelManager : SceneManagerCommon
         PlayerPrefs.SetString("CurrentLevel", sceneName);
         pc = player.GetComponent<PlayerController>();
         blackScreenImage = blackScreenHolder.GetComponent<Image>();
-        deathImage = deathImageHolder.GetComponent<Image>();
+        //deathImage = deathImageHolder.GetComponent<Image>();
         //Fade in things
         BGMFadeIn();
         BlackScreenFadeIn();

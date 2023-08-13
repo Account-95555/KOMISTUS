@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class NormalLevelManager : SceneManagerCommon
 {
     public string sceneName;
+    public GameObject pausePanel;
     public GameObject canvas;
     public GameObject player;
     public GameObject mobileControls;
@@ -24,7 +25,9 @@ public class NormalLevelManager : SceneManagerCommon
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetString("CurrentLevel", sceneName);
+        Time.timeScale = 1f;
+        AudioListener.volume = 1f;
+        PlayerPrefs.SetString("CurrentLevel", sceneName); //for restarting purposes
         pc = player.GetComponent<PlayerController>();
         blackScreenImage = blackScreenHolder.GetComponent<Image>();
         //deathImage = deathImageHolder.GetComponent<Image>();
@@ -65,5 +68,29 @@ public class NormalLevelManager : SceneManagerCommon
         yield return new WaitForSeconds(1f);
         //deathImage.CrossFadeAlpha(1f, 0.5f, false);
         LoadScene("DeathScene");
+    }
+
+    public void PauseClicked()
+    {
+        AudioListener.volume = 0; //mute and freeze everything else to pause
+        Time.timeScale = 0;
+        pausePanel.SetActive(true);
+    }
+
+    public void Unpause()
+    {
+        AudioListener.volume = 1;
+        Time.timeScale = 1f;
+        pausePanel.SetActive(false);
+    }
+
+    public void ReturnToMenu()
+    {
+        ExitScene("TitleScene");
+    }
+
+    public void Restart()
+    {
+        ExitScene(PlayerPrefs.GetString("CurrentLevel"));
     }
 }

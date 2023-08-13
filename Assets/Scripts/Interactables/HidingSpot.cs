@@ -15,6 +15,7 @@ public class HidingSpot : MonoBehaviour
 
     public AudioClip open;
     public AudioClip close;
+    public AudioClip locked;
 
     private Color playerColor;
     private SpriteRenderer srHideObj;
@@ -22,6 +23,7 @@ public class HidingSpot : MonoBehaviour
     private InteractButton ib;
     private PlayerController pc;
     private Joystick js;
+    public bool isLocked;
     private bool inRange = false;
     private bool isHiding = false;
 
@@ -40,47 +42,59 @@ public class HidingSpot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isHiding)
+        if (!isLocked)
         {
-            srHideObj.sprite = closedSprite;
-            
+            if (isHiding)
+            {
+                srHideObj.sprite = closedSprite;
+
+            }
+            else
+            {
+
+                srHideObj.sprite = openSprite;
+
+            }
         }
-        else
-        {
-            srHideObj.sprite = openSprite;
-            
-        }
+        
         
         if (inRange)
         {
             if (ib.clickRegistered)
             {
                 ib.clickRegistered = false;
-                if (isHiding == false)
+                if (isLocked)
                 {
-                    feet.SetActive(false);
-                    playerColor.a = 0f;
-                    srPlayer.color = playerColor;
-                    //StartCoroutine(HideRoutine);
-                    isHiding = true;
-                    pc.isHiding = isHiding;
-                    audioSource.PlayOneShot(close);
-                    pc.canMove = false;
-                    js.PointerUp();
-                    joystick.SetActive(false);
+                    audioSource.PlayOneShot(locked); //audio feedback for locked door
                 }
-                else if (isHiding == true)
+                else
                 {
-                    feet.SetActive(true);
-                    playerColor.a = 1f;
-                    srPlayer.color = playerColor;
-                    //StartCoroutine(HideRoutine);
-                    isHiding = false;
-                    pc.isHiding = isHiding;
-                    audioSource.PlayOneShot(open);
-                    pc.canMove = true;
-                    joystick.SetActive(true);
-                    
+                    if (isHiding == false)
+                    {
+                        feet.SetActive(false); //set feet collider inactive so it does not trigger entity while hiding
+                        playerColor.a = 0f; //set the player transparent as if inside hiding spot
+                        srPlayer.color = playerColor; //store the player's color to prevent him from coming out black
+                        //StartCoroutine(HideRoutine);
+                        isHiding = true;
+                        pc.isHiding = isHiding;
+                        audioSource.PlayOneShot(close); //audio feedback
+                        pc.canMove = false; //set player can move to false so they don't keep moving when they come out if they came in moving.
+                        js.PointerUp(); //set joystick to its default position
+                        joystick.SetActive(false); //disable it so player can't move
+                    }
+                    else if (isHiding == true)
+                    {
+                        feet.SetActive(true);
+                        playerColor.a = 1f; //make the player reappear/opauge
+                        srPlayer.color = playerColor; //reapply the player's colors
+                        //StartCoroutine(HideRoutine);
+                        isHiding = false;
+                        pc.isHiding = isHiding;
+                        audioSource.PlayOneShot(open);
+                        pc.canMove = true;
+                        joystick.SetActive(true);
+
+                    }
                 }
             }
       

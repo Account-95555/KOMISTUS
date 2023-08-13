@@ -42,7 +42,11 @@ public class LevelEnd : MonoBehaviour
                 {
                     if (iv2.storedItem != requiredItem)
                     {
-                        textbox.text = "You need to bring the item from the safe back to HQ";
+                        if (textbox.text == "")
+                        {
+                            textbox.text = "You need to bring the item from the safe back to HQ";
+                        }
+                        
                     }
                     else
                     {
@@ -69,7 +73,11 @@ public class LevelEnd : MonoBehaviour
             }
             else
             {
-                textbox.text = "The origin source is still active, use the Spezion if you are having trouble finding it!";
+                if (textbox.text == "")
+                {
+                    textbox.text = "The origin source is still active, use the Spezion if you are having trouble finding it!";
+                }
+                
             }
         }
     }

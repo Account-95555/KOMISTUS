@@ -49,17 +49,17 @@ public class SceneManagerCommon : MonoBehaviour
 
     IEnumerator BlackScreenFadeInCo()
     {
-        blackScreenImage.CrossFadeAlpha(1f, 0f, false);
-        blackScreenImage.CrossFadeAlpha(0f, fadeInTime, false);
-        yield return new WaitForSeconds(fadeInTime);
+        blackScreenImage.CrossFadeAlpha(1f, 0f, true);
+        blackScreenImage.CrossFadeAlpha(0f, fadeInTime, true);
+        yield return new WaitForSecondsRealtime(fadeInTime);
         blackScreenHolder.SetActive(false);
     }
 
     public virtual void BlackScreenFadeOut()
     {
         blackScreenHolder.SetActive(true);
-        blackScreenImage.CrossFadeAlpha(0f, 0f, false);
-        blackScreenImage.CrossFadeAlpha(1f, fadeOutTime, false);
+        blackScreenImage.CrossFadeAlpha(0f, 0f, true);
+        blackScreenImage.CrossFadeAlpha(1f, fadeOutTime, true);
     }
     public virtual void ExitScene(string sceneToLoad)
     {
@@ -70,7 +70,7 @@ public class SceneManagerCommon : MonoBehaviour
     {
         BGMFadeOut();
         BlackScreenFadeOut();
-        yield return new WaitForSeconds(fadeOutTime);
+        yield return new WaitForSecondsRealtime(fadeOutTime);
         LoadScene(sceneToLoad);
     }
 

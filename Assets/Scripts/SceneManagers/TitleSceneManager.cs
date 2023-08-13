@@ -11,6 +11,8 @@ public class TitleSceneManager : SceneManagerCommon
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
+        AudioListener.volume = 1f;
         buttonText.text = PlayerPrefs.GetString("wearyOff", "false");
         blackScreenImage = blackScreenHolder.GetComponent<Image>();
         BGMFadeIn();

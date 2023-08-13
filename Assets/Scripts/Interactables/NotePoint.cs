@@ -7,6 +7,8 @@ public class NotePoint : MonoBehaviour
     public GameObject Note;
     public AudioSource bgm;
     public AudioClip sfx;
+    public InteractButton ib;
+    private bool inRange;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,15 +18,26 @@ public class NotePoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (inRange)
+        {
+            if (ib.clickRegistered)
+            {
+                Note.SetActive(true);
+                bgm.PlayOneShot(sfx);
+                ib.clickRegistered = false;
+            }
+        }
+        else
+        {
+            Note.SetActive(false);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Note.SetActive(true);
-            bgm.PlayOneShot(sfx);
+            inRange = true;
         }
     }
 
@@ -32,7 +45,7 @@ public class NotePoint : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Note.SetActive(false);
+            inRange = false;
         }
     }
 }

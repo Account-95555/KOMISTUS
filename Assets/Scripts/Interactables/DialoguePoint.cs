@@ -18,6 +18,7 @@ public class DialoguePoint : MonoBehaviour
     public GameObject wall;
     //public SpriteRenderer wallSprite;
     public TextMeshProUGUI textbox;
+    public Sprite deadSprite;
     public string[] lines;
     public string finalText;
     public Color[] textColor;
@@ -25,6 +26,7 @@ public class DialoguePoint : MonoBehaviour
     public bool playOnce;
     public bool autoplay;
     public bool unlocksArea;
+    public bool isCaretaker;
 
     private int index;
     public bool allowedToPlay = true;
@@ -124,6 +126,10 @@ public class DialoguePoint : MonoBehaviour
             if (unlocksArea)
             {
                 StartCoroutine(FadeTo(0f,0.21f));
+            }
+            if (isCaretaker)
+            {
+                GetComponent<SpriteRenderer>().sprite = deadSprite;
             }
         }
     }

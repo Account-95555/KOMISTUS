@@ -3349,6 +3349,7 @@ MonoBehaviour:
   item: {fileID: 0}
   wall: {fileID: 377395575}
   textbox: {fileID: 6468029581289472162}
+  deadSprite: {fileID: 0}
   lines:
   - 'Lilith: Can you hear me? Come in. '
   - "You: I\u2019m in, what should I do? "
@@ -3381,6 +3382,7 @@ MonoBehaviour:
   playOnce: 1
   autoplay: 1
   unlocksArea: 1
+  isCaretaker: 0
   allowedToPlay: 1
 --- !u!1 &369779917
 GameObject:
@@ -8532,7 +8534,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 21
+      scalar: 7
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -19885,7 +19887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueAudio: {fileID: 1093223544}
-  endSound: {fileID: 8300000, guid: 072ccd66683b5e542b253644d3411569, type: 3}
+  endSound: {fileID: 8300000, guid: f2b0a737f94d4784e9a2d0935ec08190, type: 3}
   givesItem: 1
   pc: {fileID: 6468029580937575790}
   js: {fileID: 6468029582843773411}
@@ -19893,6 +19895,7 @@ MonoBehaviour:
   item: {fileID: 638183290}
   wall: {fileID: 0}
   textbox: {fileID: 6468029581289472162}
+  deadSprite: {fileID: -1369371050, guid: 8bd09c56cde03ae4f88f73e66245b45d, type: 3}
   lines:
   - 'Caretaker: -barely breathing-'
   - 'You: Sir, are you the one that called?'
@@ -19916,6 +19919,7 @@ MonoBehaviour:
   playOnce: 1
   autoplay: 0
   unlocksArea: 0
+  isCaretaker: 1
   allowedToPlay: 1
 --- !u!1 &890491480
 GameObject:
@@ -74296,7 +74300,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 21
+      scalar: 7
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -97367,6 +97371,7 @@ MonoBehaviour:
   item: {fileID: 0}
   wall: {fileID: 0}
   textbox: {fileID: 6468029581289472162}
+  deadSprite: {fileID: 0}
   lines:
   - 'You: Lilith, We have a DB on site. '
   - 'You: Victim gave me a key before he passed. It seems important.  '
@@ -97397,6 +97402,7 @@ MonoBehaviour:
   playOnce: 1
   autoplay: 1
   unlocksArea: 0
+  isCaretaker: 0
   allowedToPlay: 1
 --- !u!4 &1761076417
 Transform:
@@ -110858,6 +110864,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2128474519}
     m_Modifications:
+    - target: {fileID: 5627052569027983003, guid: d4439b333cb9ce4448df8d631ebfc7f6, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5627052569958944144, guid: d4439b333cb9ce4448df8d631ebfc7f6, type: 3}
       propertyPath: ib
       value: 

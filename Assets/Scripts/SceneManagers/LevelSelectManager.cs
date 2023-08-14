@@ -53,7 +53,7 @@ public class LevelSelectManager : SceneManagerCommon
     {
         if (index == 0)
         {
-            ExitScene("TutorialLevel");
+            ExitScene("FirstLevelCutscene");
         }
         else
         {

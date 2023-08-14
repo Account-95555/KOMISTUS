@@ -34,7 +34,7 @@ public class InventoryButtonV2 : MonoBehaviour
             }
             else
             {
-                if (!pc.inClosetRange)
+                if (!pc.noDrop)
                 {
                     iv2.storedItem = "none";
                     iv2.attachedObject.transform.position = new Vector3(player.transform.position.x, player.transform.position.y - 0.69f, player.transform.position.z);

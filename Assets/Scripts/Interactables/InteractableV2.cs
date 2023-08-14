@@ -32,6 +32,7 @@ public class InteractableV2 : MonoBehaviour
     public Joystick js;
     private SpriteRenderer sr;
     public LevelEnd le;
+    public WearyMeter wm;
     
     // Start is called before the first frame update
     void Start()
@@ -84,6 +85,8 @@ public class InteractableV2 : MonoBehaviour
 
     IEnumerator SealBreak()
     {
+        wm.chaseSource.Stop();
+        wm.wearyVal = 0f;
         sourceDestroyed = true;
         controls.SetActive(false);
         cc.target = originEntity;
@@ -93,6 +96,7 @@ public class InteractableV2 : MonoBehaviour
         yield return new WaitForSecondsRealtime(1.1f);
         sigil.SetActive(true);
         originEntity.SetActive(false);
+        wm.enabled = false;
         yield return new WaitForSecondsRealtime(1.1f);
         sigil.SetActive(false);
         bgm.PlayOneShot(entityDeathSound);

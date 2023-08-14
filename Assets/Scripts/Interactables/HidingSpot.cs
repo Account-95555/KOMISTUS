@@ -106,7 +106,7 @@ public class HidingSpot : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             inRange = true;
-            pc.inClosetRange = true;
+            pc.noDrop = true;
         }
     }
     void OnTriggerExit2D(Collider2D other)
@@ -114,7 +114,7 @@ public class HidingSpot : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             inRange = false;
-            pc.inClosetRange = false;
+            pc.noDrop = false;
         }
     }
 

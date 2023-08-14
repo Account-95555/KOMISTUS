@@ -24,7 +24,7 @@ public class InventoryButton : MonoBehaviour
 
     public void DropItem()
     {
-        if (!pc.inClosetRange)
+        if (!pc.noDrop)
         {
             dropItem = true;
         }

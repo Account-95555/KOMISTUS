@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NotePoint : MonoBehaviour
 {
+    public PlayerController pc;
     public GameObject Note;
     public AudioSource bgm;
     public AudioClip sfx;
@@ -38,6 +39,7 @@ public class NotePoint : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             inRange = true;
+            pc.noDrop = true;
         }
     }
 
@@ -46,6 +48,7 @@ public class NotePoint : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             inRange = false;
+            pc.noDrop = false;
         }
     }
 }

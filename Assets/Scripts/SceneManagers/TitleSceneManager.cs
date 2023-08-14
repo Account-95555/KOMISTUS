@@ -13,7 +13,7 @@ public class TitleSceneManager : SceneManagerCommon
     {
         Time.timeScale = 1f;
         AudioListener.volume = 1f;
-        buttonText.text = PlayerPrefs.GetString("wearyOff", "false");
+        //buttonText.text = PlayerPrefs.GetString("wearyStatus", "on");
         blackScreenImage = blackScreenHolder.GetComponent<Image>();
         BGMFadeIn();
         BlackScreenFadeIn();
@@ -22,6 +22,7 @@ public class TitleSceneManager : SceneManagerCommon
     // Update is called once per frame
     void Update()
     {
+        buttonText.text = PlayerPrefs.GetString("wearyStatus", "on");
         //Volume Fade Code
         BGMSource.volume = volumeVar;
         if (toFadeIn == true)
@@ -73,15 +74,14 @@ public class TitleSceneManager : SceneManagerCommon
 
     public void WearyToggle()
     {
-        if (PlayerPrefs.GetString("wearyOff", "false") == "false")
+        if (PlayerPrefs.GetString("wearyStatus", "on") == "on")
         {
-            PlayerPrefs.SetString("wearyOff", "true");
+            PlayerPrefs.SetString("wearyStatus", "off");
         }
         else
         {
-            PlayerPrefs.SetString("wearyOff", "false");
+            PlayerPrefs.SetString("wearyStatus", "on");
         }
-        buttonText.text = PlayerPrefs.GetString("wearyOff", "false");
     }
 
     IEnumerator QuitApplication()

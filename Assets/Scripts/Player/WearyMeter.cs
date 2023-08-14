@@ -19,7 +19,7 @@ public class WearyMeter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.GetString("wearyOff", "false") == "true")
+        if (PlayerPrefs.GetString("wearyStatus", "on") == "off")
         {
             wearyHolder.SetActive(false);
         }

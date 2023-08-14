@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     public bool isHiding = false;
     public bool isDead = false;
     public bool canMove = true;
-    public bool inClosetRange = false; //prevent player from dropping near closets
+    public bool noDrop = false; //prevent player from dropping near closets
     public bool inInteractibleRange = false; //prevent player from dropping near interactibles
     public bool inDialogue = false;
     //public bool isHolding = false;

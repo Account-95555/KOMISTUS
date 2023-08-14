@@ -19,6 +19,7 @@ public class DialoguePoint : MonoBehaviour
     //public SpriteRenderer wallSprite;
     public TextMeshProUGUI textbox;
     public Sprite deadSprite;
+    public string[] names;
     public string[] lines;
     public string finalText;
     public Color[] textColor;
@@ -52,7 +53,7 @@ public class DialoguePoint : MonoBehaviour
         }
         if (ib.dialogueSkip && inProgress)
         {
-            if (textbox.text == lines[index]) //next line when clicked if all text outputted
+            if (textbox.text == ("<color=white>" + names[index] + ": " + "</color>") + lines[index]) //next line when clicked if all text outputted
             {
                 StopAllCoroutines();
                 NextLine();
@@ -60,7 +61,7 @@ public class DialoguePoint : MonoBehaviour
             else //skip to all text outputted when clicked
             {
                 StopAllCoroutines();
-                textbox.text = lines[index];
+                textbox.text = ("<color=white>" + names[index] + ": " + "</color>") + lines[index];
                 if (autoplay)
                 {
                     StartCoroutine(TypeLine());
@@ -70,7 +71,7 @@ public class DialoguePoint : MonoBehaviour
         }
     }
 
-    void StartDialogue()
+    void StartDialogue() //initialise textbox
     {
         textbox.color = textColor[index];
         textbox.text = string.Empty;
@@ -80,8 +81,9 @@ public class DialoguePoint : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        if (textbox.text != lines[index])
+        if (textbox.text != ("<color=white>" + names[index] + ": " + "</color>") + lines[index])
         {
+            textbox.text += ("<color=white>" + names[index] + ": "+ "</color>"); //add separate white names for differentiation
             foreach (char c in lines[index].ToCharArray())
             {
                 textbox.text += c; //print out each character individually
@@ -90,7 +92,7 @@ public class DialoguePoint : MonoBehaviour
         }
         if (autoplay)
         {
-            if (textbox.text == lines[index])
+            if (textbox.text == ("<color=white>" + names[index] + ": " + "</color>") + lines[index])
             {
                 yield return new WaitForSeconds(1.5f);
                 NextLine();
@@ -115,7 +117,7 @@ public class DialoguePoint : MonoBehaviour
             js.joystickPanel.SetActive(true);
             pc.canMove = true;
             dialogueAudio.PlayOneShot(endSound);
-            if (playOnce)
+            if (playOnce) //different finish conditions
             {
                 allowedToPlay = false;
             }
@@ -163,10 +165,10 @@ public class DialoguePoint : MonoBehaviour
     IEnumerator FadeTo(float aValue, float aTime)
     {
         float alpha = wall.GetComponent<Renderer>().material.color.a;
-        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime) //while t does not = 1 (basically while aTime has not reached its full duration
         {
-            Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha, aValue, t));
-            wall.GetComponent<Renderer>().material.color = newColor;
+            Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha, aValue, t)); //Lerp to alpha to the aValue according to t
+            wall.GetComponent<Renderer>().material.color = newColor; //continually update alpha to show fade
             yield return null;
             
         }

@@ -680,42 +680,80 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[0]
-      value: 'You: Lilith, I know Spezion is some new tech the Organisation invented.'
+      value: Lilith, I know Spezion is some new tech the Organisation invented.
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[1]
-      value: 'You: Can you run me through how to use them again? '
+      value: 'Can you run me through how to use them again? '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[2]
-      value: 'Lilith: *sighs* Really? '
+      value: '*sighs* Really? '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[3]
-      value: 'Lilith: Spezion detects if there are any objects of interest nearby. '
+      value: 'Spezion detects if there are any objects of interest nearby. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[4]
-      value: 'Lilith: However, it only has 5 energy charges as it is still a prototype.  '
+      value: 'However, it only has 5 energy charges as it is still a prototype.  '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[5]
-      value: 'Lilith: Particles will appear if there is something you should check
-        out. '
+      value: 'Particles will appear if there is something you should check out. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[6]
-      value: "Lilith: It can\u2019t tell you how to use it though. Use your brain
-        for that. "
+      value: "It can\u2019t tell you how to use it though. Use your brain for that. "
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[7]
-      value: 'Lilith: Use them wisely. '
+      value: 'Use them wisely. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[8]
-      value: 'You: Thanks. Roger that. '
+      value: 'Thanks. Roger that. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[0]
+      value: You
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[1]
+      value: You
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[2]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[3]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[4]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[5]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[6]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[7]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[8]
+      value: You
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: textColor.Array.size
@@ -3697,7 +3735,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &362958542
 GameObject:
@@ -3770,21 +3808,32 @@ MonoBehaviour:
   wall: {fileID: 377395575}
   textbox: {fileID: 6468029581289472162}
   deadSprite: {fileID: 0}
+  names:
+  - Lilith
+  - You
+  - Lilith
+  - Lilith
+  - Lilith
+  - Lilith
+  - Lilith
+  - Lilith
+  - You
+  - Lilith
+  - Lilith
   lines:
-  - 'Lilith: Can you hear me? Come in. '
-  - "You: I\u2019m in, what should I do? "
-  - 'Lilith: I will guide you through what the scouting team has picked up. Listen
-    up.  '
-  - 'Lilith: Use your JOYSTICK to move around. '
-  - 'Lilith: Your JOYSTICK has 2 rings. '
-  - 'Lilith: The inner ring is for walking. Outer ring is for running. '
-  - 'Lilith: The INTERACT button is for you to interact or pick up items. You can
-    also use it to skip my talking (although screw ya if you do that...) '
-  - "Lilith: Don\u2019t get caught. Be as quiet as possible and complete your mission. "
-  - 'You: Roger that.'
-  - 'Lilith: You need to find the origin source of La Suora and break it. Explore
-    the place and report what you find. '
-  - 'Lilith: Be careful, La Suora is still there. '
+  - 'Can you hear me? Come in. '
+  - "I\u2019m in, what should I do? "
+  - 'I will guide you through what the scouting team has picked up. Listen up.  '
+  - 'Use your JOYSTICK to move around. '
+  - 'Your JOYSTICK has 2 rings. '
+  - 'The inner ring is for walking. Outer ring is for running. '
+  - 'The INTERACT button is for you to interact or pick up items. You can also use
+    it to skip my talking (although screw ya if you do that...) '
+  - "Don\u2019t get caught. Be as quiet as possible and complete your mission. "
+  - Roger that.
+  - 'You need to find the origin source of La Suora and break it. Explore the place
+    and report what you find. '
+  - 'Be careful, La Suora is still there. '
   finalText: 
   textColor:
   - {r: 1, g: 1, b: 1, a: 1}
@@ -4000,6 +4049,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5627052569958944174, guid: d4439b333cb9ce4448df8d631ebfc7f6, type: 3}
   m_PrefabInstance: {fileID: 5627052569647181296}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &379510882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379510877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 1
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_LightVolumeIntensity: 1
+  m_LightVolumeIntensityEnabled: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowIntensityEnabled: 0
+  m_ShadowIntensity: 0.75
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_Vertices:
+  - position: {x: 0.9985302, y: 0.9985302, z: 0}
+    color: {r: 0.70710677, g: 0.70710677, b: 0, a: 0}
+    uv: {x: 0, y: 0}
+  - position: {x: 0.9985302, y: 0.9985302, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  - position: {x: -0.9985302, y: 0.9985302, z: 0}
+    color: {r: -0.70710677, g: 0.70710677, b: 0, a: 0}
+    uv: {x: 0, y: 0}
+  - position: {x: -0.9985302, y: 0.9985302, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  - position: {x: -0.99853003, y: -0.9985304, z: 0}
+    color: {r: -0.70710665, g: -0.7071069, b: 0, a: 0}
+    uv: {x: 0, y: 0}
+  - position: {x: -0.99853003, y: -0.9985304, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  - position: {x: 0.99853003, y: -0.9985304, z: 0}
+    color: {r: 0.70710665, g: -0.7071069, b: 0, a: 0}
+    uv: {x: 0, y: 0}
+  - position: {x: 0.99853003, y: -0.9985304, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  - position: {x: 0, y: 0, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  m_Triangles: 030001000800020000000100030002000100050003000800040002000300050004000300070005000800060004000500070006000500010007000800000006000700010000000700
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &381593097
 GameObject:
   m_ObjectHideFlags: 0
@@ -4452,7 +4580,7 @@ Transform:
   - {fileID: 1902860978}
   - {fileID: 1888346238}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &483498663 stripped
 Transform:
@@ -5458,17 +5586,33 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[0]
-      value: "You: Lilith, There was a symbol that was released from the entity before
+      value: "Lilith, There was a symbol that was released from the entity before
         it passed. I don\u2019t recognise it. "
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[1]
-      value: 'Lilith: You can sketch it when you are back at HQ safely. '
+      value: 'You can sketch it when you are back at HQ safely. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[2]
-      value: 'You: Understood. Getting item now. '
+      value: 'Understood. Getting item now. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[0]
+      value: You
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[1]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[2]
+      value: You
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: textColor.Array.size
@@ -5566,11 +5710,13 @@ MonoBehaviour:
   bgm: {fileID: 0}
   entityDeathSound: {fileID: 0}
   wall: {fileID: 0}
+  itemToAppear: {fileID: 0}
   spriteColor: {r: 0, g: 0, b: 0, a: 0}
   isItem: 1
   isSource: 0
   sourceDestroyed: 0
   unlocksArea: 0
+  activatesItem: 0
   itemName: Key
   cc: {fileID: 0}
   sp: {fileID: 2601804706248928546}
@@ -5664,7 +5810,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5416667, y: 0.34895834}
+    oldSize: {x: 0.5777778, y: 0.37222221}
     newSize: {x: 0.94, y: 0.37}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -20315,7 +20461,7 @@ Transform:
   - {fileID: 248300620}
   - {fileID: 1318231451}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &882027792
 GameObject:
@@ -20437,7 +20583,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.46, y: 0.63}
+    oldSize: {x: 2.5894737, y: 0.6631579}
     newSize: {x: 2.46, y: 0.63}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -20535,15 +20681,24 @@ MonoBehaviour:
   wall: {fileID: 0}
   textbox: {fileID: 6468029581289472162}
   deadSprite: {fileID: -1369371050, guid: 8bd09c56cde03ae4f88f73e66245b45d, type: 3}
+  names:
+  - Caretaker
+  - You
+  - Caretaker
+  - You
+  - You
+  - Caretaker
+  - Caretaker
+  - You
   lines:
-  - 'Caretaker: -barely breathing-'
-  - 'You: Sir, are you the one that called?'
-  - 'Caretaker: Y-yes, the Nun here attacked me...'
-  - 'You: *radios* Lilith send medical support. '
-  - 'You: Is there anything else you can tell me sir?'
-  - 'Caretaker: Listen I don''t have enough time, take this key...'
-  - 'Caretaker: The Nun suddenly went berserk, it''s not really her.'
-  - 'You: Sir, Stay with me. The medics are on the way-'
+  - -barely breathing-
+  - Sir, are you the one that called?
+  - Y-yes, the Nun here attacked me...
+  - '*radios* Lilith send medical support. '
+  - Is there anything else you can tell me sir?
+  - Listen I don't have enough time, take this key...
+  - The Nun suddenly went berserk, it's not really her.
+  - Sir, Stay with me. The medics are on the way-
   finalText: 'Caretaker: -breathing stops-'
   textColor:
   - {r: 1, g: 1, b: 1, a: 1}
@@ -55391,7 +55546,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.2057291, y: 0.5677083}
+    oldSize: {x: 1.2861111, y: 0.60555553}
     newSize: {x: 0.7786458, y: 0.5130208}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -97047,7 +97202,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1558716310
 GameObject:
@@ -98124,7 +98279,7 @@ Transform:
   - {fileID: 1797644642}
   - {fileID: 1558716311}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1747642851
 GameObject:
@@ -98555,34 +98710,64 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[0]
-      value: 'You: Lilith, You were right. They could be hiding something. '
+      value: 'Lilith, You were right. They could be hiding something. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[1]
-      value: 'You: There is a keycode though. '
+      value: 'There is a keycode though. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[2]
-      value: 'Lilith: Try finding and see if there is hints anywhere. Did you spot
-        anything? '
+      value: 'Try finding and see if there is hints anywhere. Did you spot anything? '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[3]
-      value: 'You: The books could be a place to start. '
+      value: 'The books could be a place to start. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[4]
-      value: "Lilith: Great, start there. The apple doesn\u2019t fall too far from
-        the tree."
+      value: "Great, start there. The apple doesn\u2019t fall too far from the tree."
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[5]
-      value: 'Lilith: There might be a combination with the books. '
+      value: 'There might be a combination with the books. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[6]
-      value: 'Lilith: If there is an item in there, bring it back to HQ.'
+      value: If there is an item in there, bring it back to HQ.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[0]
+      value: You
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[1]
+      value: You
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[2]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[3]
+      value: You
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[4]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[5]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[6]
+      value: Lilith
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: textColor.Array.size
@@ -98702,119 +98887,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c561a0544399f1045975a773e071cd56, type: 3}
---- !u!1 &1761076414
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1761076417}
-  - component: {fileID: 1761076416}
-  - component: {fileID: 1761076415}
-  m_Layer: 0
-  m_Name: OldManDeathDialogue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!61 &1761076415
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761076414}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 6, y: 6}
-  m_EdgeRadius: 0
---- !u!114 &1761076416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761076414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2920f994365bd954d879c235b70b81df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueAudio: {fileID: 1093223544}
-  endSound: {fileID: 8300000, guid: b4a543e23a88e8148b644a5153fc33a7, type: 3}
-  givesItem: 0
-  pc: {fileID: 6468029580937575790}
-  js: {fileID: 6468029582843773411}
-  ib: {fileID: 6468029581165514288}
-  item: {fileID: 0}
-  wall: {fileID: 0}
-  textbox: {fileID: 6468029581289472162}
-  deadSprite: {fileID: 0}
-  lines:
-  - 'You: Lilith, We have a DB on site. '
-  - 'You: Victim gave me a key before he passed. It seems important.  '
-  - 'Lilith: From my database, It seems like the church was being suspected for indoctrination.  '
-  - 'You: It''s a church, what do you expect. *snickers* '
-  - 'Lilith: Whatever, check out the place. They might have some hidden items. '
-  - 'Lilith: There are hiding spots all over the place, press INTERACT to hide in
-    them if you need them.  '
-  - 'Lilith: They are sealed with blessings. Use them if you are spotted.  '
-  - 'You: Roger that.  '
-  - 'Lilith: One more thing.  '
-  - 'Lilith: You can only hold 1 item at a time. Press on the button with the item
-    to DROP it.  '
-  - 'You: I understand. Exploring site now.  '
-  finalText: 
-  textColor:
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  textSpeed: 0.042
-  playOnce: 1
-  autoplay: 1
-  unlocksArea: 0
-  isCaretaker: 0
-  allowedToPlay: 1
---- !u!4 &1761076417
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761076414}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.11, y: -10, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 25
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1763703478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98876,6 +98948,80 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03848a695608d81479ca1a8e54cc29ba, type: 3}
+--- !u!1 &1768775851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1768775852}
+  - component: {fileID: 1768775854}
+  - component: {fileID: 1768775853}
+  m_Layer: 0
+  m_Name: CreakyFloor (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1768775852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768775851}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 28.952, y: -36.399, z: -0.24320494}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1867297433}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1768775853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768775851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4e60898cfa0e543830a6892ab854dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hazardAudio: {fileID: 1093223544}
+  hazardSFX: {fileID: 8300000, guid: 3103d9d5486bf564d895d911beb70db8, type: 3}
+  wearyObject: {fileID: 6468029581816531746}
+--- !u!61 &1768775854
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768775851}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &1781244591
 GameObject:
   m_ObjectHideFlags: 0
@@ -99500,6 +99646,7 @@ Transform:
   - {fileID: 1397661748}
   - {fileID: 1636826231}
   - {fileID: 148064934}
+  - {fileID: 1768775852}
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -100303,7 +100450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8352121706282833678, guid: 081e1c5b23c99c74faf141f8e54dcd85, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.719639
+      value: 4.74964
       objectReference: {fileID: 0}
     - target: {fileID: 8352121706282833678, guid: 081e1c5b23c99c74faf141f8e54dcd85, type: 3}
       propertyPath: m_LocalPosition.z
@@ -100926,7 +101073,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.390625, y: 0.5703125}
+    oldSize: {x: 0.41666666, y: 0.60833335}
     newSize: {x: 0.66, y: 0.97}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -101009,11 +101156,13 @@ MonoBehaviour:
   bgm: {fileID: 1093223544}
   entityDeathSound: {fileID: 8300000, guid: b85d71cbc4cbb9a4bad3df61a87005c4, type: 3}
   wall: {fileID: 1888346235}
+  itemToAppear: {fileID: 0}
   spriteColor: {r: 0, g: 0, b: 0, a: 0}
   isItem: 0
   isSource: 1
   sourceDestroyed: 0
   unlocksArea: 1
+  activatesItem: 0
   itemName: 
   cc: {fileID: 6468029581051474168}
   sp: {fileID: 2601804706248928546}
@@ -102045,28 +102194,52 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[0]
-      value: 'Lilith: Stop right there. Spezion picked up multiple auras. '
+      value: 'Stop right there. Spezion picked up multiple auras. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[1]
-      value: 'Lilith: Be careful. La Suora is near there. '
+      value: 'Be careful. La Suora is near there. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[2]
-      value: "Lilith: Her origin source doesn\u2019t seem that far from her."
+      value: "Her origin source doesn\u2019t seem that far from her."
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[3]
-      value: 'Lilith: Sneak past her and break it. '
+      value: 'Sneak past her and break it. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[4]
-      value: 'You: Got it. '
+      value: 'Got it. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[5]
       value: 'Lilith: Sneak past her and break it. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[0]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[1]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[2]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[3]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[4]
+      value: You
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: textColor.Array.size
@@ -109893,49 +110066,91 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[0]
-      value: 'You: Lilith, Victim gave me a key before he passed. It seems important. '
+      value: 'Lilith, Victim gave me a key before he passed. It seems important. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[1]
-      value: 'Lilith: From my database, It seems like the church was being suspected
-        under indoctrination.  '
+      value: 'From my database, It seems like the church was being suspected under
+        indoctrination.  '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[2]
-      value: 'You: They could be starting a cult? Typical churches on the daily.
-        *snickers*'
+      value: They could be starting a cult? Typical churches on the daily. *snickers*
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[3]
-      value: 'Lilith: Whatever, check out the place. They might have some hidden
-        items.  '
+      value: 'Whatever, check out the place. They might have some hidden items.  '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[4]
-      value: 'Lilith: There are hiding spots all over the place, press INTERACT to
-        hide in them if you need them. '
+      value: 'There are hiding spots all over the place, press INTERACT to hide in
+        them if you need them. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[5]
-      value: 'Lilith: They are sealed with blessings. Use them if you are spotted. '
+      value: 'They are sealed with blessings. Use them if you are spotted. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[6]
-      value: 'You: Roger that. '
+      value: 'Roger that. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[7]
-      value: 'Lilith: One more thing. '
+      value: 'One more thing. '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[8]
-      value: 'Lilith: You can only hold 1 item at a time. Press on the button with
-        the item to DROP it.'
+      value: You can only hold 1 item at a time. Press on the button with the item
+        to DROP it.
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[9]
-      value: 'You: I understand. Exploring site now. '
+      value: 'I understand. Exploring site now. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[0]
+      value: You
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[1]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[2]
+      value: You
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[3]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[4]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[5]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[6]
+      value: You
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[7]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[8]
+      value: Lilith
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[9]
+      value: You
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: textColor.Array.size
@@ -110462,7 +110677,7 @@ Transform:
   m_Children:
   - {fileID: 379510878}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2128474520
 BoxCollider2D:
@@ -112480,7 +112695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8352121706282833678, guid: 081e1c5b23c99c74faf141f8e54dcd85, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.26036072
+      value: -0.2803612
       objectReference: {fileID: 0}
     - target: {fileID: 8352121706282833678, guid: 081e1c5b23c99c74faf141f8e54dcd85, type: 3}
       propertyPath: m_LocalPosition.z
@@ -112790,7 +113005,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2, y: 2}
+  m_Size: {x: 1.2, y: 1.8}
   m_EdgeRadius: 0
 --- !u!4 &6468029580937575789
 Transform:
@@ -112801,7 +113016,7 @@ Transform:
   m_GameObject: {fileID: 6468029580937575787}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6468029581070621931}
@@ -114798,13 +115013,25 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[0]
-      value: 'You: Lilith, there is more to the church than it seems.  '
+      value: 'Lilith, there is more to the church than it seems.  '
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: lines.Array.data[1]
-      value: 'Lilith: Keep searching. I am currently searching for data on the church
-        in our databases.'
+      value: Keep searching. I am currently searching for data on the church in our
+        databases.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[0]
+      value: You
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: names.Array.data[1]
+      value: Lilith
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: textColor.Array.size

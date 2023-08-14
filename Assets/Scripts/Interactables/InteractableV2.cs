@@ -14,13 +14,18 @@ public class InteractableV2 : MonoBehaviour
     public AudioSource bgm;
     public AudioClip entityDeathSound;
     public GameObject wall;
+    public GameObject itemToAppear;
+    public GameObject spezionHint;
+    public Animation spezionHintPath;
 
     public Color spriteColor;
 
+    public bool isSpezionHint;
     public bool isItem;
     public bool isSource;
     public bool sourceDestroyed;
     public bool unlocksArea;
+    public bool activatesItem;
     public string itemName;
     private bool inRange;
     private bool isAdded = false;
@@ -33,6 +38,7 @@ public class InteractableV2 : MonoBehaviour
     private SpriteRenderer sr;
     public LevelEnd le;
     public WearyMeter wm;
+    public SpezionHintArea sha;
     
     // Start is called before the first frame update
     void Start()
@@ -46,9 +52,24 @@ public class InteractableV2 : MonoBehaviour
         if (sp.isActive) //If the spezion is pressed, do accordingly
         {
             spezionParticles.SetActive(true);
+            if (isSpezionHint)
+            {
+                if (sha.inHintArea) //Prevent camera from shifting when out of puzzle room during hint
+                {
+                    cc.target = spezionHint;
+                }
+                spezionHint.SetActive(true);
+                spezionHintPath.Play();
+            }
         }
         else
         {
+            if (isSpezionHint)
+            {
+                cc.target = player;
+                spezionHint.SetActive(false);
+                spezionHintPath.Stop();
+            }
             spezionParticles.SetActive(false);
         }
         //onClick
@@ -108,6 +129,7 @@ public class InteractableV2 : MonoBehaviour
         cc.target = player;
         Time.timeScale = 1f;
         le.originDestroyed = true;
+        itemToAppear.SetActive(true);
         if (unlocksArea)
         {
             StartCoroutine(FadeTo(0f, 1f));

@@ -95,6 +95,7 @@ public class EnemyCommon : MonoBehaviour
 
         deathParticles.transform.position = new Vector3(entity.transform.position.x, entity.transform.position.y, deathParticles.transform.position.z);
         sigil.transform.position = new Vector3(entity.transform.position.x, entity.transform.position.y, deathParticles.transform.position.z);
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
         yield return new WaitForSecondsRealtime(1.1f);
         sigil.SetActive(true);
         //entity.SetActive(false);

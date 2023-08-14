@@ -14,13 +14,21 @@ public class InventoryV2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        storedItem = "none";
+        if (storedItem == "")
+        {
+            storedItem = "none";
+        }
+        if (attachedObject)
+        {
+            itemImage.sprite = attachedObject.GetComponent<SpriteRenderer>().sprite;
+        }
+        //storedItem = "none";
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!isHolding)
+        if (!isHolding) //disable the inventory button if holding nothing
         {
             inventoryButton.SetActive(false);
         }

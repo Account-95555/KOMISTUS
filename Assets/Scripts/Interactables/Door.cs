@@ -106,6 +106,7 @@ public class Door : MonoBehaviour
         blackScreen.CrossFadeAlpha(1f, 0.5f, false);
         yield return new WaitForSeconds(0.5f);
         player.transform.position = finalPos.position;
+        yield return new WaitForSeconds(0.5f);
         blackScreen.CrossFadeAlpha(0f, 1.25f, false);
         yield return new WaitForSeconds(1.25f);
         blackScreenHolder.SetActive(false);

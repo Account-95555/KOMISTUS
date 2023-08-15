@@ -31,23 +31,27 @@ public class Plate : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (pp.allCorrect == false)
+        if (other.gameObject.CompareTag("Feet"))
         {
-            if (correct == false)
+            if (pp.allCorrect == false)
             {
-                if (sequenceNum == pp.currentNum)
+                if (correct == false)
                 {
-                    pp.reset = false;
-                    sr.sprite = corrSprite;
-                    pp.currentNum += 1;
-                    correct = true;
-                }
-                else
-                {
-                    pp.currentNum = 1;
-                    pp.reset = true;
+                    if (sequenceNum == pp.currentNum)
+                    {
+                        pp.reset = false;
+                        sr.sprite = corrSprite;
+                        pp.currentNum += 1;
+                        correct = true;
+                    }
+                    else
+                    {
+                        pp.currentNum = 1;
+                        pp.reset = true;
+                    }
                 }
             }
         }
+        
     }
 }

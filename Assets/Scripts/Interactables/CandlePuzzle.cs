@@ -30,7 +30,7 @@ public class CandlePuzzle : MonoBehaviour
 
     IEnumerator Finished()
     {
-        l2d.color = Color.black;
+        l2d.color = Color.black; //remove the light to show puzzle is complete
         bgm.PlayOneShot(complete);
         yield return new WaitForSeconds(2f);
         item.SetActive(true);

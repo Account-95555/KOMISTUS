@@ -26,15 +26,15 @@ public class InventoryButtonV2 : MonoBehaviour
 
     public void Pressed()
     {
-        if (iv2.isHolding)
+        if (iv2.isHolding) //item drop conditions
         {
-            if (atItemRequired)
+            if (atItemRequired) //if the player drops at an unlockable, unlock
             {
                 pressed = true;
             }
             else
             {
-                if (!pc.noDrop)
+                if (!pc.noDrop) //if allowed to drop, drop
                 {
                     iv2.storedItem = "none";
                     iv2.attachedObject.transform.position = new Vector3(player.transform.position.x, player.transform.position.y - 0.69f, player.transform.position.z);

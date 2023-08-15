@@ -34,7 +34,7 @@ public class Joystick : MonoBehaviour
 
     public void PointerDown()
     {
-        int i = Input.touches.Length; ;
+        int i = Input.touches.Length; ; //get all of the finger touches on screen
 
         if (i == 1)
         {
@@ -74,7 +74,7 @@ public class Joystick : MonoBehaviour
         return id;
     }
     
-    public void Drag(BaseEventData baseEventData)
+    public void Drag(BaseEventData baseEventData) 
     {
         isDragging = true;
         PointerEventData pointerEventData = baseEventData as PointerEventData;
@@ -84,7 +84,7 @@ public class Joystick : MonoBehaviour
         joystickDist = Vector2.Distance(dragPos, joystickTouchPos);
 
 
-        if (joystickDist < joystickRadius)
+        if (joystickDist < joystickRadius) //position the joystick within the radius
         {
             joystick.transform.position = joystickTouchPos + joystickVector * joystickDist;
         }
@@ -94,7 +94,7 @@ public class Joystick : MonoBehaviour
         }
     }
 
-    public void PointerUp()
+    public void PointerUp() //on release, do stuff
     {
         isDragging = false;
         joystickVector = Vector2.zero;

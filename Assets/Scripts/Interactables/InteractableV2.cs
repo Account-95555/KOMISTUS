@@ -26,9 +26,11 @@ public class InteractableV2 : MonoBehaviour
     public bool sourceDestroyed;
     public bool unlocksArea;
     public bool activatesItem;
+    public bool isEnding;
     public string itemName;
     private bool inRange;
     private bool isAdded = false;
+    private bool camFocused = false;
     //Classes
     public CameraController cc;
     public Spezion sp;
@@ -39,6 +41,7 @@ public class InteractableV2 : MonoBehaviour
     public LevelEnd le;
     public WearyMeter wm;
     public SpezionHintArea sha;
+    public NormalLevelManager nlm;
     
     // Start is called before the first frame update
     void Start()
@@ -57,6 +60,7 @@ public class InteractableV2 : MonoBehaviour
                 if (sha.inHintArea) //Prevent camera from shifting when out of puzzle room during hint
                 {
                     cc.target = spezionHint;
+                    camFocused = false;
                 }
                 spezionHint.SetActive(true);
                 spezionHintPath.Play();
@@ -66,7 +70,12 @@ public class InteractableV2 : MonoBehaviour
         {
             if (isSpezionHint)
             {
-                cc.target = player;
+                if (!camFocused)
+                {
+                    cc.target = player;
+                    camFocused = true;
+                }
+                
                 spezionHint.SetActive(false);
                 spezionHintPath.Stop();
             }
@@ -106,36 +115,47 @@ public class InteractableV2 : MonoBehaviour
 
     IEnumerator SealBreak()
     {
-        wm.chaseSource.Stop();
-        wm.wearyVal = 0f;
-        sourceDestroyed = true;
-        controls.SetActive(false);
-        cc.target = originEntity;
-        deathParticles.transform.position = new Vector3(originEntity.transform.position.x, originEntity.transform.position.y,deathParticles.transform.position.z);
-        sigil.transform.position = new Vector3(originEntity.transform.position.x, originEntity.transform.position.y, deathParticles.transform.position.z); 
-        Time.timeScale = 0f;
-        yield return new WaitForSecondsRealtime(1.1f);
-        sigil.SetActive(true);
-        originEntity.SetActive(false);
-        wm.enabled = false;
-        yield return new WaitForSecondsRealtime(1.1f);
-        sigil.SetActive(false);
-        bgm.PlayOneShot(entityDeathSound);
-        deathParticles.SetActive(true);
-        yield return new WaitForSecondsRealtime(2.1f);
-        originEntityHolder.SetActive(false);
-        controls.SetActive(true);
-        js.PointerUp();
-        cc.target = player;
-        Time.timeScale = 1f;
-        le.originDestroyed = true;
-        itemToAppear.SetActive(true);
-        if (unlocksArea)
+        if (isEnding)
         {
-            StartCoroutine(FadeTo(0f, 1f));
+            nlm.ExitScene("EndingCutscene"); //special case for end scene
         }
-        gameObject.GetComponent<SpriteRenderer>().enabled = false;
-        gameObject.GetComponent<BoxCollider2D>().enabled = false; //prevent player from destroying origin again but allows origin process to continue running.
+        else
+        {
+            wm.chaseSource.Stop(); //stop the chase music from playing
+            wm.wearyVal = 0f; //set the weary bar to 0
+            sourceDestroyed = true;
+            controls.SetActive(false); //prevent player from moving
+            cc.target = originEntity; //zoom into the origin entity
+            deathParticles.transform.position = new Vector3(originEntity.transform.position.x, originEntity.transform.position.y, deathParticles.transform.position.z);
+            sigil.transform.position = new Vector3(originEntity.transform.position.x, originEntity.transform.position.y, deathParticles.transform.position.z);
+            Time.timeScale = 0f;
+            yield return new WaitForSecondsRealtime(1.1f);
+            sigil.SetActive(true); //show sigil
+            originEntity.SetActive(false);
+            wm.enabled = false; //disable weary meter since entities are all dead
+            yield return new WaitForSecondsRealtime(1.1f);
+            sigil.SetActive(false);
+            bgm.PlayOneShot(entityDeathSound);
+            deathParticles.SetActive(true);
+            yield return new WaitForSecondsRealtime(2.1f);
+            originEntityHolder.SetActive(false);
+            controls.SetActive(true);
+            js.PointerUp(); //reset joystick to default position
+            cc.target = player; //focus back onto the player
+            Time.timeScale = 1f; //reset the timescale back
+            le.originDestroyed = true;
+            if (itemToAppear)
+            {
+                itemToAppear.SetActive(true);
+            }
+            if (unlocksArea)
+            {
+                StartCoroutine(FadeTo(0f, 1f));
+            }
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<BoxCollider2D>().enabled = false; //prevent player from destroying origin again but allows origin process to continue running.
+        }
+        
     }
 
     //Range codes if the player is within the item's range

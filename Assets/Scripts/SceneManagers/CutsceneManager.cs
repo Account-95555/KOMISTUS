@@ -18,7 +18,7 @@ public class CutsceneManager : SceneManagerCommon
     // Start is called before the first frame update
     void Start()
     {
-        skipText = skipTextHolder.GetComponent<TextMeshProUGUI>();
+        skipText = skipTextHolder.GetComponent<TextMeshProUGUI>(); //fade into scene
         //BGMFadeIn();
         StartCoroutine(CheckPlaying());
         blackScreenImage = blackScreenHolder.GetComponent<Image>();
@@ -28,30 +28,30 @@ public class CutsceneManager : SceneManagerCommon
     // Update is called once per frame
     void Update()
     {
-        if (!vp.isPlaying && !endReached && finishedLoading)
+        if (!vp.isPlaying && !endReached && finishedLoading) //if cutscene is finished
         {
-            StartCoroutine(ExitSceneCo(nextLevel));
+            StartCoroutine(ExitSceneCo(nextLevel)); //load next level
             endReached = true;
         }
-        if (holding)
+        if (holding) //if holding, set the time text so the player knows how long to wait
         {
             seconds -= Time.deltaTime;
             if (!skipTextHolder.activeInHierarchy)
             {
                 skipTextHolder.SetActive(true);
             }
-            if (seconds < 0f)
+            if (seconds < 0f) //so no negatives
             {
                 seconds = 0f;
             }
-            skipText.text = ("Skipping in " + Mathf.RoundToInt(seconds));
+            skipText.text = ("Skipping in " + Mathf.RoundToInt(seconds)); //continually update the text
             if (seconds <= 0f && !endReached)
             {
                 SkipCutscene();
                 endReached = true;
             }
         }
-        else
+        else //if released, set the text inactive and reset back to 3 seconds
         {
             if (skipTextHolder.activeInHierarchy)
             {
@@ -64,7 +64,7 @@ public class CutsceneManager : SceneManagerCommon
         }
     }
 
-    IEnumerator CheckPlaying()
+    IEnumerator CheckPlaying() //give time for the video to load up, or else isPlaying will not function as intended
     {
         yield return new WaitForSeconds(3f);
         finishedLoading = true;

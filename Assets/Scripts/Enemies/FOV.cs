@@ -16,7 +16,7 @@ public class FOV : MonoBehaviour
     void Update()
     {
         transform.position = enemy.transform.position;
-        transform.localScale = new Vector3(Mathf.Sign(enemy.transform.localScale.x), 1, 1);
+        transform.localScale = new Vector3(Mathf.Sign(enemy.transform.localScale.x), 1, 1); //change the fov according to where enemy is facing
     }
 
     void OnTriggerEnter2D(Collider2D other)

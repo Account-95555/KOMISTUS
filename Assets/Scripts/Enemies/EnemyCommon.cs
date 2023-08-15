@@ -85,12 +85,12 @@ public class EnemyCommon : MonoBehaviour
         //agent.SetDestination(new Vector3(originPos.x, originPos.y, transform.position.z));
     //}
 
-    public virtual void ChangeScale()
+    public virtual void ChangeScale() //change scale based on direction of player
     {
         entity.transform.localScale = new Vector3(-Mathf.Sign(agent.velocity.x) * 1, 1, 1);
     }
 
-    public virtual IEnumerator SealBreak()
+    public virtual IEnumerator SealBreak() //set the individual enemies to die
     {
 
         deathParticles.transform.position = new Vector3(entity.transform.position.x, entity.transform.position.y, deathParticles.transform.position.z);

@@ -33,7 +33,7 @@ public class ItemRequired : MonoBehaviour
     {
         if (inRange && ib2.pressed)
         {
-            if (iv2.storedItem == requiredObject)
+            if (iv2.storedItem == requiredObject) //if item in hand is item required, do stuff
             {
                 iv2.storedItem = "none";
                 iv2.isHolding = false;

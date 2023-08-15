@@ -52,7 +52,7 @@ public class KeycodeObject : MonoBehaviour
             keypad.SetActive(false);
         }
     }
-    public void NumberPress(int number)
+    public void NumberPress(int number) //set the number to show on the keypad
     {
         if (playerInput.Length < codeNumber.Length && !correctCode)
         {
@@ -87,7 +87,7 @@ public class KeycodeObject : MonoBehaviour
         
     }
     
-    IEnumerator CorrectCode()
+    IEnumerator CorrectCode() //if code is correct, do stuff
     {
         bgm.PlayOneShot(correct);
         playerInput = "ACCESS GRANTED";

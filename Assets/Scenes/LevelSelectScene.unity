@@ -1196,8 +1196,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9e62b385e22f3944d855ebd68b1b2a81, type: 3}
   - {fileID: 21300000, guid: e17544badcfc5514d974ada8babdaec9, type: 3}
   popupSprite:
-  - {fileID: 21300000, guid: 56a146ac4b0436d4dbec4decc22d39ab, type: 3}
-  - {fileID: 21300000, guid: 0561237bd8c3bbe4b8b2e441bb83fcf1, type: 3}
+  - {fileID: 21300000, guid: e65bc8f9221262b4da746ab2bec51ac9, type: 3}
+  - {fileID: 21300000, guid: d9389cc093fa2a749be9be7a81a22236, type: 3}
   levelPopup: {fileID: 540740917}
   lockedHolder: {fileID: 1888688734}
   index: 0
@@ -2202,7 +2202,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 56a146ac4b0436d4dbec4decc22d39ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e65bc8f9221262b4da746ab2bec51ac9, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

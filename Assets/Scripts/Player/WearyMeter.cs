@@ -71,7 +71,7 @@ public class WearyMeter : MonoBehaviour
             //pc.isDead = true;
             //PlayerPrefs.SetString("CauseOfDeath", "WearyMeter");
         }
-        else if (wearyMeter.value < 40)
+        else if (wearyMeter.value < 40) //end chase when value is lower than 40
         {
             if (!coroutineActive)
             {

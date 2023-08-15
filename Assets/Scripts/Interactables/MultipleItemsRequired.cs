@@ -9,6 +9,7 @@ public class MultipleItemsRequired : MonoBehaviour
     public GameObject door;
     public int itemsRequired;
     public int status = 0;
+    private bool complete = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,11 @@ public class MultipleItemsRequired : MonoBehaviour
         if (status == itemsRequired)
         {
             door.SetActive(false);
-            bgm.PlayOneShot(correct);
+            if (!complete) //prevent win sound from continually activating
+            {
+                bgm.PlayOneShot(correct);
+                complete = true;
+            }
         }
     }
 }

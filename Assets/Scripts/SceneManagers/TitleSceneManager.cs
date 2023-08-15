@@ -14,7 +14,7 @@ public class TitleSceneManager : SceneManagerCommon
         Time.timeScale = 1f;
         AudioListener.volume = 1f;
         //buttonText.text = PlayerPrefs.GetString("wearyStatus", "on");
-        blackScreenImage = blackScreenHolder.GetComponent<Image>();
+        blackScreenImage = blackScreenHolder.GetComponent<Image>(); //fade in for transition
         BGMFadeIn();
         BlackScreenFadeIn();
     }
@@ -72,7 +72,7 @@ public class TitleSceneManager : SceneManagerCommon
         }
     }
 
-    public void WearyToggle()
+    public void WearyToggle() //set the weary status to on or off
     {
         if (PlayerPrefs.GetString("wearyStatus", "on") == "on")
         {

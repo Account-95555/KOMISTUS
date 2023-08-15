@@ -47,20 +47,20 @@ public class Door : MonoBehaviour
             }
             else
             {
-                doorColor.a = Mathf.MoveTowards(doorColor.a, 0f, 1f * Time.deltaTime);
+                doorColor.a = Mathf.MoveTowards(doorColor.a, 0f, 1f * Time.deltaTime); //fade the door to show that it is opening
             }
             
         }
         else
         {
-            doorColor.a = Mathf.MoveTowards(doorColor.a, 1f, 1f * Time.deltaTime);
+            doorColor.a = Mathf.MoveTowards(doorColor.a, 1f, 1f * Time.deltaTime); //fade to show closing
         }
        
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Enemy")) //allow both players and enemies to trigger the door
         {
             isEntered = true;
             if (isTrigger)
@@ -98,7 +98,7 @@ public class Door : MonoBehaviour
         }
     }
 
-    IEnumerator TeleportCo()
+    IEnumerator TeleportCo() //teleport the character and fade as a transition
     {
         telCo = true;
         blackScreenHolder.SetActive(true);

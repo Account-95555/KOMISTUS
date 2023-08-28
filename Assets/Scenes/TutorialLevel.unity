@@ -672,6 +672,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6468029581289472162}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: textSpeed
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: dialogueAudio
       value: 
       objectReference: {fileID: 1093223544}
@@ -3554,8 +3558,8 @@ MonoBehaviour:
   - 'Use your JOYSTICK to move around. '
   - 'Your JOYSTICK has 2 rings. '
   - 'The inner ring is for walking. Outer ring is for running. '
-  - 'The INTERACT button is for you to interact or pick up items. You can also use
-    it to skip my talking (although screw ya if you do that...) '
+  - 'The INTERACT button is for you to interact or pick up items. To skip me talking
+    (although screw ya if you do that...), click the textbox. '
   - "Don\u2019t get caught. Be as quiet as possible and complete your mission. "
   - Roger that.
   - 'You need to find the origin source of La Suora and break it. Explore the place
@@ -3574,7 +3578,7 @@ MonoBehaviour:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 0, b: 0, a: 1}
-  textSpeed: 0.042
+  textSpeed: 0.03
   playOnce: 1
   autoplay: 1
   unlocksArea: 1
@@ -5033,6 +5037,10 @@ PrefabInstance:
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: autoplay
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: textSpeed
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: dialogueAudio
@@ -19901,7 +19909,7 @@ MonoBehaviour:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
-  textSpeed: 0.04
+  textSpeed: 0.03
   playOnce: 1
   autoplay: 0
   unlocksArea: 0
@@ -95714,6 +95722,7 @@ MonoBehaviour:
   anotherDoor: 0
   givesItem: 0
   multipleItems: 0
+  pc: {fileID: 6468029580937575790}
   iv2: {fileID: 7015238709069851884}
   ib2: {fileID: 2601804704825040183}
   mir: {fileID: 0}
@@ -97351,6 +97360,10 @@ PrefabInstance:
       propertyPath: textbox
       value: 
       objectReference: {fileID: 6468029581289472162}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: textSpeed
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: dialogueAudio
       value: 
@@ -100568,6 +100581,10 @@ PrefabInstance:
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: autoplay
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: textSpeed
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: dialogueAudio
@@ -108442,6 +108459,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6468029581289472162}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: textSpeed
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: dialogueAudio
       value: 
       objectReference: {fileID: 1093223544}
@@ -113384,6 +113405,10 @@ PrefabInstance:
       propertyPath: textbox
       value: 
       objectReference: {fileID: 6468029581289472162}
+    - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
+      propertyPath: textSpeed
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 8569126146989914714, guid: c561a0544399f1045975a773e071cd56, type: 3}
       propertyPath: unlocksArea
       value: 1

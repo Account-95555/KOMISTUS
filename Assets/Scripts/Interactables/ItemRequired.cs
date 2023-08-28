@@ -16,6 +16,7 @@ public class ItemRequired : MonoBehaviour
     public bool anotherDoor;
     public bool givesItem;
     public bool multipleItems;
+    public PlayerController pc;
     public InventoryV2 iv2;
     public InventoryButtonV2 ib2;
     public MultipleItemsRequired mir;
@@ -58,7 +59,7 @@ public class ItemRequired : MonoBehaviour
             }
             else
             {
-                if (textbox.text == "")
+                if (textbox.text == "" && !pc.inDialogue)
                 {
                     textbox.text = "You require a " + requiredObject + " for this..."; //prevent any dialogue overwrites
                 }
@@ -77,7 +78,7 @@ public class ItemRequired : MonoBehaviour
             ib2.atItemRequired = true;
             if (ib.clickRegistered)
             {
-                if (textbox.text == "")
+                if (textbox.text == "" && !pc.inDialogue)
                 {
                     textbox.text = "You require a " + requiredObject + " for this..."; //prevent any dialogue overwrites
                 }
@@ -93,7 +94,7 @@ public class ItemRequired : MonoBehaviour
         {
             if (ib.clickRegistered)
             {
-                if (textbox.text == "")
+                if (textbox.text == "" && !pc.inDialogue)
                 {
                     textbox.text = "You require a " + requiredObject + " for this..."; //prevent any dialogue overwrites
                 }
@@ -109,8 +110,14 @@ public class ItemRequired : MonoBehaviour
         {
             inRange = false;
             ib2.atItemRequired = false;
-            textbox.text = string.Empty;
+            if (!pc.inDialogue)
+            {
+                textbox.text = string.Empty;
+            }
+            
         }
         
     }
+
+    //ItemRequired - just for me to copy and paste for debugging :D
 }

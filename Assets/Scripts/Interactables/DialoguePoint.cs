@@ -111,6 +111,7 @@ public class DialoguePoint : MonoBehaviour
         }
         else if (index >= lines.Length - 1 || ib.clicksInFourthSec > 1)  //once all text done do this
         {
+            ib.clicksInFourthSec = 0;
             pc.inDialogue = false;
             textbox.text = finalText;
             inProgress = false;

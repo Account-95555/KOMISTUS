@@ -5,6 +5,9 @@ using TMPro;
 
 public class HintArea : MonoBehaviour
 {
+    public KeycodeObject safe; //only for lvl 1
+    public WearyMeter wm;
+    public LevelEnd le;
     public GameObject hintTextHolder;
     public TextMeshProUGUI hintText;
     public Animator hintAnim;
@@ -37,16 +40,25 @@ public class HintArea : MonoBehaviour
             StartCoroutine(HintSecondsCounter());
         }
 
-        if (inHintArea && hintTimer >= timeToWait && !hintTextHolder.activeInHierarchy) //if hint timer is equal to the waiting timer, show the hint
+        if (inHintArea && hintTimer >= timeToWait && !hintTextHolder.activeInHierarchy && !wm.canBeChased && !le.originDestroyed) //if hint timer is equal to the waiting timer, show the hint
         {
             hintStay = true;
             if (!hintTextHolder.activeInHierarchy)
             {
+                
                 hintTextHolder.SetActive(true);
             }
             
         }
-        
+
+        if (safe)
+        {
+            if (safe.correctCode)
+            {
+                gameObject.SetActive(false);
+            }
+        }
+
     }
 
     void OnTriggerStay2D(Collider2D other)

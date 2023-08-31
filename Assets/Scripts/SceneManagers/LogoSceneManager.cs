@@ -26,7 +26,7 @@ public class LogoSceneManager : SceneManagerCommon
     {
         yield return new WaitForSeconds(1);
         videoHolder.SetActive(true);
-        yield return new WaitForSeconds((float)loadingVideo.clip.length + 0.69f);
+        yield return new WaitForSeconds((float)loadingVideo.clip.length + 1f);
         LoadScene(sceneToLoad);
     }
 }

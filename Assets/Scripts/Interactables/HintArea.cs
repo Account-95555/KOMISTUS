@@ -5,6 +5,7 @@ using TMPro;
 
 public class HintArea : MonoBehaviour
 {
+
     public KeycodeObject safe; //only for lvl 1
     public WearyMeter wm;
     public LevelEnd le;
@@ -19,6 +20,7 @@ public class HintArea : MonoBehaviour
     public bool hintStay = false;
     private bool coRunning = false;
     private bool coRunning2 = false;
+    private bool inAnimArea = false;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +31,7 @@ public class HintArea : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hintTextHolder.activeInHierarchy)
+        if (hintTextHolder.activeInHierarchy && inAnimArea)
         {
             hintAnim.SetBool("HintGoUp", hintDrop);
             hintAnim.SetBool("HintStay", hintStay);
@@ -69,6 +71,7 @@ public class HintArea : MonoBehaviour
             hintDrop = false;
             hintText.text = hintToDisplay;
             inHintArea = true;
+            inAnimArea = true;
         }
     }
     
@@ -100,6 +103,7 @@ public class HintArea : MonoBehaviour
         hintDrop = true;
         yield return new WaitForSeconds(1f);
         hintTextHolder.SetActive(false);
+        inAnimArea = false;
         coRunning2 = false;
     }
 }

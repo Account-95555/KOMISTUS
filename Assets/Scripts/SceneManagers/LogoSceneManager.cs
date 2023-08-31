@@ -13,7 +13,7 @@ public class LogoSceneManager : SceneManagerCommon
     {
         loadingVideo = videoHolder.GetComponent<VideoPlayer>();
         StartCoroutine(LoadProcess());
-        Debug.Log((float) loadingVideo.clip.length);
+        //Debug.Log((float) loadingVideo.clip.length);
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class LogoSceneManager : SceneManagerCommon
     {
         yield return new WaitForSeconds(1);
         videoHolder.SetActive(true);
-        yield return new WaitForSeconds((float)loadingVideo.clip.length);
+        yield return new WaitForSeconds((float)loadingVideo.clip.length + 0.69f);
         LoadScene(sceneToLoad);
     }
 }
